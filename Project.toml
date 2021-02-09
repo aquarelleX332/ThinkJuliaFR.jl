@@ -1,0 +1,13 @@
+name = "ThinkJuliaFR"
+uuid = "2ca51d71-db58-4e08-8535-c672b24e6241"
+authors = ["Thierry Lepoint\nthierry.lepoint@protonmail.com"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
