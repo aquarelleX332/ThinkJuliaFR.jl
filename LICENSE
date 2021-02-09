@@ -1,22 +1,29 @@
-MIT License
+Creative Commons
+
+Here is the legal license in English: https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode
 
 Copyright (c) 2021 Thierry Lepoint
 thierry.lepoint@protonmail.com
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+En vertu de la licence Creative Commons (CC BY-NC-SA 3.0 FR; Attribution -
+Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 3.0 FR), vous
+êtes autorisé à partager (copier, distribuer et communiquer le matériel par tous moyens
+et sous tous formats) et adapter (remixer, transformer et créer à partir du matériel) selon
+les conditions suivantes :
+— Attribution — Vous devez créditer le document, intégrer un lien vers la licence
+(en l’occurrence : CC BY-NC-SA 3.0 FR) et indiquer si des modifications ont
+été effectuées au document. Vous devez indiquer ces informations par tous les
+moyens raisonnables, sans toutefois suggérer que le présent auteur vous sou-
+tient ou soutient la façon dont vous avez utilisé son travail.
+— Pas d’utilisation commerciale — Vous n’êtes pas autorisé à faire un usage com-
+mercial du présent document, tout ou partie du matériel le composant.
+— Partage dans les mêmes conditions — Dans le cas où vous effectuez un remix,
+que vous transformez, ou créez à partir du matériel composant le document
+original, vous devez diffuser le document modifié dans les mêmes conditions,
+c’est-à-dire avec la même licence avec laquelle le document original a été dif-
+fusé.
+Vous n’êtes pas autorisé à appliquer des conditions légales ou des mesures techniques
+qui restreindraient légalement autrui à utiliser le document dans les conditions décrites
+par la licence.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
