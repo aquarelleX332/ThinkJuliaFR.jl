@@ -6,11 +6,15 @@
 Une version PDF peut être téléchargée en cliquant sur ce [lien](https://github.com/aquarelleX332/ThinkJuliaFR.jl/blob/master/book/Think_Julia_FR_B5-1.0.pdf).
 Le code source LYX peut être téléchargé en cliquant sur le bouton *download* de ce [lien](https://github.com/aquarelleX332/ThinkJuliaFR.jl/blob/master/src/Think_Julia_FR_B5-1.0.lyx).
 
-**Installation**
-Dans le REPL:  
+<hr>
+
+**Installation:**  
+Dans le REPL, saisir:  
 ]  
 add https://github.com/aquarelleX332/ThinkJuliaFR.jl  
 using ThinkJuliaFR
 
-**Usage**
+<hr>
+
+**Usage:**  
 Dans le cadre des exemples et des exercices, l'installation de ThinkJuliaFR permet d'utiliser les paquets Turtle (Chapitre 4), Plots (chapitres 13 et 19), Printf (chapitres 16 et 17), etc. 
