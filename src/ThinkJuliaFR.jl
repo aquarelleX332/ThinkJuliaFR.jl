@@ -9,6 +9,5 @@ module ThinkJuliaFR
   using Luxor
   using TikzPictures
   using Plots
-
   
 end
