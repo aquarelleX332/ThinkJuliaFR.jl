@@ -1,6 +1,6 @@
 module ThinkJuliaFR
 
-  __precompile__(false)
+#  __precompile__(false)
 
   using Printf
   using Random
@@ -11,4 +11,4 @@ module ThinkJuliaFR
   using Plots
 
   
-  end
+end
