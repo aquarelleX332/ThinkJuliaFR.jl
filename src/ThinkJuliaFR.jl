@@ -15,14 +15,7 @@ module ThinkJuliaFR
       error("ThinkJuliaFR not installed properly, run Pkg.build(\"ThinkJuliaFR\"), restart Julia and try again")
   end
   include(depsjl_path)
-"""
-  function __init__()
-    # Always check your dependencies that live in `deps.jl`
-    check_deps()
-    global setcolor! = Core.eval(Base, :(x -> (y = have_color; global have_color = x; y)))
-    CAN_INLINE[] = Base.JLOptions().can_inline == 0 ? false : true
-  end
-"""
+
   #import Base.+
 
   export printlyrics, repeatlyrics, printtwice, cattwice
