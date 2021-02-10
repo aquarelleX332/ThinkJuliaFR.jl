@@ -10,9 +10,9 @@ Le code source LYX peut être téléchargé en cliquant sur le bouton *download*
 
 **Installation:**  
 Dans le REPL, saisir:  
-`]  
-add https://github.com/aquarelleX332/ThinkJuliaFR.jl  
-using ThinkJuliaFR`
+`]`  
+`add https://github.com/aquarelleX332/ThinkJuliaFR.jl`  
+`using ThinkJuliaFR`
 
 <hr>
 
