@@ -19,5 +19,8 @@ Vous pouvez tester une installation dans le REPL:
 **Perspectives:**  
 Une version complète est en cours de préparation. Elle permettra d'utiliser les paquets Turtle (Chapitre 4), Plots (chapitres 13 et 19), Printf (chapitres 16 et 17), etc.
 
-
+<hr>
+**Autres traductions:**  
+[Version espagnole](https://introajulia.org/) par Pamela Alejandra Bustamante Faúndez.
+[Version portugaise](https://juliaintro.github.io/JuliaIntroBR.jl/index.html) par Abel Soares Siqueira, Gustavo Sarturi, João Okimoto et Kally Chung.
 
