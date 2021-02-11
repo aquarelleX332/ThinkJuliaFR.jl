@@ -22,6 +22,6 @@ Une version complète est en cours de préparation. Elle permettra d'utiliser le
 <hr>
 
 **Autres traductions:**  
-[Version espagnole] (https://introajulia.org/) par Pamela Alejandra Bustamante Faúndez.  
-[Version portugaise] (https://juliaintro.github.io/JuliaIntroBR.jl/index.html) par Abel Soares Siqueira, Gustavo Sarturi, João Okimoto et Kally Chung.
+[Version espagnole](https://introajulia.org) par Pamela Alejandra Bustamante Faúndez.  
+[Version portugaise](https://juliaintro.github.io/JuliaIntroBR.jl/index.html) par Abel Soares Siqueira, Gustavo Sarturi, João Okimoto et Kally Chung.
 
