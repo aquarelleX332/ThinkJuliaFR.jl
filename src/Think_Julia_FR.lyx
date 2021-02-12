@@ -721,7 +721,7 @@ Traductions en espagnol et en portugais
 \end_layout
 
 \begin_layout Standard
-Le lecteur trouvera également, sous 
+Le lecteur trouvera également une traduction en espagnol sous 
 \begin_inset CommandInset href
 LatexCommand href
 name "ce lien"
@@ -730,9 +730,9 @@ literal "false"
 
 \end_inset
 
-, une traduction en espagnol réalisée par Pamela Alejandra Bustamante Faúndez
- (Ph.D.
- à la Pontificia Universidad Católica de Chile) ainsi que, sous 
+ réalisée par Pamela Alejandra Bustamante Faúndez (Ph.D.
+ à la Pontificia Universidad Católica de Chile) ainsi qu'une traduction
+ en portugais sous 
 \begin_inset CommandInset href
 LatexCommand href
 name "ce lien"
@@ -741,8 +741,8 @@ literal "false"
 
 \end_inset
 
-, une traduction en portugais effectuée par Abel Soares Siqueira, Gustavo
- Sarturi, João Okimoto, Kally Chung.
+ réalisée par Abel Soares Siqueira, Gustavo Sarturi, João Okimoto, Kally
+ Chung.
  Abel Soares Siqueira est professeur à la Federal University of Paraná in
  Curitiba, PR, Brazil.
  Gustavo Sarturi est titulaire d'une licence en mathématiques industrielles
@@ -15011,7 +15011,11 @@ luxor-drawing-165611_608.svg
 \color inherit
 – s'affiche dans la partie Plots du REPL.
  Nous pouvons effectuer une recherche pour déterminer dans quel répertoire
- se trouve ce fichier (sous GNU/Linux: 
+ se trouve ce fichier (sous GNU/
+\noun on
+Linux
+\noun default
+: 
 \color blue
 sudo updatedb
 \begin_inset Index idx
@@ -103747,7 +103751,7 @@ est bien supérieur à 60?
 Dans ce cas, il ne suffit pas d'effectuer l'opération une seule fois.
  Nous devons poursuivre jusqu'à ce que 
 \color blue
-time.second
+time.seconde
 \color inherit
  soit inférieur à soixante.
  Une solution consiste à remplacer les déclarations 
