@@ -23,6 +23,8 @@ Cette version permet d'utiliser les paquets Turtle (Chapitre 4), Plots (chapitre
 
 **Exemple:**
 ```julia
+# exercice 4.12.5 (page 51)
+
 using ThinkJuliaFR
 🐢 = Turtle()
 
