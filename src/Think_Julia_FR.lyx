@@ -121612,7 +121612,10 @@ literal "false"
 \end_inset
 
 .
- 
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Standard
@@ -143087,6 +143090,108 @@ addcontentsline{toc}{chapter}{Index}
 LatexCommand printindex
 type "idx"
 name "Index"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Quatrième de couverture
+\end_layout
+
+\begin_layout Standard
+Si vous souhaitez commencer à programmer, Julia est un excellent langage
+ compilé à la volée (
+\emph on
+Just In Time
+\emph default
+, JIT), dynamiquement typé et doté d'une syntaxe élégante et soignée.
+ Ce guide pratique utilise Julia (version 
+\begin_inset Formula $\geq$
+\end_inset
+
+ 1.0) pour apprendre à programmer de manière progressive, en commençant par
+ les concepts de base de la programmation avant de passer à des fonctionnalités
+ plus avancées, telles que la création de nouveaux types, le polymorphisme,
+ la méta-programmation et le 
+\emph on
+dispatch multiple
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Conçu dès le départ pour être très performant, Julia est un langage polyvalent,
+ idéal non seulement pour l'analyse numérique et les sciences informatiques,
+ mais aussi pour la programmation web ou la création de scripts.
+ Grâce à des exercices accompagnant chaque chapitre, vous pourrez tester
+ les notions de programmation au fur et à mesure de leur apprentissage.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes cld
+\end_inset
+
+Think Julia
+\begin_inset Quotes crd
+\end_inset
+
+ est idéal pour les ingénieurs, les étudiants de niveau secondaire et universita
+ire ainsi que pour les autodidactes, les étudiants scolarisés à domicile
+ et les professionnels devant apprendre les bases de la programmation moderne.
+\end_layout
+
+\begin_layout Itemize
+Commencez par les bases, y compris la syntaxe et la sémantique du langage
+\end_layout
+
+\begin_layout Itemize
+Accédez une définition claire de chaque notion de programmation
+\end_layout
+
+\begin_layout Itemize
+Apprenez à manipuler les valeurs, les variables, les énoncés, les fonctions
+ et les structures de données dans une progression logique
+\end_layout
+
+\begin_layout Itemize
+Découvrez comment exploiter des fichiers et des bases de données
+\end_layout
+
+\begin_layout Itemize
+Créez et gérez les types, les méthodes et le 
+\emph on
+dispatch multiple
+\end_layout
+
+\begin_layout Itemize
+Utilisez des techniques de débogage performantes pour corriger les erreurs
+ de syntaxe, d'exécution et de sémantique
+\end_layout
+
+\begin_layout Itemize
+Explorez la conception d'interfaces et les structures de données à travers
+ des études de cas
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Quatrième de couverture}
+\end_layout
 
 \end_inset
 
