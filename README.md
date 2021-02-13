@@ -21,24 +21,24 @@ Cette version permet d'utiliser les paquets Turtle (Chapitre 4), Plots (chapitre
 
 **Exemple:**  
 
-'using ThinkJuliaFR`__
-`🐢 = Turtle()`__
-``
-`function spiralearchimede(t)`__
-`    θ = 0.0                     # angle initial`__
-`    n = 2500                    # nombre de segments`__
-`    len = 2                     # longueur d'1 segment`__
-`    for i in 1:n`__
-`        forward(t,len)`__
-`        Δ = 1/(0.002 + 0.001*θ) # incrément d'angle`__
-`        turn(t,-Δ)`__
-`        θ = θ + Δ`__
-`    end`__
-`end`__
-``
-`@svg begin`__
-`    spiralearchimede(🐢)`__
-`end'
+'using ThinkJuliaFR`  
+`🐢 = Turtle()`  
+` `  
+`function spiralearchimede(t)`  
+`    θ = 0.0                     # angle initial`  
+`    n = 2500                    # nombre de segments`  
+`    len = 2                     # longueur d'1 segment`  
+`    for i in 1:n`  
+`        forward(t,len)`  
+`        Δ = 1/(0.002 + 0.001*θ) # incrément d'angle`  
+`        turn(t,-Δ)`  
+`        θ = θ + Δ`  
+`    end`  
+`end`  
+` `  
+`@svg begin`  
+`    spiralearchimede(🐢)`  
+`end'  
 
 
 <hr>
