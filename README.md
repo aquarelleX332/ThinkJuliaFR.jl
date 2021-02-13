@@ -17,7 +17,29 @@ Dans le REPL:
 <hr>
 
 **Usages:**  
-Cette version permet d'utiliser les paquets Turtle (Chapitre 4), Plots (chapitres 13 et 19), Printf (chapitres 16 et 17).
+Cette version permet d'utiliser les paquets Turtle (Chapitre 4), Plots (chapitres 13 et 19), DBM (chapitres 14 et 19) et Printf (chapitres 16 et 17).
+
+**Exemple:**  
+
+'using ThinkJuliaFR`__
+`🐢 = Turtle()`__
+``
+`function spiralearchimede(t)`__
+`    θ = 0.0                     # angle initial`__
+`    n = 2500                    # nombre de segments`__
+`    len = 2                     # longueur d'1 segment`__
+`    for i in 1:n`__
+`        forward(t,len)`__
+`        Δ = 1/(0.002 + 0.001*θ) # incrément d'angle`__
+`        turn(t,-Δ)`__
+`        θ = θ + Δ`__
+`    end`__
+`end`__
+``
+`@svg begin`__
+`    spiralearchimede(🐢)`__
+`end'
+
 
 <hr>
 
