@@ -37,6 +37,7 @@ module ThinkJuliaFR
   #export printall
   #export processfile, processline, totalwords, differentwords, mostcommon, printmostcommon, subtract
   export DBM
+  export @printf
   #export Point, MPoint, Rectangle, printpoint, findcenter, movepoint!, moverectangle!
   #export MyTime, isafter
   #export inttotime, timetoint, increment!, printtime
