@@ -21,6 +21,32 @@ Cette version permet d'utiliser les paquets Turtle (Chapitre 4), Plots (chapitre
 
 <hr>
 
+**Exemple:**
+```julia
+using ThinkJuliaFR
+🐢 = Turtle()
+
+function spiralearchimede(t)
+    θ = 0.0                     # angle initial
+    n = 2500                    # nombre de segments
+    len = 2                     # longueur d'1 segment
+    for i in 1:n
+        forward(t,len)
+        Δ = 1/(0.002 + 0.001*θ) # incrément d'angle
+        turn(t,-Δ)
+        θ = θ + Δ
+    end
+end
+
+@svg begin
+    spiralearchimede(🐢)
+end
+
+```
+
+<hr>
+
+
 **Autres traductions:**  
 [Version espagnole](https://introajulia.org) par Pamela Alejandra Bustamante Faúndez.  
 [Version portugaise](https://juliaintro.github.io/JuliaIntroBR.jl/index.html) par Abel Soares Siqueira, Gustavo Sarturi, João Okimoto et Kally Chung.  
