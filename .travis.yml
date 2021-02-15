@@ -1,0 +1,31 @@
+# Documentation: https://docs.travis-ci.com/user/languages/julia/
+
+language: julia
+
+julia:
+    - nightly
+    - 1
+
+os: linux
+dist: focal
+arch:
+    - amd64
+
+notifications:
+  email: false
+  
+  
+git:
+  depth: 99999999
+  
+jobs:
+  include:
+    - stage: 
+      script:
+        -
+        -
+      addons:
+        apt_packages:
+          -
+          -
+      after_success: skip
