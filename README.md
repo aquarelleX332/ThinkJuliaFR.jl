@@ -27,6 +27,7 @@ ou
 
 **Usages:**  
 Cette version permet d'utiliser les paquets Turtle (Chapitre 4), Plots (chapitres 13 et 19), DBM (chapitres 14 et 19) et Printf (chapitres 16 et 17).  
+
 This version allows you to use Turtle, Plots, DBM functions and the "@printf" macro to solve exercises and use the examples from the book.
 
 <hr>
