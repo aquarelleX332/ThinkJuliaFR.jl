@@ -12,7 +12,7 @@ The LYX source code can be downloaded by clicking on the download button of this
 
 <hr>
 
-**Installation:**  
+**Installation / Install:**  
 Dans le REPL:  
 `]`  
 `add https://github.com/aquarelleX332/ThinkJuliaFR.jl`  
