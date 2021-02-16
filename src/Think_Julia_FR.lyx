@@ -65,6 +65,8 @@
 % séparation texte / notes de bas de page si page pas pleine
 %\addtolength{\skip\footins}{5pt} 
 \usepackage[bottom]{footmisc}
+
+\listfiles
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -1855,7 +1857,7 @@ Compte tenu de modifications récentes (postérieures à la publication de
  Think Julia 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "key-10"
+key "key-1"
 literal "false"
 
 \end_inset
@@ -14463,6 +14465,16 @@ ThinkJulia, module
 
 \end_inset
 
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+ThinkJuliaFR, module
+\end_layout
+
+\end_inset
+
  doit être ajouté à l'installation de Julia (avant de poursuivre, consultez
  l'annexe B (
 \begin_inset CommandInset ref
@@ -14600,10 +14612,9 @@ status open
 
 \begin_layout Plain Layout
 
-\color blue
-(
 \size small
-@v1.5) pkg>
+\color blue
+(@v1.5) pkg>
 \color inherit
  add
 \begin_inset Index idx
@@ -14631,6 +14642,54 @@ string:
 \end_inset
 
 //github.com/BenLauwens/ThinkJulia.jl
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+\color cyan
+➥ pour la version française:
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+\color blue
+(@v1.5) pkg>
+\color inherit
+ add
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\size small
+add
+\end_layout
+
+\end_inset
+
+ https
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+string:
+\end_layout
+
+\end_inset
+
+//github.com/aquarelleX332/ThinkJuliaFR.jl
 \end_layout
 
 \end_inset
@@ -14702,6 +14761,29 @@ ThinkJulia
 \end_layout
 
 \begin_layout Plain Layout
+
+\size small
+\color cyan
+➥ pour la version française:
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+\color green
+using 
+\color black
+ThinkJuliaFR
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/PNG/tutle3.png
 	scale 35
@@ -14740,7 +14822,7 @@ Turtle(0.0, 0.0, true, 0.0, (0.0, 0.0, 0.0))
 \end_layout
 
 \begin_layout Standard
-Le module ThinkJulia fournit une fonction appelée 
+Le module ThinkJulia (ou ThinkJuliaFR) fournit une fonction appelée 
 \color blue
 Turtle
 \color inherit
@@ -14758,7 +14840,11 @@ Luxor
 
 \end_inset
 
-, que nous attribuons à une variable nommée 
+, que nous attribuons à une variable nommée
+\begin_inset Newline newline
+\end_inset
+
+
 \begin_inset Graphics
 	filename Figures/PNG/tutle3.png
 	scale 35
@@ -14769,7 +14855,7 @@ Luxor
 \begin_inset space ~
 \end_inset
 
- (
+(
 \color blue
 
 \backslash
@@ -26575,8 +26661,8 @@ recurse(-1, 0)
 \end_layout
 
 \begin_layout Standard
-Les exercices suivants utilisent le module ThinkJulia, décrit dans le chapitre
- 
+Les exercices suivants utilisent le module ThinkJulia (ou ThinkJuliaFR),
+ décrit dans le chapitre 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Étude-de-cas-conception-interface"
@@ -94520,7 +94606,8 @@ base de données
 \end_layout
 
 \begin_layout Standard
-ThinkJulia fournit une interface au gestionnaire de base de données 
+ThinkJulia (et ThinkJuliaFR) fournit une interface au gestionnaire de base
+ de données 
 \color blue
 GDBM
 \color inherit
@@ -94588,6 +94675,16 @@ ThinkJulia
 status open
 
 \begin_layout Plain Layout
+ThinkJuliaFR
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
 DBM
 \end_layout
 
@@ -94621,6 +94718,34 @@ DBM
 julia> using 
 \color black
 ThinkJulia
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+\color green
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+\color cyan
+➥
+\size default
+ pour la version française:
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+\color green
+julia> using 
+\color black
+ThinkJuliaFR
 \end_layout
 
 \begin_layout Plain Layout
@@ -105488,6 +105613,26 @@ n
 
 \begin_layout Standard
 \begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+addtocontents{toc}{
+\backslash
+protect
+\backslash
+newpage}
+\end_layout
+
 \end_inset
 
 
@@ -130136,7 +130281,17 @@ ThinkJulia
 
 \end_inset
 
-.
+ (ou ThinkJuliaFR
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+ThinkJuliaFR
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Section
@@ -137134,22 +137289,6 @@ débogage stockage des messages de débogage dans un journal.
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-%
-\backslash
-addtocontents{toc}{
-\backslash
-protect
-\backslash
-newpage}
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
