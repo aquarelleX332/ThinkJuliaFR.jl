@@ -26,6 +26,48 @@ jobs:
         -
       addons:
         apt_packages:
-          -
-          -
+          - lyx-common
+          - xdg-utils
+          - libc6
+          - libenchant
+          - libgcc-s1
+          - libmagic1
+          - libmythes
+          - libqt5core5a
+          - libqt5gui5
+          - libqt5gui5-gles
+          - libqt5svg5
+          - libqt5widgets5
+          - libstdc++6
+          - zlib1g
+          - dvipng
+          - evince
+          - pdf-viewer
+          - fonts-lyx
+          - ghostscript
+          - imagemagick
+          - poppler-utils
+          - preview-latex-style
+          - psutils
+          - texlive-fonts-recommended
+          - texlive-latex-extra
+          - texlive-latex-recommended
+          - texlive-plain-generic
+          - texlive-science
+          - chktex
+          - gnuhtml2latex
+          - groff
+          - latex2rtf
+          - librsvg2-bin
+          - inkscape
+          - libtiff-tools
+          - linuxdoc-tools
+          - noweb
+          - rcs
+          - sgmltools-lite
+          - tex4ht
+          - latex2html
+          - texlive-xetex
+          - writer2latex
+          - wv
       after_success: skip
