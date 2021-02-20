@@ -201,7 +201,7 @@ Traduction française et aménagements: Thierry Lepoint
 
 \size small
 \noun default
-Version: B5-RV-1.0
+Version: B5-RV-1.1
 \end_layout
 
 \begin_layout Standard
@@ -15526,7 +15526,7 @@ name "fig:Un-angle-droit-avec-Turtle"
 
 \end_inset
 
-Un angle droit dessiné avec la module Turtle.
+Un angle droit dessiné avec le module Turtle.
 \end_layout
 
 \end_inset
@@ -17789,8 +17789,8 @@ end
 \end_layout
 
 \begin_layout Standard
-Ce code permet de dessiner un polygone à 7 côtés, chacun d'eux ayant une
- longueur de 70 pixels.
+Ce code permet de dessiner un heptagone, chacun des côtés ayant une longueur
+ de 70 pixels.
 \end_layout
 
 \begin_layout Section
@@ -17823,7 +17823,7 @@ circle
 \color blue
 polygon
 \color inherit
- pour dessiner un polygone à 50 côtés: 
+ pour dessiner un polygone à 50 côtés (pentacontagone): 
 \end_layout
 
 \begin_layout Standard
@@ -18009,7 +18009,7 @@ len
 \color blue
 polygon
 \color inherit
- dessine-t-elle un polygone à 50 côtés qui se rapproche d'un cercle de rayon
+ dessine-t-elle un pentacontagone qui se rapproche d'un cercle de rayon
  
 \color blue
 r
@@ -39298,7 +39298,7 @@ fruit =
 \begin_layout Plain Layout
 
 \size small
-\color brown
+\color lightgray
 "banane"
 \end_layout
 
@@ -44348,218 +44348,6 @@ j = prevind(word2, j)
 \begin_layout Plain Layout
 
 \size small
-\color green
-function 
-\color inherit
-isreverse(word1, word2)
-\end_layout
-
-\begin_layout Plain Layout
-
-\size small
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\color green
-if 
-\color inherit
-length(word1) 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-!
-\backslash
-string=
-\end_layout
-
-\end_inset
-
- length(word2)
-\end_layout
-
-\begin_layout Plain Layout
-
-\size small
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\color green
-return false
-\end_layout
-
-\begin_layout Plain Layout
-
-\size small
-\color green
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-end
-\end_layout
-
-\begin_layout Plain Layout
-
-\size small
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-i = firstindex(word1)
-\end_layout
-
-\begin_layout Plain Layout
-
-\size small
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-j = lastindex(word2)
-\end_layout
-
-\begin_layout Plain Layout
-
-\size small
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\color green
-while
-\color inherit
- j >= 0
-\end_layout
-
-\begin_layout Plain Layout
-
-\size small
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-j = prevind(word2, j)
-\end_layout
-
-\begin_layout Plain Layout
-
-\size small
 \begin_inset space ~
 \end_inset
 
@@ -47689,9 +47477,9 @@ textcolor{brown}{
 \backslash
 textquotesingle c
 \backslash
-textquotesingle}) -  (
+textquotesingle}) -  {Int}(
 \backslash
-textcolor{brown}{Int
+textcolor{brown}{
 \backslash
 textquotesingle a
 \backslash
@@ -64421,7 +64209,7 @@ begin{tip}
 
 \begin_layout Plain Layout
 
-Avant d'utiliser les fonctions et les opérateurs agissant sur tableaux,
+Avant d'utiliser les fonctions et les opérateurs agissant sur les tableaux,
  il est vivement recommandé de lire attentivement la documentation et de
  tester ces fonctions en mode interactif.
 \end_layout
@@ -131109,10 +130897,10 @@ begin{tip}
 \begin_layout Plain Layout
 
 En Julia,  lors de sa première exécution, une fonction  est compilée.
- La comparaison de deux algorithmes requiert que ceux-ci soient être implémentés
+ La comparaison de deux algorithmes requiert que ceux-ci soient implémentés
  en tant que fonctions pour être compilés et, la première fois qu'ils sont
- appelés doit être exclue de la mesure de performance, sinon le temps de
- compilation est pris en compte.
+ appelés doit être exclue de la mesure de performance, sinon la durée de
+ compilation est prise en compte.
  
 \backslash
 
