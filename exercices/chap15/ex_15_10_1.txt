@@ -1,0 +1,267 @@
+# Exercice 15.10.1
+
+# Partie 1:
+# Rédigez une définition pour un type nommé Circle avec des champs centre et
+# radius, où centre est un objet Point et radius est un nombre.
+
+struct Circle
+    radius
+    centre
+end
+
+struct Point
+    x
+    y
+end
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# Partie 2:
+# Instancier un objet circle qui représente un cercle dont le centre est à (150, 100)
+# et le rayon = 75.
+
+centre = Point(150,100)
+circle = Circle(75, centre)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# Partie 3:
+# Écrivez une fonction appelée pointincercle qui prend un objet Circle et un objet
+# Point et qui retourne true si le point se trouve dans ou sur la circonférence du
+# cercle.
+# 
+
+
+struct Circle
+    radius
+    centre
+end
+
+struct Point
+    x
+    y
+end
+
+centre = Point(100,100)
+circle = Circle(40, centre)
+
+function pointincircle(circ,p)
+    x1 = circ.centre.x - circ.radius
+    x2 = circ.centre.x + circ.radius
+
+    if p.x ≥ x1 && p.x ≤ x2                  # l'abcisse de p est dans l'aplomb du cercle                
+                                             # l'ordonnée de p? Calcul des racines y1 et y2
+                                             # avec la représentaton cartésienne du cercle
+        b = -2.0 * circ.centre.y
+        c = circ.centre.y^2 - circ.radius^2 + (p.x - circ.centre.x)^2
+        Δ = b^2 - (4*c)
+        if Δ ≥ 0
+            sqrtΔ = sqrt(Δ)
+            y1 = 0.5*(-b-(sqrtΔ))
+            y2 = 0.5*(-b+(sqrtΔ))
+            if p.y ≥ y1 && p.y ≤ y2
+                println("true")
+            else
+                println("false")
+            end
+        else
+            println("ERREUR: discriminant < 0")
+        end
+    else
+        println("false")
+    end
+end
+
+p1 = Point(60, 110)
+pointincircle(circle,p1)
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# Partie 4:
+# Écrivez une fonction appelée rectincircle qui prend un objet Circle et un objet
+# Rectangle et qui retourne true si le rectangle se trouve entièrement dans le cercle
+# ou touche la circonférence.
+
+# Pour des raisons de clarté le prgm est écrit en totalité.
+
+# définition de la position des coins
+# c2----------c3
+# |           |
+# |           |
+# c1----------c4
+
+
+
+state = 0   # variable globale:
+            # si 1 le point analysé par pointincircle() est dans le cercle
+            # si 0 le point analysé par pointincircle() est hors du cercle
+
+struct Point
+    x
+    y
+end
+
+struct Circle
+    radius
+    centre
+end
+
+struct Rectangle
+    width       # largeur
+    heigth      # hauteur
+    c1          # coin inférieur gauche
+end
+
+# définitions:
+#    cas du cercle
+centre = Point(100,100)
+roundabout = Circle(40, centre)
+#    cas du rectangle
+c1 = Point(90,90)
+box = Rectangle(20,20,c1)
+
+function pointincircle(circ,p)
+    x1 = circ.centre.x - circ.radius
+    x2 = circ.centre.x + circ.radius
+
+    if p.x ≥ x1 && p.x ≤ x2
+        # calcul des racines y1 et y2
+        b = -2.0 * circ.centre.y
+        c = circ.centre.y^2 - circ.radius^2 + (p.x - circ.centre.x)^2
+        Δ = b^2 - (4*c)
+        if Δ ≥ 0
+            y1 = 0.5*(-b-(sqrt(Δ)))
+            y2 = 0.5*(-b+(sqrt(Δ)))
+            #@show y1 y2
+            if p.y ≥ y1 && p.y ≤ y2
+                global state = 1
+            else
+                global state = 0
+            end
+        else
+            println("ERREUR: discriminant < 0")
+        end
+    else
+        global state = 0
+    end
+end
+
+function rectincircle(circ,rect)
+    c2 = Point(rect.c1.x, rect.c1.y + rect.heigth)
+    c3 = Point(rect.c1.x + rect.width, c2.y)
+    c4 = Point(c3.x, c1.y)
+    if pointincircle(circ,rect.c1) == 1 && pointincircle(circ,c2) == 1 &&
+        pointincircle(circ,c3) == 1 && pointincircle(circ,c4) == 1
+        println("Le rectangle est dans le cercle.")
+    else
+        println("Le rectangle n'est pas dans le cercle.")
+    end
+end
+
+rectincircle(roundabout,box)
+
+# Notes: @timev ==>
+#   0.096683 seconds (33.12 k allocations: 1.612 MiB)
+# elapsed time (ns): 96683046
+# bytes allocated:   1690288
+# pool allocs:       33123
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# Partie 5
+# Écrivez une fonction appelée rectcircleoverlap qui prend un objet Cercle et un
+# objet Rectangle et retourne true si l’un des coins du rectangle se trouve à l’in-
+# térieur du cercle. Ou, dans une version plus complexe, elle retourne true si une
+# partie quelconque du rectangle intersecte le cercle.
+
+function rectcircleoverlap(circ,rect)
+    c2 = Point(rect.c1.x, rect.c1.y + rect.heigth)
+    c3 = Point(rect.c1.x + rect.width, c2.y)
+    c4 = Point(c3.x, c1.y)
+    if pointincircle(circ,rect.c1) == 1 || pointincircle(circ,c2) == 1 ||
+        pointincircle(circ,c3) == 1 || pointincircle(circ,c4) == 1
+        println("Un coin est dans le cercle.")
+    else
+        println("Pas de recouvrement.")
+    end
+end
+
+------------------------------------------------
+# Partie 5 (suite):
+# Ou, dans une version plus complexe, elle retourne true si une
+# partie quelconque du rectangle intersecte le cercle.
+
+
+state = 0   # variable globale:
+            # si 1 le point est dans le cercle
+            # si 0 le point est hors du cercle
+
+struct Point
+    x
+    y
+end
+
+struct Circle
+    radius
+    centre
+end
+
+struct Rectangle
+    width       # largeur
+    heigth      # hauteur
+    c1          # coin inférieur gauche
+end
+
+# définitions
+#    cas du cercle
+centre = Point(100,100)
+roundabout = Circle(40, centre)
+#    cas du rectangle
+c1 = Point(50,40)
+box = Rectangle(40,60,c1)
+
+function pointincircle(circ,p)      # modifications mineures de la fct.
+    x1 = circ.centre.x - circ.radius
+    x2 = circ.centre.x + circ.radius
+
+    if p.x ≥ x1 && p.x ≤ x2
+        # calcul des racines y1 et y2
+        b = -2.0 * circ.centre.y
+        c = circ.centre.y^2 - circ.radius^2 + (p.x - circ.centre.x)^2
+        Δ = b^2 - (4*c)
+        if Δ ≥ 0
+            y1 = 0.5*(-b-(sqrt(Δ)))
+            #y2 = 0.5*(-b+(sqrt(Δ)))
+
+            if p.y > y1
+                global state = 1
+            else
+                global state = 0
+            end
+        else
+            println("ERREUR: discriminant < 0")
+        end
+    else
+        global state = 0
+    end
+end
+
+function rectcircleoverlap2(circ,rect)
+    x1 = circ.centre.x - circ.radius
+    x2 = circ.centre.x + circ.radius
+
+    c2 = Point(rect.c1.x, rect.c1.y + rect.heigth)
+    c3 = Point(rect.c1.x + rect.width, c2.y)
+    #c4 = Point(c3.x, c1.y)
+
+    if rect.c1.x > x1 && rect.c1.x < x2 && pointincircle(circ,c2) == 1 ||
+        c3.x > x1 && pointincircle(circ,c3) == 1
+        println("Chevauchement")
+    else
+        println("Pas de chevauchement")
+    end
+end
+
+rectcircleoverlap2(roundabout,box)
+
+

@@ -1,0 +1,77 @@
+# Partie 1:
+
+# Écrivez une fonction appelée drawrect qui prend un objet « turtle » et un objet
+# Rectangle et utilise la tortue pour dessiner le rectangle. Voir le chapitre 4 pour
+# des exemples d’utilisation d’objets Turtle.
+
+
+# Définition des coins
+# c4 ---------c3
+# |           |
+# |           |
+# c1 ---------c2
+
+
+
+using ThinkJuliaFR
+
+🐢 = Turtle()
+
+struct Point
+    x
+    y
+end
+
+struct Rectangle
+    largeur
+    hauteur
+    coin
+end
+
+c1 = Point(0,0)
+box = Rectangle(161,100,c1)
+
+function drawrect(t, rect)
+    for i in 1:2
+        forward(🐢, rect.largeur)
+        turn(🐢, -90)
+        forward(🐢, rect.hauteur)
+        turn(🐢, -90)
+        i += 1
+    end
+end
+
+@svg begin
+    drawrect(🐢, box)
+end
+
+
+------------------------------------------------------------
+# Partie 2:
+
+# Écrivez une fonction appelée drawcircle qui prend un objet Turtle et un objet
+# Cercle et, qui dessine le cercle.
+
+
+using ThinkJuliaFR
+
+🐢 = Turtle()
+
+struct Circle
+    θ       # angle initial
+    n       # nombre de segments
+    length  # longueur des segments
+end
+
+roundabout = Circle(1,5000,2)
+
+function drawcircle(t, circ)
+    for i in 1:circ.n
+        forward(t,circ.length)
+        turn(t,circ.θ)
+    end
+end
+
+@svg begin
+    drawcircle(🐢, roundabout)
+end 
