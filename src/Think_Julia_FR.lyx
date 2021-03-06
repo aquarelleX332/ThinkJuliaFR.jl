@@ -102019,7 +102019,7 @@ Champs: heure, minute, seconde
 \begin_layout Plain Layout
 
 \size small
-struct MyTime
+mutable struct MyTime
 \end_layout
 
 \begin_layout Plain Layout
