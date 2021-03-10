@@ -105357,6 +105357,7 @@ literal "false"
 \end_inset
 
 .
+ À l'usage: using Dates.
 \end_layout
 
 \begin_layout Enumerate
@@ -107351,7 +107352,7 @@ Exercice
 \begin_layout Standard
 Réécrivez 
 \color blue
-time
+timetoint
 \color inherit
  et 
 \color blue
