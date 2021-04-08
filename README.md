@@ -42,7 +42,7 @@ using ThinkJuliaFR
 function spiralearchimede(t)
     θ = 0.0                     # angle initial
     n = 2500                    # nombre de segments
-    len = 2                     # longueur d'1 segment
+    len = 2                     # longueur d'un segment
     for i in 1:n
         forward(t,len)
         Δ = 1/(0.002 + 0.001*θ) # incrément d'angle
