@@ -592,7 +592,7 @@ MIT, licence
  Cependant, c'est seulement durant la période de confinement associée à
  la covid-19, au début mars 2020, que j'ai été véritablement attiré par
  Julia du fait qu'il s'agit d'un langage dont la syntaxe, aisée à comprendre,
- conduit rapidement, entre autre, à la résolution de problèmes scientifiques
+ conduit rapidement, entre autres, à la résolution de problèmes scientifiques
  (mais aussi économiques et financiers), à l'apprentissage machine, à la
  manipulation de données de masse et à l'intelligence artificielle.
 \end_layout
@@ -600,7 +600,11 @@ MIT, licence
 \begin_layout Standard
 Au tout début mars, j'ai donc cherché un livre permettant d'apprendre le
  langage Julia.
- Parmi plusieurs ouvrages 
+ Parmi plusieurs ouvrages
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-1,key-2,key-3,key-4,key-5"
@@ -640,6 +644,10 @@ Downey, Allen B.
 \end_inset
 
 
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-1"
@@ -667,7 +675,7 @@ literal "false"
 
 \end_inset
 
- –lui-même 
+ — lui-même 
 \begin_inset Quotes cld
 \end_inset
 
@@ -687,7 +695,10 @@ literal "false"
  d'Allen B.
  Downey.
  Quelques aménagements ont été apportés; ils sont mentionnés dans l'annexe
- C (
+\begin_inset space ~
+\end_inset
+
+C (
 \begin_inset CommandInset ref
 LatexCommand vpageref
 reference "chap:Annexe-C:-Notes-de-traduction"
@@ -745,12 +756,12 @@ literal "false"
 
  réalisée par Abel Soares Siqueira, Gustavo Sarturi, João Okimoto, Kally
  Chung.
- Abel Soares Siqueira est professeur à la Federal University of Paraná in
- Curitiba, PR, Brazil.
+ Abel Soares Siqueira est professeur à l'Université fédérale du Paraná (UFPR),
+ située à Curitiba, Brésil.
  Gustavo Sarturi est titulaire d'une licence en mathématiques industrielles
- de l'Universidade Federal do Paraná (UFPR).
+ de l'UFPR.
  João Okimoto est étudiant en informatique à l'UFPR et Kally Chung y est
- professeur d'ingéniérie mécanique.
+ professeur d'ingénierie mécanique.
 \end_layout
 
 \begin_layout Standard
@@ -790,39 +801,16 @@ Remerciements
 Ma gratitude s'adresse aux développeurs du langage Julia travaillant inlassablem
 ent à l'efficacité et au rayonnement du langage ainsi qu'aux développeurs
  de la Free Software Foundation qui ont contribué aux logiciels \SpecialChar LyX
-, 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX{}
-\end_layout
-
-\end_inset
-
-, 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-TeX{}
-\end_layout
-
-\end_inset
-
-, Inkscape et Gimp ainsi qu'aux fontes Times Roman et TeX Gyre DejaVu Math,
- sans lesquels ce document n'aurait pu être réalisé.
+, \SpecialChar LaTeX
+, \SpecialChar TeX
+, Inkscape
+ et Gimp ainsi qu'aux fontes Times Roman et TeX Gyre DejaVu Math, sans lesquels
+ ce document n'aurait pu être réalisé.
 \end_layout
 
 \begin_layout Standard
 Enfin, mes plus vifs remerciements vont aux relecteurs et correcteurs aussi
- avisés que scrupuleux: Maryse Debrichy, et Claude Just.
+ avisés que scrupuleux: Maryse Debrichy et Claude Just.
 \end_layout
 
 \begin_layout Standard
@@ -947,13 +935,12 @@ literal "false"
 
 \end_inset
 
- Attribution-NonCom\SpecialChar softhyphen
-mercial 3.0 Unported License
+ Attribution-NonCommercial 3.0 Unported License
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-ATTRIBUTION: Toutes les licences Creative Commons obligent ceux qui utilisent
+ATTRIBUTION: toutes les licences Creative Commons obligent ceux qui utilisent
  vos 
 \begin_inset ERT
 status open
@@ -973,10 +960,10 @@ uvres à vous créditer de la manière dont vous le demandez, sans pour autant
 \end_layout
 
 \begin_layout Plain Layout
-PAS D’UTILISATION COMMERCIALE : vous autorisez les autres à reproduire,
- à diffuser et (à moins que vous ne choisissiez ‘Pas de Modification’) à
- modifier votre œuvre, pour toute utilisation autre que commerciale, à moins
- qu’ils obtiennent votre autorisation au préalable.
+PAS D’UTILISATION COMMERCIALE: vous autorisez les autres à reproduire, à
+ diffuser et (à moins que vous ne choisissiez ‘Pas de Modification’) à modifier
+ votre œuvre, pour toute utilisation autre que commerciale, à moins qu’ils
+ obtiennent votre autorisation au préalable.
 \end_layout
 
 \end_inset
@@ -1264,7 +1251,7 @@ Think Python
  programmer correctement.
  Cependant, ce livre était basé sur le langage de programmation Python.
  Ma première ébauche de notes de cours était un melting-pot de toutes sortes
- d'ouvrages de référence, mais plus j'y travaillais, plus le contenu commençait
+ d'ouvrages de référence, mais, plus j'y travaillais, plus le contenu commençait
  à ressembler aux chapitres de 
 \begin_inset Quotes cld
 \end_inset
@@ -1300,7 +1287,7 @@ status open
 \begin_layout Plain Layout
 
 \emph off
-Julia Discourses
+Julia Discourse
 \end_layout
 
 \end_inset
@@ -1327,7 +1314,7 @@ Allez-y!
 \begin_inset Quotes crd
 \end_inset
 
- Il m'a mis en contact avec son éditeur chez O'Reilly Media, et un an plus
+ Il m'a mis en contact avec son éditeur chez O'Reilly Media et, un an plus
  tard, je mettais la dernière main à ce livre.
 \end_layout
 
@@ -1335,13 +1322,13 @@ Allez-y!
 
 \emph on
 C'était un parcours semé d'embûches.
- En août 2018, Julia v1.0 est sortie et, comme tous mes collègues programmeurs
+ En août 2018, Julia 1.0 est sorti et, comme tous mes collègues programmeurs
  de Julia, j'ai dû procéder à une migration du code.
  Tous les exemples du livre ont été testés lors de la conversion des fichiers
  sources en fichiers AsciiDoc compatibles avec O'Reilly.
  La chaîne d'outils et le code des exemples ont dû être rendus conformes
  à la version 1.0 de Julia.
- Heureusement, il n'y a pas de conférences à donner en août...
+ Heureusement, il n'y a pas de conférence à donner en août...
 \end_layout
 
 \begin_layout Standard
@@ -1466,8 +1453,8 @@ Julia dispose d'une bibliothèque standard étendue et de nombreux paquets
 \end_layout
 
 \begin_layout Standard
-Julia est un langage de programmation unique car il résout le problème dit
- des 
+Julia est un langage de programmation unique, car il résout le problème
+ dit des 
 \begin_inset Quotes cld
 \end_inset
 
@@ -1565,9 +1552,9 @@ Dans la traduction française, les locutions latines sont en italique.
 
 \begin_layout Description
 renvois les renvois à des chapitres, sections, sous-sections (voire sous-sous-se
-ctions), les renvois aux notes de bas de page et à la bibiographie ainsi
+ctions), les renvois aux notes de bas de page et à la bibliographie ainsi
  que les liens hypertextes sont en gris et cliquables (sur ordinateur à
- l'aide de la souris (symbole 
+ l'aide de la souris [symbole 
 \begin_inset Graphics
 	filename Figures/PNG/souris_main.png
 	lyxscale 4
@@ -1575,7 +1562,7 @@ ctions), les renvois aux notes de bas de page et à la bibiographie ainsi
 
 \end_inset
 
-)).
+]).
 \end_layout
 
 \begin_layout Description
@@ -1831,7 +1818,7 @@ literal "false"
 \end_inset
 
 .
- Pour installer Git (MS-Windows, MacOS et GNU/
+ Pour installer Git (Windows, macOS et GNU/
 \noun on
 Linux
 \noun default
@@ -1854,7 +1841,11 @@ literal "false"
 
 \begin_layout Standard
 Compte tenu de modifications récentes (postérieures à la publication de
- Think Julia 
+ Think Julia
+\begin_inset space \thinspace{}
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-1"
@@ -2090,11 +2081,15 @@ Void
 \color blue
 Nothing
 \color inherit
-, ce qui a lancé la migration vers Julia v1.0.
+, ce qui a lancé la migration vers Julia 1.0.
 \end_layout
 
 \begin_layout Itemize
-Robin Deits a trouvé quelques fautes de frappe dans le chapitre 
+Robin Deits a trouvé quelques fautes de frappe dans le chapitre
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Variables,-expressions-et-déclarations"
@@ -2104,7 +2099,7 @@ noprefix "false"
 
 \end_inset
 
- (Variables, Expressions et Déclarations).
+ (Variables, expressions et déclarations).
 \end_layout
 
 \begin_layout Itemize
@@ -2112,7 +2107,11 @@ Mark Schmitz a suggéré d'activer la mise en évidence syntaxique,
 \end_layout
 
 \begin_layout Itemize
-Zigu Zhao a détecté des bogues dans le chapitre 
+Zigu Zhao a détecté des bogues dans le chapitre
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Chaînes"
