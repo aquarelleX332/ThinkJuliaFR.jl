@@ -2318,7 +2318,7 @@ programme
 \end_layout
 
 \begin_layout Standard
-Un programme est une séquence d'instructions qui établit comment effectuer
+Un programme est une séquence d'instructions qui établit la manière d'effectuer
  un calcul.
  Le calcul peut être mathématique, comme la résolution d'un système d'équations
  ou la recherche des racines d'un polynôme, mais il peut aussi être symbolique,
@@ -2394,7 +2394,11 @@ Codium
 
 \end_inset
 
- (voir l'annexe 
+ (voir l'annexe
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Annexe-B:-Installation de Julia"
@@ -2404,7 +2408,11 @@ noprefix "false"
 
 \end_inset
 
-), nous arrivons sur une page telle que celle de la figure 
+), nous arrivons sur une page telle que celle de la figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:REPL-et-invite"
@@ -2443,7 +2451,11 @@ Read-Eval-Print Loop
 \end_inset
 
  Le REPL est exécutable en ouvrant un terminal sur JuliaBox et en saisissant
- julia
+ 
+\family typewriter
+julia
+\family default
+
 \begin_inset Index idx
 status open
 
@@ -2596,7 +2608,7 @@ Traditionnellement, le premier programme à écrire dans un nouveau langage
 \begin_inset Quotes crd
 \end_inset
 
- bien qu'il n'affiche que l'expression
+, bien qu'il n'affiche que l'expression
 \color black
  
 \color blue
@@ -2703,7 +2715,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Section
-Les opérateurs arithmétiques
+Opérateurs arithmétiques
 \begin_inset Index idx
 status open
 
@@ -2749,8 +2761,8 @@ status open
 
 \end_inset
 
- Julia fournit des opérateurs de multiplication, division, addition, soustractio
-n.
+ Julia fournit des opérateurs de multiplication, de division, d'addition
+ et de soustraction.
  Les opérateurs 
 \color blue
 +
@@ -2759,7 +2771,7 @@ n.
 \color blue
 -
 \color inherit
-, et
+ et
 \color blue
  *
 \color inherit
@@ -3217,7 +3229,7 @@ Int64
 \color blue
 String
 \color inherit
-, et les nombres à virgule flottante au type 
+ et les nombres à virgule flottante au type 
 \color blue
 Float64
 \color inherit
@@ -3254,7 +3266,7 @@ Qu'en est-il des valeurs comme
 \color blue
 "42.0"
 \color inherit
-? Elles ressemblent à des nombres, mais commes elles sont entre guillemets,
+? Elles ressemblent à des nombres, mais comme elles sont entre guillemets,
  il s'agit de chaînes de caractères:
 \end_layout
 
@@ -3333,7 +3345,11 @@ String
 \begin_layout Standard
 Lorsque des nombres constitués de nombreux chiffres sont saisis, il peut
  être tentant d'utiliser des virgules entre les groupes de chiffres, comme
- pour exprimer un million en notation anglo-saxonne: 1,000,000.
+ pour exprimer un million en notation anglo-saxonne: 
+\family typewriter
+1,000,000
+\family default
+.
  Ceci n'est pas un nombre 
 \emph on
 entier 
@@ -3392,11 +3408,18 @@ julia>
 
 \begin_layout Standard
 Évidemment, ce n'est pas du tout le résultat espéré.
- Julia analyse 1,000,000 comme une suite d'entiers, à savoir 1, 0 et 0,
- séparés par des virgules.
+ Julia analyse 
+\family typewriter
+1,000,000
+\family default
+ comme une suite d'entiers, à savoir 1, 0 et 0, séparés par des virgules.
  Ce type de séquences sera analysé plus tard.
  Il est cependant possible d'obtenir le résultat recherché en utilisant
- 1_000_000.
+ 
+\family typewriter
+1_000_000
+\family default
+.
  
 \end_layout
 
@@ -3464,8 +3487,15 @@ oe{}
 
 ur des langages formels est constitué de règles syntaxiques strictes qui
  organisent la structure des énoncés.
- Par exemple, en mathématiques, l'énoncé 3+3=6 a une syntaxe correcte, mais
- 3+=3$6 n'a pas de sens.
+ Par exemple, en mathématiques, l'énoncé 
+\begin_inset Formula $3+3=6$
+\end_inset
+
+ a une syntaxe correcte, mais 
+\begin_inset Formula $3+=3\$6$
+\end_inset
+
+ n'a pas de sens.
  En chimie, H
 \begin_inset script subscript
 
@@ -3496,8 +3526,15 @@ Les règles syntaxiques se déclinent en deux types, relatives aux signes
  d'une part et à la structure, de l'autre.
  Les signes sont les éléments de base de tout langage, tels que les mots,
  les nombres et les éléments chimiques.
- Un des problèmes avec 3+=3$6 est que $ n'est en principe pas un signe autorisé
- en mathématiques.
+ Un des problèmes avec 
+\begin_inset Formula $3+=3\$6$
+\end_inset
+
+ est que 
+\begin_inset Formula $\$$
+\end_inset
+
+ n'est en principe pas un signe autorisé en mathématiques.
  De même, 
 \begin_inset script subscript
 
@@ -3507,12 +3544,15 @@ Les règles syntaxiques se déclinent en deux types, relatives aux signes
 
 \end_inset
 
-Zz n'est pas licite car il n'y a pas d'élément de symbole Zz.
+Zz n'est pas licite, car il n'y a pas d'élément de symbole Zz.
  Le deuxième type de règle syntaxique concerne la manière dont les signes
  sont combinés.
- L'équation 3+=3 est incorrecte car, même si + et = sont des signes autorisés,
- leur succession n'est pas définie en mathématiques et n'a dès lors pas
- de sens.
+ L'équation 
+\begin_inset Formula $3+=3$
+\end_inset
+
+ est incorrecte car, même si + et = sont des signes autorisés, leur succession
+ n'est pas définie en mathématiques et n'a dès lors pas de sens.
  De même, dans une formule chimique, l'indice vient éventuellement après
  le nom d'un élément, jamais avant.
 \end_layout
@@ -3526,7 +3566,7 @@ Voici un exemple curieux: l@ phrase de françai$ bien structurée avec des
 
 \begin_layout Standard
 La lecture d'une phrase en français ou une déclaration dans une langue formelle
- suppose d'en comprendre la structure (bien que dans une langue naturelle,
+ suppose d'en comprendre la structure (bien que, dans une langue naturelle,
  tout lecteur procède ainsi, inconsciemment).
  Ce processus s'appelle l'
 \emph on
@@ -3544,7 +3584,7 @@ analyse syntaxique
 
 .
  Bien que les langues formelles et naturelles aient de nombreuses caractéristiqu
-es en commun –les signes, la structure et la syntaxe– il existe quelques
+es en commun — les signes, la structure et la syntaxe — il existe quelques
  différences notoires: 
 \end_layout
 
@@ -3564,8 +3604,8 @@ ambiguïté
 : les langues naturelles sont chargées d'ambiguïté, que les humains gèrent
  en utilisant des indices contextuels ainsi que d'autres informations.
  Les langues formelles sont conçues pour être presque ou totalement dépourvues
- d'ambiguïté, ce qui signifie que toute déclaration a une –et une seule–
- signification, quel que soit le contexte, 
+ d'ambiguïté, ce qui signifie que toute déclaration a une — et une seule
+ — signification, quel que soit le contexte, 
 \end_layout
 
 \begin_layout Description
@@ -3602,7 +3642,7 @@ littéralité
 
 : les langues naturelles sont remplies d'expressions idiomatiques et de
  métaphores.
- Dans l'expression: 
+ Dans l'expression 
 \begin_inset Quotes cld
 \end_inset
 
@@ -3637,14 +3677,14 @@ Prose: le sens littéral des mots est important et la structure apporte du
 \end_deeper
 \begin_layout Description
 Programmes: la signification d'un programme informatique est sans ambiguïté
- et littérale, et peut être entièrement comprise par l'analyse des signes
+ et littérale, elle peut être entièrement comprise par l'analyse des signes
  et de la structure.
  
 \end_layout
 
 \begin_layout Standard
 Les langages formels sont plus denses que les langues naturelles, ce qui
- nécessite plus de temps et de la concentration pour les interpréter.
+ nécessite plus de temps et de concentration pour les interpréter.
  De plus, la structure est fondamentale.
  Il n’est donc pas toujours judicieux de lire de haut en bas et de gauche
  à droite.
@@ -3679,7 +3719,7 @@ Tous les programmeurs commettent des erreurs.
 \begin_inset Quotes cld
 \end_inset
 
- bugs
+ bogues
 \begin_inset Quotes crd
 \end_inset
 
@@ -3703,7 +3743,7 @@ debugging
  Il est prouvé que de très nombreuses personnes réagissent naturellement
  face aux ordinateurs comme si ces derniers étaient des personnes.
  Lorsque les ordinateurs fonctionnent bien, nous les considérons comme des
- coéquipiers mais, lorsqu'ils se montrent obstinés, nous leur répondons
+ coéquipiers, mais, lorsqu'ils se montrent obstinés, nous leur répondons
  de la même manière que si nous répondions à des personnes obstinées.
 \end_layout
 
@@ -3714,8 +3754,8 @@ Se préparer à ces réactions aide à les surmonter.
  faiblesses particulières, comme le manque d'empathie et l'incapacité à
  saisir la situation dans son ensemble.
  Le travail d'un programmeur consiste à être un bon gestionnaire: trouver
- des moyens de tirer parti des points forts et d'atténuer les points faibles.
- Trouver des moyens d'effacer ses émotions pour s'attaquer au problème,
+ des moyens de tirer parti des points forts et d'atténuer les points faibles,
+ trouver des moyens d'effacer ses émotions pour s'attaquer au problème,
  sans laisser ses réactions interférer avec sa capacité à travailler efficacemen
 t.
  
@@ -4019,11 +4059,7 @@ bug
 \begin_inset space ~
 \end_inset
 
-(ou
-\begin_inset space ~
-\end_inset
-
-bogue
+(bogue
 \begin_inset Index idx
 status open
 
@@ -4094,8 +4130,8 @@ end{tip}
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 1-1
 \end_layout
 
 \begin_layout Standard
@@ -4124,21 +4160,33 @@ Ce genre d'expérience aide à se souvenir de ce qui est lu, ainsi que lors
 
 \begin_layout Enumerate
 Dans une déclaration d'affichage, que se passe-t-il en cas d'omission d'une
- des parenthèses, ou des deux?
+ des parenthèses ou des deux?
 \end_layout
 
 \begin_layout Enumerate
 À l'affichage d'une chaîne de caractères, que se passe-t-il si un des guillemets
- est omis, ou les deux?
+ est omis ou les deux?
 \end_layout
 
 \begin_layout Enumerate
-Un signe moins peut être utilisé pour obtenir un nombre négatif comme -2.
- Que se passe-t-il si un signe plus précède un nombre? Qu'en est-il de 2++2?
+Un signe moins peut être utilisé pour obtenir un nombre négatif comme 
+\family typewriter
+-2
+\family default
+.
+ Que se passe-t-il si un signe plus précède un nombre? Qu'en est-il de 
+\family typewriter
+2++2
+\family default
+?
 \end_layout
 
 \begin_layout Enumerate
-En notation mathématique, les zéros de tête sont acceptés, comme dans 02.
+En notation mathématique, les zéros de tête sont acceptés, comme dans 
+\family typewriter
+02
+\family default
+.
  Que se passe-t-il lorsqu'une telle notation est utilisée en Julia?
 \end_layout
 
@@ -4146,8 +4194,8 @@ En notation mathématique, les zéros de tête sont acceptés, comme dans 02.
 Que se passe-t-il lorsqu'il n'y a pas d'opérateur entre deux valeurs?
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 1-2
 \end_layout
 
 \begin_layout Standard
@@ -4155,11 +4203,12 @@ Lançons le REPL Julia et utilisons-le comme calculatrice:
 \end_layout
 
 \begin_layout Enumerate
-Combien de secondes dans 42 minutes 42 secondes? 
+Combien de secondes y a-t-il dans 42 minutes 42 secondes? 
 \end_layout
 
 \begin_layout Enumerate
-Sachant qu'1 mile terrestre = 1,61 km, combien de miles dans 10 kilomètres?
+Sachant qu'un mile terrestre correspond à 1,61 km, combien de miles y a-t-il
+ dans 10 kilomètres?
 \end_layout
 
 \begin_layout Enumerate
