@@ -2703,7 +2703,7 @@ println
  est une fonction (voir le 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "chap:Les-fonctions"
+reference "chap:Fonctions"
 plural "false"
 caps "false"
 noprefix "false"
@@ -4400,7 +4400,7 @@ n
 \backslash
 pi
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -4450,7 +4450,7 @@ diagramme d'état
 
 \end_inset
 
-
+,
 \emph default
  car il montre dans quel état se trouve chacune des variables.
  La 
@@ -4515,7 +4515,7 @@ Exemple d'un diagramme d'état.
 \end_layout
 
 \begin_layout Section
-Les noms de variables
+Noms de variables
 \end_layout
 
 \begin_layout Standard
@@ -4536,7 +4536,11 @@ Unicode
 
 \end_inset
 
- (voir la section 
+ (voir la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Caractères"
@@ -4547,27 +4551,11 @@ noprefix "false"
 \end_inset
 
 ), mais ils ne peuvent pas commencer par un nombre.
- Les lettres majuscules sont autorisées quoiqu'il soit conventionnel de
+ Les lettres majuscules sont autorisées, quoiqu'il soit conventionnel de
  n'utiliser que des minuscules pour les noms de variables.
  Les caractères Unicode peuvent être saisis en complétant les abréviations
- de type 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
-\end_layout
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
- dans le REPL et ce, par des tabulations.
+ de type \SpecialChar LaTeX
+ dans le REPL, et ce, par des tabulations.
 \end_layout
 
 \begin_layout Standard
@@ -4592,7 +4580,7 @@ _
 \end_layout
 
 \begin_layout Standard
-Si un nom inappropié est attribué à une variable, Julia retourne une erreur
+Si un nom inapproprié est attribué à une variable, Julia retourne une erreur
  de syntaxe
 \begin_inset Index idx
 status open
@@ -4791,7 +4779,7 @@ string:
 \color blue
 more@
 \color inherit
- est erroné parce cette formulation contient un caractère non-autorisé,
+ est erroné parce cette formulation contient un caractère non autorisé,
  
 \color blue
 @
@@ -5809,7 +5797,7 @@ instruction
 
 \end_inset
 
-) est une unité de code qui produit un effet comme la création d'une variable
+) est une unité de code qui produit un effet, comme la création d'une variable
  ou l'affichage d'une valeur.
 \end_layout
 
@@ -5897,7 +5885,7 @@ Lorsqu'une instruction est saisie, le REPL l'
 \emph on
 exécute
 \emph default
-, ce qui signifie qu'il fait tout ce que contient l'instruction.
+, ce qui signifie qu'il effectue tout ce que contient l'instruction.
 \end_layout
 
 \begin_layout Section
@@ -5933,8 +5921,8 @@ script
 \begin_layout Standard
 Jusqu'à présent, nous avons pratiqué Julia en mode interactif, ce qui signifie
  que nous interagissons directement avec le REPL.
- Le mode interactif est un bon moyen de démarrer, mais lors d’un usage intensif,
- cette technique devient rapidement fastidieuse.
+ Le mode interactif est un bon moyen de démarrer, mais, lors d’un usage
+ intensif, cette technique devient rapidement fastidieuse.
 \end_layout
 
 \begin_layout Standard
@@ -5991,7 +5979,11 @@ Pluto
 
 \end_inset
 
-, par exemple; voir l'annexe B, 
+, par exemple; voir l'annexe
+\begin_inset space ~
+\end_inset
+
+B, 
 \begin_inset CommandInset ref
 LatexCommand vpageref
 reference "chap:Annexe-B:-Installation de Julia"
@@ -6002,11 +5994,11 @@ noprefix "false"
 \end_inset
 
 ).
- À ce stade, il existe 2 méthodes:
+ À ce stade, il existe deux méthodes pour créer un script et l'exécuter:
 \end_layout
 
 \begin_layout Itemize
-soit nous ouvrons un fichier texte (avec Vim
+soit ouvrir un fichier texte (avec Vim
 \begin_inset Index idx
 status open
 
@@ -6026,7 +6018,7 @@ Emacs
 
 \end_inset
 
-, etc.), nous y écrivons et nous l'enregistrons avec une extension
+, etc.), y écrire le code du script et l'enregistrer avec une extension
 \color blue
  .jl
 \color inherit
@@ -6041,7 +6033,7 @@ bash
 
 \end_inset
 
- (ou analogue) pour autant que nous nous trouvions dans le répertoire contenant
+ (ou analogue) pour autant que le dossier courant soit le répertoire contenant
  le script à exécuter:
 \end_layout
 
@@ -6146,7 +6138,7 @@ nom_du_programme.jl
 \end_layout
 
 \begin_layout Itemize
-soit nous recourons à un environnement de développement intégré comme VSCodium
+soit recourir à un environnement de développement intégré comme VSCodium
 \begin_inset Index idx
 status open
 
@@ -6156,7 +6148,11 @@ VSCodium
 
 \end_inset
 
- (voir l'annexe B, 
+ (voir l'annexe
+\begin_inset space ~
+\end_inset
+
+B, 
 \begin_inset CommandInset ref
 LatexCommand vpageref
 reference "chap:Annexe-B:-Installation de Julia"
@@ -6167,13 +6163,15 @@ noprefix "false"
 \end_inset
 
 ).
- Dans ce cas, nous supposerons que le script est enregistré dans un répertoire
- dénommé Prgm_Julia.
- Dans VSCodium, il suffit de cliquer sur File 
+ En supposant que le script est enregistré dans un répertoire dénommé 
+\family typewriter
+Prgm_Julia
+\family default
+, dans VSCodium, il suffit de cliquer sur File 
 \begin_inset Formula $\rightarrow$
 \end_inset
 
- OpenFile et de sélectionner le script.
+ Open File et de sélectionner le script.
  Celui-ci apparaît, colorisé, la partie supérieure de Codium
 \begin_inset Index idx
 status open
@@ -6190,7 +6188,7 @@ Codium
 \begin_inset Formula $\vartriangleright$
 \end_inset
 
- de la barre de commandes supérieure.
+ de la barre de commandes supérieure afin de le lancer.
  
 \end_layout
 
@@ -6275,7 +6273,7 @@ miles
 \color inherit
  et affiche la valeur.
  La deuxième ligne est une expression.
- Donc le REPL l'évalue et affiche le résultat
+ Par conséquent, le REPL l'évalue et affiche le résultat
 \begin_inset Foot
 status open
 
@@ -6298,7 +6296,7 @@ Il s'avère qu'un marathon couvre environ 42 kilomètres.
 \begin_layout Standard
 Néanmoins, l'exécution du même code dans un script ne produit aucun résultat.
  En mode script, une expression, à elle seule, n'a aucun effet visible.
- Julia évalue bel et bien l'expression, mais n'affiche pas la valeur sauf
+ Julia évalue bel et bien l'expression, mais n'affiche pas la valeur, sauf
  à lui demander de le faire:
 \end_layout
 
@@ -6420,7 +6418,7 @@ println(x)
 \end_layout
 
 \begin_layout Standard
-retourne:
+affiche:
 \end_layout
 
 \begin_layout Standard
@@ -6474,8 +6472,8 @@ retourne:
 Les déclarations d'affectation ne produisent aucun résultat.
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 2-1
 \end_layout
 
 \begin_layout Standard
@@ -6605,7 +6603,7 @@ parenthèses
 \color blue
 2*(3-1)
 \color inherit
- vaut 4, et 
+ vaut 4 et 
 \color blue
 (1+1)^(5-2)
 \color inherit
@@ -6637,7 +6635,7 @@ exponentiation
 \color blue
 1+2^3
 \color inherit
- est 9 (et non 27), et 
+ vaut 9 (et non 27) et 
 \color blue
 2*3^2
 \color inherit
@@ -6706,11 +6704,11 @@ soustraction
 \color blue
  2*3-1
 \color inherit
- est 5 (et non 4) et, 
+ a pour valeur 5 (et non 4) et 
 \color blue
 6+4/2
 \color inherit
- est 8 (et non 5),
+ est évalué comme 8 (et non 5),
 \end_layout
 
 \begin_layout Enumerate
@@ -6880,7 +6878,7 @@ uf" / "le plat"
 \end_layout
 
 \begin_layout Standard
-Cependant, il existe deux exceptions 
+Cependant, il existe deux exceptions: 
 \color blue
 *
 \color inherit
@@ -7119,8 +7117,7 @@ Spam"^3
 \color blue
 "Spam " * "Spam " * "Spam"
 \color inherit
-.
- Ce qui est bien le cas.
+, ce qui est bien le cas.
  
 \end_layout
 
@@ -7190,7 +7187,7 @@ status open
 \begin_layout Plain Layout
 
 \color cyan
-# calcule le pourcentage d'heure écoulée
+# calcule le pourcentage d'heure écoulé
 \end_layout
 
 \begin_layout Plain Layout
@@ -7254,7 +7251,7 @@ pourcentage = (minute * 100) / 60
 
 
 \color cyan
-# calcule le pourcentage d'heure écoulée
+# calcule le pourcentage d'heure écoulé
 \end_layout
 
 \end_inset
@@ -7623,12 +7620,12 @@ semantique@sémantique, erreur
  Il s'agit d'un problème de sens.
  Si un programme contient une erreur sémantique, il s'exécute sans émettre
  le moindre message d'erreur.
- Cependant, le programme produit un résultat autre que celui attendu bien
+ Cependant, le programme produit un résultat autre que celui attendu, bien
  qu'il accomplisse exactement ce qu'il lui est demandé.
 \begin_inset Newline newline
 \end_inset
 
-L'identification des erreurs sémantiques peut être délicate car elle oblige
+L'identification des erreurs sémantiques peut être délicate, car elle oblige
  à travailler à rebours en examinant la sortie d'un programme et en essayant
  de comprendre comment il procède.
  
@@ -7766,7 +7763,7 @@ déclaration section de code qui représente un ordre ou une action.
  Jusqu'à présent, les déclarations que nous avons vues opèrent des affectations
  (
 \emph on
-assignations
+assignments
 \emph default
  en anglais) et des déclarations d'affichage,
 \begin_inset Index idx
@@ -7936,6 +7933,7 @@ d'exécution (appelée également
 exception
 \series default
 ) erreur qui est détectée pendant que le programme est en cours d'exécution,
+ 
 \begin_inset Index idx
 status open
 
@@ -8010,8 +8008,8 @@ semantique@sémantique, erreur
 Exercices
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 2-2
 \end_layout
 
 \begin_layout Standard
@@ -8052,9 +8050,9 @@ x = y = 1
 \end_layout
 
 \begin_layout Enumerate
-Dans certaines langages, chaque énoncé se termine par un point-virgule 
+Dans certains langages, chaque énoncé se termine par un point-virgule (
 \color blue
-(
+
 \begin_inset space ~
 \end_inset
 
@@ -8082,7 +8080,7 @@ En notation mathématique, vous pouvez multiplier
 \color blue
  y
 \color inherit
- comme ceci
+ comme ceci:
 \color blue
  x y
 \color inherit
@@ -8094,8 +8092,8 @@ En notation mathématique, vous pouvez multiplier
 ?
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 2-3
 \end_layout
 
 \begin_layout Standard
@@ -8107,7 +8105,7 @@ Le volume d'une sphère de rayon
 \begin_inset Formula $r$
 \end_inset
 
- donné par la formule: 
+ est donné par la formule 
 \begin_inset Formula $V_{sp}=\frac{4}{3}\pi r^{3}$
 \end_inset
 
@@ -8120,18 +8118,18 @@ Le volume d'une sphère de rayon
 \end_layout
 
 \begin_layout Enumerate
-Supposons que le prix de couverture d'un livre soit de 24.95 € mais que les
- librairies obtiennent une remise de 40 %.
+Supposons que le prix de couverture d'un livre soit de 24,95 €, mais que
+ les librairies obtiennent une remise de 40 %.
  Les frais d'expédition sont de 3 € pour le premier exemplaire et de 75
  centimes pour chaque exemplaire supplémentaire.
  Quel est le prix de gros total pour 60 exemplaires?
 \end_layout
 
 \begin_layout Enumerate
-Si quelqu'un quitte son habitation à 6h52 du matin et qu'il court 1 km au
- rythme de 8 min 15s par km, puis 3 km au rythme de 7 min 12 par km et encore
- 1 km à un rythme de 8 min 15s par km, à quelle heure rentrera-t-il pour
- le petit-déjeuner?
+Si quelqu'un quitte son habitation à 6 h 52 du matin et qu'il court 1 km
+ au rythme de 8 min 15 s par km, puis 3 km au rythme de 7 min 12 par km
+ et encore 1 km à un rythme de 8 min 15 s par km, à quelle heure rentrera-t-il
+ pour le petit-déjeuner?
 \end_layout
 
 \begin_layout Standard
@@ -8151,11 +8149,11 @@ Si quelqu'un quitte son habitation à 6h52 du matin et qu'il court 1 km au
 \begin_layout Chapter
 \begin_inset CommandInset label
 LatexCommand label
-name "chap:Les-fonctions"
+name "chap:Fonctions"
 
 \end_inset
 
-Les fonctions
+Fonctions
 \end_layout
 
 \begin_layout Standard
@@ -25073,7 +25071,7 @@ stacktrace
  est un peu plus grande que celle que nous avons vue dans le 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "chap:Les-fonctions"
+reference "chap:Fonctions"
 plural "false"
 caps "false"
 noprefix "false"
