@@ -2604,7 +2604,7 @@ Traditionnellement, le premier programme à écrire dans un nouveau langage
 \begin_inset Quotes cld
 \end_inset
 
- Hello, World! 
+Hello, World!
 \begin_inset Quotes crd
 \end_inset
 
@@ -10581,36 +10581,12 @@ julia> function
 \begin_inset space ~
 \end_inset
 
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
 carré = t * t
 \end_layout
 
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -14575,8 +14551,12 @@ ThinkJuliaFR, module
 
 \end_inset
 
- doit être ajouté à l'installation de Julia (avant de poursuivre, consultez
- l'annexe B (
+ doit donc être ajouté à l'installation de Julia (avant de poursuivre, consultez
+ l'annexe
+\begin_inset space ~
+\end_inset
+
+B [
 \begin_inset CommandInset ref
 LatexCommand vpageref
 reference "chap:Annexe-B:-Installation de Julia"
@@ -14586,7 +14566,11 @@ noprefix "false"
 
 \end_inset
 
-), en particulier la sous-section 
+], en particulier la sous-section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Installation-de-modules"
@@ -14596,7 +14580,7 @@ noprefix "false"
 
 \end_inset
 
- qui traite de l'installation des modules Julia).
+, qui traite de l'installation des modules Julia).
  
 \end_layout
 
@@ -14755,7 +14739,7 @@ string:
 
 \size small
 \color cyan
-➥ pour la version française:
+➥ pour la version en français:
 \end_layout
 
 \begin_layout Plain Layout
@@ -14864,7 +14848,7 @@ ThinkJulia
 
 \size small
 \color cyan
-➥ pour la version française:
+➥ pour la version en français:
 \end_layout
 
 \begin_layout Plain Layout
@@ -14979,7 +14963,7 @@ string:
 ).
  Une fois que nous avons créé une tortue, nous pouvons appeler une fonction
  pour la déplacer sur une feuille dessin.
- Par exemple, pour faire avancer la tortue 
+ Par exemple, ce code fait avancer la tortue 
 \begin_inset ERT
 status open
 
@@ -15053,10 +15037,6 @@ begin
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -15187,7 +15167,7 @@ string:
 \end_layout
 
 \begin_layout Standard
-En conséquence de quoi, un graphique –intitulé, en l'occurrence,
+En conséquence de quoi, un graphique — intitulé, en l'occurrence,
 \size small
 \color lightgray
  
@@ -15195,7 +15175,7 @@ En conséquence de quoi, un graphique –intitulé, en l'occurrence,
 luxor-drawing-165611_608.svg
 \size default
 \color inherit
-– s'affiche dans la partie Plots du REPL.
+ — s'affiche dans la partie Plots du REPL.
  Nous pouvons effectuer une recherche pour déterminer dans quel répertoire
  se trouve ce fichier (sous GNU/
 \noun on
@@ -15233,7 +15213,11 @@ locate
 
 
 \color inherit
- indiquera l'emplacement du fichier .svg).
+ indiquera l'emplacement du fichier 
+\family typewriter
+.svg
+\family default
+).
  Le résultat devrait ressembler au dessin de la 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -15390,7 +15374,7 @@ turn
 \end_layout
 
 \begin_layout Standard
-De plus, chaque tortue tient un stylo, qui est soit vers le bas soit vers
+De plus, chaque tortue tient un stylo, qui est soit vers le bas, soit vers
  le haut.
  Si le stylo est vers le bas, la tortue laisse une trace lorsqu'elle se
  déplace.
@@ -15398,7 +15382,7 @@ De plus, chaque tortue tient un stylo, qui est soit vers le bas soit vers
 \emph on
 A contrario
 \emph default
-, si le stylo est relevé, la tortue peut avancer mais sans déposer de trace.
+, si le stylo est relevé, la tortue peut avancer, mais sans déposer de trace.
  Les fonctions 
 \color blue
 penup
@@ -15481,10 +15465,6 @@ Pour dessiner un angle droit, modifions l'appel de la macro:
 \begin_inset space ~
 \end_inset
 
-
-\begin_inset space ~
-\end_inset
-
 forward(
 \begin_inset Graphics
 	filename Figures/PNG/tutle3.png
@@ -15513,10 +15493,6 @@ forward(
 \begin_inset space ~
 \end_inset
 
-
-\begin_inset space ~
-\end_inset
-
 turn(
 \begin_inset Graphics
 	filename Figures/PNG/tutle3.png
@@ -15530,10 +15506,6 @@ turn(
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -15643,8 +15615,8 @@ Un angle droit dessiné avec le module Turtle.
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 4-1
 \end_layout
 
 \begin_layout Standard
@@ -15709,10 +15681,6 @@ Il y a beaucoup de chances que vous ayez écrit ceci:
 \begin_inset space ~
 \end_inset
 
-
-\begin_inset space ~
-\end_inset
-
 forward(
 \begin_inset Graphics
 	filename Figures/PNG/tutle3.png
@@ -15726,10 +15694,6 @@ forward(
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -15773,10 +15737,6 @@ turn(
 \begin_inset space ~
 \end_inset
 
-
-\begin_inset space ~
-\end_inset
-
 forward(
 \begin_inset Graphics
 	filename Figures/PNG/tutle3.png
@@ -15790,10 +15750,6 @@ forward(
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -15837,10 +15793,6 @@ turn(
 \begin_inset space ~
 \end_inset
 
-
-\begin_inset space ~
-\end_inset
-
 forward(
 \begin_inset Graphics
 	filename Figures/PNG/tutle3.png
@@ -15869,10 +15821,6 @@ forward(
 \begin_inset space ~
 \end_inset
 
-
-\begin_inset space ~
-\end_inset
-
 turn(
 \begin_inset Graphics
 	filename Figures/PNG/tutle3.png
@@ -15886,10 +15834,6 @@ turn(
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -15989,10 +15933,6 @@ string:
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -16148,8 +16088,8 @@ for
 \color inherit
 .
  Nous en verrons davantage plus tard.
- Cependant, cela devrait suffire pour permettre de reformuler le programme
- de dessin permettant d'obtenir un carré.
+ Cependant, cela devrait suffire pour reformuler le programme de dessin
+ de carré.
  Ne continuez pas tant que vous n'aurez pas réussi.
 \end_layout
 
@@ -16221,10 +16161,6 @@ for
 \begin_inset space ~
 \end_inset
 
-
-\begin_inset space ~
-\end_inset
-
 for
 \color black
  i 
@@ -16281,10 +16217,6 @@ string:
 \begin_inset space ~
 \end_inset
 
-
-\begin_inset space ~
-\end_inset
-
 forward(
 \begin_inset Graphics
 	filename Figures/PNG/tutle3.png
@@ -16298,10 +16230,6 @@ forward(
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -16406,7 +16334,7 @@ end
 \color blue
 for
 \color inherit
- est également appelée boucle car le flux d'exécution passe par le corps
+ est également appelée boucle, car le flux d'exécution passe par le corps
  et revient ensuite en boucle vers le haut.
  Dans le cas présent, le corps est exécuté quatre fois.
 \end_layout
@@ -16416,7 +16344,7 @@ Cette version est en fait un peu différente du précédent code de dessin
  de carré parce qu'elle effectue une rotation supplémentaire après avoir
  dessiné le dernier côté du carré.
  Cette rotation supplémentaire allonge le temps d'exécution, mais elle simplifie
- le code parce que le programme exécute la même chose dans chaque boucle.
+ le code, parce que le programme exécute la même chose dans chaque boucle.
  Cette version a également pour effet de laisser la tortue dans la position
  de départ, tournée dans la direction initiale.
 \end_layout
@@ -16473,8 +16401,8 @@ end{tip}
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 4-2
 \end_layout
 
 \begin_layout Standard
@@ -16486,7 +16414,7 @@ qui prend un paramètre appelé
 \color blue
 t
 \color inherit
-, qui soit une tortue.
+, qui est une tortue.
  Elle doit utiliser 
 \color blue
 Turtle
@@ -16504,8 +16432,8 @@ square
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 4-3
 \end_layout
 
 \begin_layout Standard
@@ -16520,8 +16448,8 @@ square
 , puis exécutez à nouveau la macro.
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 4-4
 \end_layout
 
 \begin_layout Standard
@@ -16547,8 +16475,8 @@ len
 .
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 4-5
 \end_layout
 
 \begin_layout Standard
@@ -16621,8 +16549,8 @@ end{tip}
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 4-6
 \end_layout
 
 \begin_layout Standard
@@ -16697,8 +16625,8 @@ end{tip}
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 4-7
 \end_layout
 
 \begin_layout Standard
@@ -16714,7 +16642,7 @@ arc
  d'un cercle à dessiner.
  
 \color blue
-Angle
+angle
 \color inherit
  s'exprime en degrés.
  En conséquence, quand 
@@ -16817,10 +16745,6 @@ function
 \begin_inset space ~
 \end_inset
 
-
-\begin_inset space ~
-\end_inset
-
 for
 \color black
  i 
@@ -16875,18 +16799,10 @@ string:
 \begin_inset space ~
 \end_inset
 
-
-\begin_inset space ~
-\end_inset
-
 forward(t, 100)
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -16979,10 +16895,6 @@ end
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -17070,11 +16982,11 @@ square
 
 \end_inset
 
-, donc 
+, 
 \color blue
 turn(t, -90)
 \color inherit
- a le même effet que
+ a donc le même effet que
 \color blue
  turn(
 \color inherit
@@ -17109,7 +17021,7 @@ t
 \end_inset
 
 .
- Donc un autre animal qui effectue le même travail que 
+ Un autre animal qui effectue le même travail que 
 \begin_inset Graphics
 	filename Figures/PNG/tutle3.png
 	scale 35
@@ -17163,10 +17075,6 @@ square
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -17321,10 +17229,6 @@ function
 \begin_inset space ~
 \end_inset
 
-
-\begin_inset space ~
-\end_inset
-
 for
 \color black
  i 
@@ -17381,20 +17285,12 @@ string:
 \begin_inset space ~
 \end_inset
 
-
-\begin_inset space ~
-\end_inset
-
 forward(t, len)
 \end_layout
 
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -17492,10 +17388,6 @@ end
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -17664,10 +17556,6 @@ angle = 360 / n
 \begin_inset space ~
 \end_inset
 
-
-\begin_inset space ~
-\end_inset
-
 for
 \color black
  i 
@@ -17724,20 +17612,12 @@ string:
 \begin_inset space ~
 \end_inset
 
-
-\begin_inset space ~
-\end_inset
-
 forward(t, len)
 \end_layout
 
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -17835,10 +17715,6 @@ end
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -17996,10 +17872,6 @@ circumference = 2 *
 \end_inset
 
 
-\begin_inset space ~
-\end_inset
-
-
 \color black
 n = 50
 \end_layout
@@ -18049,22 +17921,6 @@ polygon(t, n, len)
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
 \color green
 end
 \end_layout
@@ -18100,11 +17956,11 @@ r
 \color blue
 n
 \color inherit
- est le nombre de segments dans notre approximation d'un cercle, donc 
+ est le nombre de segments dans l'approximation d'un cercle, 
 \color blue
 len
 \color inherit
- est la longueur de chaque segment.
+ est donc la longueur de chaque segment.
  Ainsi, la fonction 
 \color blue
 polygon
@@ -18132,7 +17988,7 @@ Une des limites de cette solution vient de ce que
 \color blue
 n
 \color inherit
- est une constante, ce qui signifie que pour les très grands cercles, les
+ est une constante, ce qui signifie que, pour les très grands cercles, les
  segments de droite sont trop longs.
  En revanche, pour les petits cercles, nous perdons du temps à dessiner
  de très petits segments.
@@ -18151,8 +18007,8 @@ circle
 
 \begin_layout Standard
 L'interface d'une fonction est un résumé de son utilisation: quels sont
- les paramètres? Que fait la fonction? Et quelle est la valeur retournée?
- Une interface est 
+ les paramètres? Que fait la fonction? Quelle est la valeur retournée? Une
+ interface est 
 \begin_inset Quotes cld
 \end_inset
 
@@ -18169,7 +18025,8 @@ Dans cet exemple,
 \color blue
 r
 \color inherit
- est un membre de l'interface car ce paramètre conditionne le cercle à dessiner.
+ est un membre de l'interface, car ce paramètre conditionne le cercle à
+ dessiner.
  Le paramètre 
 \color blue
 n
@@ -18283,10 +18140,6 @@ circumference = 2 *
 \end_inset
 
 
-\begin_inset space ~
-\end_inset
-
-
 \color black
 n = 
 \color green
@@ -18344,22 +18197,6 @@ polygon(t, n, len)
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
 \color green
 end
 \end_layout
@@ -18389,13 +18226,13 @@ circumference / 3
 \color inherit
  et la longueur de chaque segment vaut 3.
  Cette valeur est un bon compromis: assez petite pour que les cercles présentent
- une allure convenable, tout en étant assez grande pour être efficace, et
+ une allure convenable, tout en étant assez grande pour être efficace et,
  qui plus est, acceptable pour toute taille de cercle.
  L'addition de 3 à 
 \color blue
 n 
 \color inherit
-garantit que le polygone ait au moins 3 côtés.
+garantit que le polygone ait au moins trois côtés.
 \end_layout
 
 \begin_layout Section
@@ -18445,7 +18282,7 @@ Quand nous avons écrit
 \color blue
 polygon
 \color inherit
- car un polygone à grand nombre de côtés est une bonne approximation d'un
+, car un polygone à grand nombre de côtés est une bonne approximation d'un
  cercle.
  Si nous voulions tracer un arc, pourrait-on utiliser 
 \color blue
@@ -18459,7 +18296,7 @@ circle
 \end_layout
 
 \begin_layout Standard
-Une possiblité est de commencer avec une copie de 
+Une possibilité est de commencer avec une copie de 
 \color blue
 polygon
 \color inherit
@@ -18535,10 +18372,6 @@ arc_length = 2 *
 
 \size small
 \color green
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -19076,10 +18909,6 @@ angle = 360 / n
 \end_inset
 
 
-\begin_inset space ~
-\end_inset
-
-
 \color black
 polyline(t, n, len, angle)
 \end_layout
@@ -19138,10 +18967,6 @@ arc_length = 2 *
 
 \size small
 \color green
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -19314,22 +19139,6 @@ arc(t, r, 360)
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
 \color green
 end
 \end_layout
@@ -19394,14 +19203,10 @@ Si nous avions planifié la programmation, nous aurions peut-être écrit
 polyline
 \color inherit
  au premier jet et évité la refonte.
- Souvent au début d'un projet, on n'en connait pas assez pour concevoir
+ Souvent, au début d'un projet, on n'en connait pas assez pour concevoir
  les interfaces optimales.
  Lorsqu'on entame le codage, le problème est mieux cerné.
- Parfois, le 
-\emph on
-refactoring
-\emph default
- est le signe d'une compréhension approfondie d'un problème.
+ Parfois, la refonte est le signe d'une compréhension approfondie d'un problème.
 \end_layout
 
 \begin_layout Section
@@ -19426,7 +19231,8 @@ Un
 plan de développement
 \emph default
  est un processus de rédaction de programmes.
- Celui que nous avons utilisé dans cette étude de cas est l'encapsulation
+ Celui que nous avons utilisé dans cette étude de cas est constitué de deux
+ étapes: l'encapsulation
 \begin_inset Index idx
 status open
 
@@ -19482,8 +19288,8 @@ chercher des possibilités d'améliorer le programme en le remaniant (processus
 \end_layout
 
 \begin_layout Standard
-Cette manière de procéder présente quelques inconvénients –nous verrons
- les alternatives plus tard– mais il s'avère utile si le programmeur ignore
+Cette manière de procéder présente quelques inconvénients — nous verrons
+ les alternatives plus tard —, mais il s'avère utile si le programmeur ignore
  comment diviser le programme en fonctions.
  Cette approche permet de concevoir un programme de manière progressive.
 \end_layout
@@ -19784,7 +19590,7 @@ REPL
 \color blue
  ?
 \color inherit
- suivi du nom d'une fonction ou d'une macro, et en appuyant sur ENTER:
+ suivi du nom d'une fonction ou d'une macro et en appuyant sur ENTER:
 \begin_inset Index ind
 status open
 
@@ -19965,7 +19771,7 @@ guillemet triple
 \color brown
 "
 \color inherit
-, également appelées chaînes multilignes car les triples guillemets permettent
+, également appelées chaînes multilignes, car les triples guillemets permettent
  à la chaîne de s'étendre sur plus d'une ligne.
 \end_layout
 
@@ -20056,7 +19862,11 @@ type
 \begin_inset Quotes crd
 \end_inset
 
- Turtle, 
+ 
+\family typewriter
+Turtle
+\family default
+, 
 \color blue
 n
 \color inherit
@@ -20099,8 +19909,8 @@ a priori
 \emph on
 a priori
 \emph default
-) car elles sont supposées être vraies avant que la fonction ne commence
- à s'exécuter.
+), car elles sont supposées être vraies avant que la fonction commence à
+ s'exécuter.
  
 \emph on
 A contrario
@@ -20454,8 +20264,8 @@ condition
 Exercices
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 4-8
 \end_layout
 
 \begin_layout Standard
@@ -20527,8 +20337,8 @@ noprefix "false"
 
 \end_inset
 
- n'est pas très précise car l'approximation linéaire du cercle se fait toujours
- en dehors du cercle vrai.
+ n'est pas très précise, car l'approximation linéaire du cercle se fait
+ toujours en dehors du vrai cercle.
  Par conséquent, la tortue se retrouve à quelques pixels de sa destination
  correcte.
  Ci-dessous, une solution qui illustre un moyen de réduire l'effet de cette
@@ -20593,7 +20403,7 @@ polyline
 
 \size small
 \color brown
-Trace un arc d'un rayon et d'un angle donnés:
+Trace un arc d'un rayon et d'un angle donnés :
 \end_layout
 
 \begin_layout Plain Layout
@@ -20924,8 +20734,8 @@ end
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 4-9
 \end_layout
 
 \begin_layout Standard
@@ -20958,8 +20768,8 @@ Rédigez un ensemble de fonctions générales appropriées pour dessiner des
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 4-10
 \end_layout
 
 \begin_layout Standard
@@ -20985,8 +20795,8 @@ Rédigez un ensemble de fonctions générales appropriées pour dessiner des
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 4-11
 \end_layout
 
 \begin_layout Standard
@@ -21013,8 +20823,8 @@ letters.jl
 .
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 4-11
 \end_layout
 
 \begin_layout Standard
