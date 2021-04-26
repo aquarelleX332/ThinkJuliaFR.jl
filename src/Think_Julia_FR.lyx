@@ -8168,7 +8168,8 @@ fonction
 \end_inset
 
  est une séquence d'instructions effectuant un calcul.
- Une fonction définie porte un nom et contient une suite d'instructions.
+ La définition d'une fonction doit contenir le nom de la fonction et une
+ suite d'instructions.
  La fonction étant définie, il y est fait appel en utilisant son nom.
  
 \end_layout
@@ -8827,7 +8828,7 @@ La fonction
 log
 \color inherit
  calcule les logarithmes naturels (ou népériens, aussi appelés hyperboliques
- – 
+ — 
 \begin_inset Formula $\ln$
 \end_inset
 
@@ -8911,6 +8912,8 @@ radians = 0.7
 \end_layout
 
 \begin_layout Plain Layout
+
+\size small
 heigth = sin(radians)
 \end_layout
 
@@ -8936,7 +8939,7 @@ Ce deuxième cas avec la fonction
 \color blue
  sin
 \color inherit
- illustre la manière de procéder pour le sinus d'angles exprimés en radians.
+ illustre la manière de procéder pour le sinus d'un angle exprimé en radians.
  Un argument passé tel quel aux fonctions trigonométriques (
 \color blue
 sin
@@ -9161,17 +9164,17 @@ composition
 \end_layout
 
 \begin_layout Standard
-Jusqu'à présent, nous avons examiné les éléments d'un programme –variables,
- expressions et déclarations– isolément, sans évoquer la manière de les
+Jusqu'à présent, nous avons examiné les éléments d'un programme — variables,
+ expressions et déclarations — isolément, sans évoquer la manière de les
  combiner.
 \end_layout
 
 \begin_layout Standard
-Une autre caractéristique des plus utiles des langages de programmation
- provient de leur capacité à prendre de petits blocs de construction et
- à les combiner (les associer).
+Une caractéristique des plus utiles des langages de programmation provient
+ de leur capacité à prendre de petits blocs de construction et à les combiner
+ (les associer).
  Par exemple, l'argument d'une fonction peut être tout type d'expression,
- incluant des opérateurs arithmétiques: 
+ dont des opérateurs arithmétiques: 
 \begin_inset Index idx
 status open
 
@@ -9272,10 +9275,9 @@ x = exp(log(x+1))
 
 \begin_layout Standard
 Presque partout où une valeur peut être injectée, il est possible de poser
- une expression arbitraire.
- À une contrainte près: le membre de gauche d'une déclaration d'affectation
- doit être un nom de variable.
- Toute autre expression à gauche conduit une erreur de syntaxe (nous verrons
+ une expression arbitraire, à une contrainte près: le membre de gauche d'une
+ déclaration d'affectation doit être un nom de variable.
+ Toute autre expression à gauche conduit à une erreur de syntaxe (nous verrons
  les exceptions à cette règle plus tard).
  
 \end_layout
@@ -9558,7 +9560,7 @@ function
  est un mot-clé qui indique qu'une nouvelle fonction est définie.
  Le nom de la fonction est 
 \color blue
-printlyrics()
+printlyrics
 \color inherit
 .
 \begin_inset Index idx
@@ -9581,7 +9583,11 @@ Unicode
 
 \end_inset
 
- (voir la section 
+ (voir la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Caractères"
@@ -9593,7 +9599,7 @@ noprefix "false"
 
 ), si ce n'est que le premier caractère ne peut pas être un nombre.
  Par ailleurs, il n'est pas permis d'utiliser un mot-clé comme nom de fonction.
- En outre, il faut éviter qu'une variable et une fonction porte le même
+ En outre, il faut éviter qu'une variable et une fonction portent le même
  nom.
  Les parenthèses vides après le nom indiquent que cette fonction ne prend
  pas d'arguments.
@@ -9697,7 +9703,19 @@ guillemets, simples
 \end_inset
 
 ).
- Les guillemets de ce type “
+ Les guillemets de ce type 
+\begin_inset Quotes cld
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Quotes crd
+\end_inset
+
+, “
 \begin_inset space ~
 \end_inset
 
@@ -9880,7 +9898,7 @@ Ses fluctuat nec mergitur,
 
 \size small
 \color lightgray
-C’était pas d’la litterature
+C’était pas d’la littérature
 \end_layout
 
 \end_inset
@@ -10283,9 +10301,9 @@ repeatlyrics()
 \begin_layout Standard
 Ce programme contient deux définitions de fonctions: 
 \color blue
-printlyric
+printlyrics
 \color inherit
-s et 
+ et 
 \color blue
 repeatlyrics
 \color inherit
@@ -10293,7 +10311,7 @@ repeatlyrics
  Les définitions de fonction sont exécutées comme les autres instructions,
  mais elles ont pour effet de créer des objets de fonction.
  Les instructions à l'intérieur de la fonction ne s'exécutent pas avant
- que la fonction ne soit pas appelée.
+ que la fonction soit pas appelée.
  La définition de la fonction ne produit aucune sortie.
 \end_layout
 
@@ -10305,8 +10323,8 @@ Comme on peut s'y attendre, il faut créer une fonction avant de pouvoir
  
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 3-1
 \end_layout
 
 \begin_layout Standard
@@ -10354,11 +10372,11 @@ flux d'exécution
 
 \begin_layout Standard
 L'exécution commence toujours à la première instruction d'un programme.
- Les instructions sont exécutées séquentiellement, dans l'ordre de haut
+ Les instructions sont exécutées séquentiellement, dans l'ordre, de haut
  en bas.
  Les définitions de fonction ne modifient pas le flux d'exécution du programme,
  mais il faut se rappeler que les instructions à l'intérieur de la fonction
- ne s'exécutent pas avant que la fonction ne soit appelée.
+ ne s'exécutent pas avant que la fonction soit appelée.
  Un appel de fonction
 \begin_inset Index idx
 status open
@@ -10391,7 +10409,8 @@ Cela semble assez simple, jusqu'à ce qu'on se souvienne qu'une fonction
 \begin_layout Standard
 En résumé, la lecture d'un programme ne se fait pas toujours linéairement
  de haut en bas.
- Généralement, il s'avère préférable de suivre le déroulement de l'exécution.
+ Généralement, pour la compréhension d'un programme, il s'avère préférable
+ de suivre le déroulement de l'exécution.
 \end_layout
 
 \begin_layout Section
@@ -10429,7 +10448,7 @@ argument
 \color blue
 sin
 \color inherit
- qui requiert un nombre en argument.
+, qui requiert un nombre en argument.
  D'autres fonctions en nécessitent plusieurs.
  Par exemple, 
 \color blue
@@ -10497,7 +10516,7 @@ paramètre
 \color green
 julia> function
 \color inherit
- eleve_au_carre(t)
+ élève_au_carré(t)
 \end_layout
 
 \begin_layout Plain Layout
@@ -10574,7 +10593,7 @@ julia> function
 \begin_inset space ~
 \end_inset
 
-carre = t * t
+carré = t * t
 \end_layout
 
 \begin_layout Plain Layout
@@ -10651,7 +10670,7 @@ carre = t * t
 \begin_inset space ~
 \end_inset
 
-println(carre)
+println(carré)
 \end_layout
 
 \begin_layout Plain Layout
@@ -10719,7 +10738,7 @@ end
 \color green
 julia>
 \color inherit
- eleve_au_carre(5)
+ élève_au_carré(5)
 \end_layout
 
 \begin_layout Plain Layout
@@ -10746,11 +10765,11 @@ julia>
 \end_layout
 
 \begin_layout Standard
-En l'occurrence, l'appel de la fonction (c'est-à-dire l'instruction 
+En l'occurrence, l'appel de la fonction [c'est-à-dire l'instruction 
 \color blue
-eleve_au_carre(5)
+élève_au_carré(5)
 \color inherit
-) passe son argument (
+] passe son argument (
 \color blue
 5
 \color inherit
@@ -10758,11 +10777,11 @@ eleve_au_carre(5)
 \color blue
 t
 \color inherit
- (de la 
+ [de la fonction 
 \color blue
-function eleve_au_carre(t)
+élève_au_carré(t)
 \color inherit
-).
+].
 
 \color blue
  t
@@ -10773,7 +10792,7 @@ paramètre
 \emph default
  à l'intérieur de la fonction 
 \color blue
-eleve_au_carre(t)
+élève_au_carré(t)
 \size small
 \color inherit
 .
@@ -10785,7 +10804,7 @@ t * t
 \color inherit
 ) est affecté à la variable 
 \color blue
-carre
+carré
 \color inherit
 .
  Celle-ci est passée en argument à la fonction 
@@ -10798,7 +10817,7 @@ println
 status open
 
 \begin_layout Plain Layout
-eleve_au_carre
+eleve_au_carre@élève_au_carré
 \end_layout
 
 \end_inset
@@ -10809,7 +10828,11 @@ eleve_au_carre
 \begin_layout Standard
 L'intérêt de ce type de pratique est de pouvoir réutiliser la fonction ultérieur
 ement.
- Par exemple, en vertu de ce qui a été discuté en section 
+ Par exemple, en vertu de ce qui a été discuté en section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Opérations-sur-les-chaines-de-caracteres"
@@ -10821,7 +10844,7 @@ noprefix "false"
 
 , 
 \color blue
-eleve_au_carre("lu")
+élève_au_carré("lu")
 \color brown
  
 \color black
@@ -10858,7 +10881,7 @@ Il est également possible d'utiliser une variable en tant qu'argument:
 \color green
 julia> 
 \color black
-name = 
+nom = 
 \color brown
 "lu"
 \end_layout
@@ -10876,7 +10899,7 @@ name =
 \color green
 julia> 
 \color black
-eleve_au_carre( name)
+élève_au_carré(nom)
 \end_layout
 
 \begin_layout Plain Layout
@@ -10906,7 +10929,7 @@ lulu
 \begin_layout Standard
 Le nom de la variable que nous passons en argument (
 \color blue
-name
+nom
 \color inherit
 ) n'a rien à voir avec le nom du paramètre (
 \color blue
@@ -10920,7 +10943,7 @@ t
 \color inherit
  tout qui arrive en argument dans la fonction 
 \color blue
-eleve_au_carre
+élève_au_carré
 \color inherit
 .
 \end_layout
@@ -11429,7 +11452,11 @@ string:
 
 \begin_layout Standard
 Ceci illustre le fait que les paramètres sont locaux.
- Par exemple (voir la section 
+ Par exemple (voir la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Paramètres-et-arguments"
@@ -11441,7 +11468,7 @@ noprefix "false"
 
 ), hors de la fonction 
 \color blue
-eleve_au_carre
+élève_au_carré
 \color inherit
 , 
 \color blue
@@ -11555,15 +11582,15 @@ Diagramme de pile.
 
 \begin_layout Standard
 Les cadres sont disposés dans une pile qui indique quelle fonction est appelée.
- Dans cet exemple, 
+ Dans cet exemple, la fonction 
 \color blue
 printtwice
 \color inherit
- a été appelé par 
+ a été appelée par 
 \color blue
 cattwice
 \color inherit
- et, 
+ et 
 \color blue
 cattwice
 \color inherit
@@ -11609,7 +11636,7 @@ part2
 \color blue
 line2
 \color inherit
-, et 
+ et 
 \color blue
 eluard
 \color inherit
@@ -11769,7 +11796,7 @@ string:
 
 \size small
 \color black
- [2] cattwice (
+[2] cattwice (
 \begin_inset ERT
 status open
 
@@ -11949,7 +11976,7 @@ fonction avec retour
 
 \end_inset
 
- D'autres fonctions effectuent une action mais ne retournent pas de valeur.
+ D'autres fonctions effectuent une action, mais ne retournent pas de valeur.
  On les appelle des fonctions nulles ou vides (
 \emph on
 void functions
@@ -12090,7 +12117,11 @@ la fonction
 \color blue
 printtwice
 \color inherit
- vue précédemment (section 
+ vue précédemment (section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Paramètres-et-arguments"
@@ -12100,7 +12131,7 @@ noprefix "false"
 
 \end_inset
 
-) ne retourne aucune valeur bien qu'elle effectue deux actions.
+) ne retourne aucune valeur, bien qu'elle effectue deux actions.
 \begin_inset Index ind
 status open
 
@@ -12117,7 +12148,7 @@ printtwice
 En appelant une fonction avec retour, l'intention est d'exploiter le résultat
  obtenu.
  Par exemple, il est tout-à-fait possible d'affecter le résultat à une variable
- ou l'utiliser comme partie d'une expression: 
+ ou de l'utiliser comme partie d'une expression: 
 \begin_inset Index idx
 status open
 
@@ -12157,8 +12188,9 @@ x = cos(radians)
 \begin_layout Plain Layout
 
 \size small
+golden
 \color green
-golden 
+ 
 \color black
 = (sqrt(5) + 1) / 2
 \end_layout
@@ -12291,13 +12323,13 @@ sqrt(5)
 \begin_layout Standard
 si une fonction avec retour est appelée seule, la valeur de retour est définitiv
 ement perdue.
- Ce script calcule bien la racine carrée de 5, mais comme il n'enregistre
+ Ce script calcule bien la racine carrée de 5, mais, comme il n'enregistre
  ni n'affiche le résultat, il n'est guère utile.
 \end_layout
 
 \begin_layout Standard
 Les fonctions vides ou nulles peuvent afficher un message à l'écran ou avoir
- quelqu'autre effet, mais elles n'ont pas de valeur de retour.
+ quelque autre effet, mais elles n'ont pas de valeur de retour.
  Si le résultat est attribué à une variable, nous obtenons une valeur spéciale
  appelée
 \emph on
@@ -12328,7 +12360,7 @@ Les fonctions vides ou nulles peuvent afficher un message à l'écran ou avoir
 \color green
 julia> 
 \color inherit
-resultat = eleve_au_carre(5)
+resultat = élève_au_carré(5)
 \end_layout
 
 \begin_layout Plain Layout
@@ -12475,7 +12507,11 @@ Nothing
 \end_layout
 
 \begin_layout Standard
-Nous commencerons à rédiger des fonctions avec retour au chapitre 
+Nous commencerons à rédiger des fonctions avec retour aux chapitres
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Fonctions-avec-retour"
@@ -12572,6 +12608,16 @@ When you have eliminated the impossible, whatever remains, however improbable,
  Conan Doyle – The Sign of Four)
 \end_layout
 
+\begin_layout Quotation
+
+\emph on
+Lorsque vous avez éliminé l'impossible, ce qui reste, si improbable soit-il,
+ est nécessairement la vérité.
+
+\emph default
+ (Traduction de Jeanne de Polignac)
+\end_layout
+
 \begin_layout Standard
 Pour certains, la programmation et le débogage sont une seule et même notion:
  la programmation est le processus qui consiste à déboguer progressivement
@@ -12618,7 +12664,7 @@ literal "false"
 
 \end_inset
 
- dans
+ 
 \begin_inset Index idx
 status open
 
@@ -12628,7 +12674,7 @@ Greenfield, Larry
 
 \end_inset
 
- 
+ dans 
 \begin_inset CommandInset href
 LatexCommand href
 name "\\textit{The Linux User's Guide}"
@@ -12641,16 +12687,16 @@ literal "true"
 \begin_inset Quotes cld
 \end_inset
 
- Un des premiers projets de Linus était un programme qui permettait de passer
+Un des premiers projets de Linus était un programme qui permettait de passer
  de l'impression "AAAA" à "BBBB".
  Ce programme a ensuite évolué vers le noyau
 \noun on
  Linux
-\noun default
- 
 \begin_inset Quotes crd
 \end_inset
 
+
+\noun default
 .
  
 \end_layout
@@ -12910,7 +12956,7 @@ nothing
 \color blue
 nothing
 \color inherit
- valeur spéciale renvoyée par les fonctions vides (dites nulles), 
+ valeur spéciale renvoyée par les fonctions vides, 
 \begin_inset Index idx
 status open
 
@@ -12936,7 +12982,7 @@ composition
 
 \end_inset
 
- (ou combinaison) utilisation d'une expression (ou d'une délcaration) dans
+ (ou combinaison) utilisation d'une expression (ou d'une déclaration) dans
  le cadre d'une expression (ou d'une déclaration) plus large,
 \end_layout
 
@@ -13141,8 +13187,8 @@ end{tip}
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 3-2
 \end_layout
 
 \begin_layout Standard
@@ -13220,7 +13266,7 @@ length()
 \color green
 julia> 
 \color black
-rightjustify(Julieta)
+rightjustify("Julieta")
 \end_layout
 
 \begin_layout Plain Layout
@@ -13765,8 +13811,8 @@ end{tip}
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 3-3
 \end_layout
 
 \begin_layout Standard
@@ -14010,7 +14056,11 @@ Dans votre script, copiez la définition de
 \color blue
 printtwice
 \color inherit
- donnée plus haut dans ce chapitre (voir la section 
+ donnée plus haut dans ce chapitre (voir la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Paramètres-et-arguments"
@@ -14060,14 +14110,14 @@ dofour
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Exercice-4-14-3"
 
 \end_inset
 
-Exercice
+Exercice 3-4
 \end_layout
 
 \begin_layout Enumerate
@@ -14110,7 +14160,11 @@ literal "false"
 
 \end_inset
 
- 
+
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-6"
@@ -14118,7 +14172,7 @@ literal "false"
 
 \end_inset
 
- 
+
 \begin_inset Index idx
 status open
 
