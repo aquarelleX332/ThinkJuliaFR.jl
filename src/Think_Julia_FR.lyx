@@ -34564,7 +34564,11 @@ noprefix "false"
 \end_inset
 
 ).
- Une autre l'a été avec les boucles, dans la section 
+ Une autre l'a été avec les boucles, dans la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Répétitions-simples"
@@ -34731,7 +34735,15 @@ x
 a = b
 \color inherit
  comme une proposition mathématique d'égalité, c'est-à-dire l'affirmation
- que a et b sont égaux.
+ que 
+\color blue
+a
+\color inherit
+ et 
+\color blue
+b
+\color inherit
+ sont égaux.
 
 \emph on
  Cette interprétation est erronée
@@ -34746,7 +34758,7 @@ Premièrement, l'égalité est une relation symétrique.
 \color blue
 a = 7
 \color inherit
- il est permis d'écrire 
+, il est permis d'écrire 
 \color blue
 7 = a
 \color inherit
@@ -34908,7 +34920,7 @@ julia>
 \begin_inset space ~
 \end_inset
 
-# a ne pointe plus vers 5 mais vers 3
+# a ne pointe plus vers 5, mais vers 3
 \end_layout
 
 \begin_layout Plain Layout
@@ -35021,7 +35033,7 @@ La troisième ligne modifie la valeur de
 \color blue
 a
 \color inherit
- mais ne change pas la valeur de 
+, mais ne change pas la valeur de 
 \color blue
 b
 \color inherit
@@ -35087,11 +35099,8 @@ Mise à jour des variables
 \end_layout
 
 \begin_layout Standard
-Il est courant de réaffecter une variable 
-\emph on
-via
-\emph default
- la mise à jour de son ancienne valeur: 
+Il est courant de réaffecter une variable via la mise à jour de son ancienne
+ valeur: 
 \end_layout
 
 \begin_layout Standard
@@ -35148,8 +35157,15 @@ Cela signifie
 \begin_inset Quotes cld
 \end_inset
 
-obtenir la valeur actuelle de x (à savoir 7), y ajouter 1 et ensuite affecter
- 8 à x
+obtenir la valeur actuelle de 
+\color blue
+x
+\color inherit
+ (à savoir 7), y ajouter 1 et ensuite affecter 8 à 
+\color blue
+x
+\color inherit
+
 \begin_inset Quotes crd
 \end_inset
 
@@ -35307,7 +35323,7 @@ while
 
 \begin_layout Standard
 Les ordinateurs sont souvent utilisés pour automatiser les tâches répétitives.
- Répéter des tâches identiques ou similaires sans faire d'erreurs constitue
+ Répéter des tâches identiques ou similaires sans faire d'erreur constitue
  un point fort des ordinateurs, contrairement aux humains.
  Dans un programme informatique, la répétition est également appelée 
 \emph on
@@ -35346,7 +35362,11 @@ recursion@récursion
 
 \end_inset
 
- (section 
+ (section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Récursion"
@@ -35363,7 +35383,11 @@ noprefix "false"
 \color blue
  for
 \color inherit
- que nous avons vue dans la section 
+ que nous avons vue dans la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Répétitions-simples"
@@ -35625,10 +35649,22 @@ while
 \begin_inset Quotes cld
 \end_inset
 
-Si n est supérieur à 0, affichez la valeur de n, puis décrémentez n.
+Si n est supérieur à 0, affichez la valeur de 
+\color blue
+n
+\color inherit
+, puis décrémentez 
+\color blue
+n
+\color inherit
+.
  Lorsque vous arrivez à 0, affichez l'expression
 \color black
- "mise à feu!"
+ 
+\color blue
+"mise à feu!"
+\color black
+
 \begin_inset Quotes crd
 \end_inset
 
@@ -35661,11 +35697,11 @@ si la condition est vraie, exécuter le corps et revenir ensuite à l'étape
 \end_layout
 
 \begin_layout Standard
-Ce type de flux est appelé une boucle car la troisième étape revient en
+Ce type de flux est appelé une boucle, car la troisième étape revient en
  boucle vers le haut.
  Il est fondamental que le corps de la boucle modifie la valeur d'une ou
- plusieurs variables de sorte que la condition devienne fausse à terme et
- que la boucle se termine.
+ plusieurs variables, de sorte que la condition devienne fausse à terme
+ et que la boucle se termine.
  Sinon,
 \begin_inset Index idx
 status open
@@ -35880,7 +35916,7 @@ println(n)
 \color green
 if
 \color inherit
- n%2 == 0
+ n % 2 == 0
 \begin_inset space ~
 \end_inset
 
@@ -36078,6 +36114,14 @@ else
 \begin_inset space ~
 \end_inset
 
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
 # n est impair
 \end_layout
 
@@ -36248,7 +36292,7 @@ n
 \color blue
 2
 \color inherit
- tandis que s'il est impair, la valeur de 
+ tandis que, s'il est impair, la valeur de 
 \color blue
 n
 \color inherit
@@ -36282,7 +36326,7 @@ n
 \color blue
 n
 \color inherit
- atteindra 1, ou que le programme se termine.
+ atteindra 1 ou que le programme se termine.
  Pour certaines valeurs particulières de 
 \color blue
 n
@@ -36312,7 +36356,8 @@ La question véritablement difficile est de savoir s'il peut être prouvé
  n
 \color inherit
 .
- Jusqu'à présent, personne n'a été capable ni de prouver ni de réfuter.
+ Jusqu'à présent, personne n'a été capable ni de prouver ni de réfuter cet
+ énoncé.
  Il s'agit de la 
 \begin_inset CommandInset href
 LatexCommand href
@@ -36336,8 +36381,8 @@ Collatz, conjecture de
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 7-1
 \end_layout
 
 \begin_layout Standard
@@ -36345,7 +36390,11 @@ Réécrivez la fonction
 \color blue
 printn
 \color inherit
- (voir la section 
+ (voir la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Récursion"
@@ -36390,9 +36439,9 @@ break
  Dans ce cas, l'
 \emph on
 instruction 
-\color black
-break
 \emph default
+\color blue
+break
 \color inherit
  peut être utilisée pour sortir de la boucle.
  Supposons, par exemple, qu'il faille capter les données d'un utilisateur
@@ -36740,7 +36789,7 @@ Cette manière d'écrire des boucles
 \color blue
 while
 \color inherit
- est courante car on peut vérifier la condition n'importe où dans la boucle
+ est courante, car on peut vérifier la condition n'importe où dans la boucle
  (pas seulement en haut) et la condition d'arrêt peut être exprimée affirmativem
 ent (
 \begin_inset Quotes cld
@@ -37029,7 +37078,7 @@ i
 \color blue
 continue
 \color inherit
- arrête l'itération en cours et, l'itération suivante commence.
+ arrête l'itération en cours et l'itération suivante commence.
  Seuls les nombres compris entre 1 et 10 non divisibles par 3 sont affichés.
 \end_layout
 
@@ -37088,7 +37137,7 @@ x
 \begin_layout Standard
 \begin_inset Formula 
 \[
-y=\frac{1}{2}(x+\frac{\alpha}{x})
+y=\frac{1}{2}\left(x+\frac{\alpha}{x}\right)
 \]
 
 \end_inset
@@ -37882,8 +37931,15 @@ Dans ce code, ε (
 \backslash
 varepsilon TAB
 \color inherit
-) a une valeur telle que 0.0000001 qui détermine la proximité au résultat
- réel.
+) a une valeur telle que 0,000
+\begin_inset space ~
+\end_inset
+
+000
+\begin_inset space ~
+\end_inset
+
+1 qui détermine la proximité au résultat réel.
  
 \begin_inset Index idx
 status open
@@ -37979,8 +38035,8 @@ et 9, il est possible d'écrire
 \begin_layout Standard
 De même, les techniques apprises à l'école primaire pour l'addition avec
  report, la soustraction par emprunt (ou celle par compensation) et la division
- longue (méthode de la potence) sont toutes de nature algorithmiques.
- Les algorithmes ont pour caractéristiques communes de ne nécessiter aucune
+ longue (méthode de la potence) sont toutes de nature algorithmique.
+ Les algorithmes ont pour caractéristique commune de ne nécessiter aucune
  intelligence pour être exécutés.
  Ce sont des processus mécaniques où chaque étape suit la précédente selon
  un ensemble de règles simples.
@@ -37996,7 +38052,7 @@ Exécuter des algorithmes est ennuyeux, mais les concevoir est intéressant,
 Certains actes naturellement exécutés par les humains, sans difficulté ni
  pensée consciente, sont les plus difficiles à exprimer par des algorithmes.
  La compréhension du langage naturel en est un bon exemple.
- Nous agissons tous ainsi, mais jusqu'à présent, personne n'a pu expliquer
+ Nous agissons tous ainsi, mais, jusqu'à présent, personne n'a pu expliquer
  comment nous pratiquons, du moins pas sous la forme d'un algorithme.
  
 \end_layout
@@ -38077,7 +38133,7 @@ milieu du programme
 
  et une vérification n'est pas toujours réalisable.
  Il n'est pas pertinent de compter les lignes et de trouver l'exact milieu.
- Mieux vaut reprérer les endroits du programme où des erreurs pourraient
+ Mieux vaut repérer les endroits du programme où des erreurs pourraient
  apparaître et où il est facile de pratiquer une vérification.
  Ensuite, il est judicieux de choisir un endroit où les chances de débusquer
  le bogue avant ou après la vérification sont approximativement les mêmes.
@@ -38277,12 +38333,16 @@ algorithme
 Exercices
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 7-2
 \end_layout
 
 \begin_layout Standard
-Copiez la boucle de la section 
+Copiez la boucle de la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Racines-carrées"
@@ -38391,7 +38451,7 @@ Tableau produit par la fonction
 \color blue
 testsquareroot
 \color inherit
- .
+.
 \end_layout
 
 \end_inset
@@ -38399,17 +38459,13 @@ testsquareroot
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 7-3
 \end_layout
 
 \begin_layout Standard
@@ -38580,8 +38636,8 @@ julia>
 \color blue
  evalloop
 \color inherit
- qui invite l'utilisateur de manière itérative, prend les données résultantes
- et les évalue à l'aide de la fonction 
+ qui invite l'utilisateur de manière itérative à saisir une expression,
+ prend les données résultantes et les évalue à l'aide de la fonction 
 \color blue
 eval
 \color inherit
@@ -38608,8 +38664,8 @@ evalloop
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 7-4
 \end_layout
 
 \begin_layout Standard
