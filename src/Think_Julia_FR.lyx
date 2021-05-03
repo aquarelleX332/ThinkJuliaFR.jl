@@ -78443,12 +78443,13 @@ Les tuples sont persistants
 \begin_layout Standard
 Un tuple est une séquence de valeurs.
  Celles-ci peuvent être de type quelconque et elles sont indexées par des
- entiers, de sorte qu'à cet égard, les tuples ressemblent beaucoup aux tableaux.
+ entiers, de sorte que, à cet égard, les tuples ressemblent beaucoup aux
+ tableaux.
  La différence notoire est que les tuples sont persistants (
 \emph on
-immutables
+immutable
 \emph default
-).
+, en anglais).
  Chaque élément peut avoir son propre type (nombres, chaînes de caractères,
  tableaux, dictionnaires, tuples).
 \end_layout
@@ -79776,7 +79777,7 @@ textquotesingle
 \end_layout
 
 \begin_layout Standard
-Cependant, comme les tuples sont persitants, vouloir en modifier un élément
+Cependant, comme les tuples sont persistants, vouloir en modifier un élément
  conduit à une erreur: 
 \end_layout
 
@@ -79902,8 +79903,8 @@ NTuple{5,Char}, ::Char, ::Int64)
 Les opérateurs relationnels agissent sur les tuples comme avec d'autres
  séquences.
  Julia commence par comparer le premier élément de chaque séquence.
- S'ils sont égaux, Julia passe aux éléments suivants, et ainsi de suite
- jusqu'à trouver des éléments qui diffèrent.
+ S'ils sont égaux, Julia passe aux éléments suivants et ainsi de suite jusqu'à
+ trouver des éléments qui diffèrent.
  Les éléments ultérieurs ne sont pas pris en compte (même s'il s'agit, par
  exemple, de grands nombres).
  
@@ -80101,7 +80102,7 @@ a, b = b, a
 \end_layout
 
 \begin_layout Standard
-Le membre de gauche de l'affectation est un tuple de variables alors que
+Le membre de gauche de l'affectation est un tuple de variables, alors que
  le membre de droite est un tuple d'expressions.
  Chaque valeur est attribuée à sa variable respective.
  Toutes les expressions du membre de droite sont évaluées avant toute affectatio
@@ -80448,8 +80449,15 @@ valeur retournée, tuple
 t plusieurs valeurs.
  Par exemple, soit deux entiers dont on veut obtenir par division le quotient
  et le reste.
- Comme il est inefficace de calculer x ÷ y puis x % y, il est préférable
- de réaliser ces opérations simultanément.
+ Comme il est inefficace de calculer 
+\color blue
+x ÷ y
+\color inherit
+ puis 
+\color blue
+x % y
+\color inherit
+, il est préférable de réaliser ces opérations simultanément.
 \end_layout
 
 \begin_layout Standard
@@ -80914,7 +80922,7 @@ Le nom du
 \emph on
 paramètre d'agrégation
 \emph default
- est libre quoique le terme 
+ est libre, quoique le terme 
 \color blue
 args
 \color inherit
@@ -81109,7 +81117,7 @@ splat
 \color blue
 divrem
 \color inherit
- prend exactement deux arguments mais cette fonction ne peut pas manipuler
+ prend exactement deux arguments, mais cette fonction ne peut pas manipuler
  directement de tuples: 
 \begin_inset Index idx
 status open
@@ -81553,8 +81561,8 @@ Int64)
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 12-1
 \end_layout
 
 \begin_layout Standard
@@ -82095,7 +82103,7 @@ zip, objet
 \end_inset
 
  est une espèce d'itérateur agissant sur une séquence.
- D'une certaine manière, les itérateurs sont similaires aux tableaux, mais
+ D'une certaine manière, les itérateurs sont similaires aux tableaux, mais,
  contrairement à ces derniers, il n'est pas possible d'utiliser les indices
  pour sélectionner un élément donné de l'itérateur.
 \end_layout
@@ -84604,7 +84612,11 @@ t dans un tableau.
 \color blue
 ("Rabelais", "François")
 \color inherit
- apparaîtra comme dans la figure 
+ apparaîtra comme dans la figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Diagramme-d'état-associé-tuple-clees-john"
@@ -84668,7 +84680,11 @@ Diagramme d'état associé au tuple
 Cependant, dans un diagramme plus étendu, il est pratique d'omettre les
  détails.
  Par exemple, un diagramme de l'annuaire téléphonique peut apparaître comme
- dans la figure 
+ dans la figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Diagramme-d'état-associé-répertoire-téléphonique"
@@ -84778,7 +84794,7 @@ e.
 
 \begin_layout Standard
 Tout d'abord, les chaînes de caractères sont plus limitées que les autres
- séquences car les éléments doivent absolument être des caractères.
+ séquences, car les éléments doivent absolument être des caractères.
  Elles sont également persistantes.
  S'il faut pouvoir modifier les caractères d'une chaîne (plutôt que d'en
  créer une nouvelle), un tableau de caractères est plus pratique.
@@ -85152,7 +85168,7 @@ Exercices
 \end_layout
 
 \begin_layout Subsection
-Exercice
+Exercice 12-2
 \end_layout
 
 \begin_layout Standard
@@ -85195,14 +85211,14 @@ mostfrequent
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Exercice-13-10-2"
 
 \end_inset
 
-Exercice
+Exercice 12-3
 \end_layout
 
 \begin_layout Standard
@@ -85222,7 +85238,11 @@ anagramme
 
 \begin_layout Enumerate
 Écrivez un programme qui lit une liste de mots à partir d'un fichier (voir
- la section 
+ la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Lecture-de-listes-de-mots"
@@ -85349,7 +85369,7 @@ begin{tip}
 Si vous voulez construire un dictionnaire qui établit une correspondance
  entre une collection de lettres et une série de mots qui pouvent être orthograp
 hiés avec ces lettres, comment pouvez-vous représenter la collection de
- lettres de manière à ce qu'elle puisse servir de clé.
+ lettres de manière à ce qu'elle puisse servir de clé?
 \end_layout
 
 \begin_layout Plain Layout
@@ -85416,11 +85436,11 @@ scrabble
 \begin_inset Quotes crd
 \end_inset
 
- possibles ?
+ possible?
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 12-4
 \end_layout
 
 \begin_layout Standard
@@ -85497,7 +85517,7 @@ begin{tip}
 
 \begin_layout Plain Layout
 
-Ne testez pas toutes les paires de mots, et ne testez pas tous les échanges
+Ne testez pas toutes les paires de mots et ne testez pas tous les échanges
  possibles.
 \end_layout
 
@@ -85526,8 +85546,8 @@ literal "false"
 .
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 12-5
 \end_layout
 
 \begin_layout Standard
@@ -85572,9 +85592,8 @@ Maintenant, les lettres peuvent être enlevées à l'une ou l'autre extrémité,
  Chaque fois que vous laissez tomber une lettre, vous vous retrouvez avec
  un autre mot anglais.
  Si vous faites cela, vous finirez par avoir une lettre et ce sera aussi
- un mot anglais - un mot que l'on trouve dans le dictionnaire.
- Je veux savoir quel est le mot le plus long et combien de lettres il comporte
- ?
+ un mot anglais — un mot que l'on trouve dans le dictionnaire.
+ Je veux savoir quel est le mot le plus long et combien de lettres il comporte.
 \end_layout
 
 \begin_layout Standard
@@ -85584,7 +85603,7 @@ Je vais vous donner un petit exemple modeste : Sprite.
  D'accord? On commence par sprite, on enlève une lettre, une de l'intérieur
  du mot, on enlève le r, et on se retrouve avec le mot spite, puis on enlève
  le e à la fin, on se retrouve avec spit, on enlève le s, on se retrouve
- avec pit, it, et I.
+ avec pit, it et I.
 \emph default
 
 \begin_inset Quotes crd
@@ -85623,7 +85642,7 @@ Le commentaire est associé à la langue anglaise.
 \backslash
 textcolor{blue}{mots
 \backslash
-_FR.txt}  (voir la section 
+_FR.txt}  (voir la section~
 \backslash
 nameref{sec:Lecture-de-listes-de-mots}).
  Cet exercice est un peu plus difficile que la plupart des autres, aussi
@@ -85718,7 +85737,7 @@ string:
 
 \end_inset
 
- structures de données – choix
+ structures de données — choix
 \end_layout
 
 \begin_layout Standard
