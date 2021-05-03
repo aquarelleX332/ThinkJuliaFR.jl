@@ -52863,7 +52863,7 @@ tableau, dimension
 \end_layout
 
 \begin_layout Section
-Les tableaux sont non-persistants
+Les tableaux sont non persistants
 \end_layout
 
 \begin_layout Standard
@@ -53071,7 +53071,7 @@ julia>
 \end_layout
 
 \begin_layout Standard
-Contrairement aux chaînes, les tableaux sont non-persitents (c'est-à-dire
+Contrairement aux chaînes, les tableaux sont non persistants (c'est-à-dire
  qu'ils sont modifiables).
  Lorsque l'opérateur 
 \color blue
@@ -53643,7 +53643,7 @@ end
 \end_layout
 
 \begin_layout Standard
-Cela ne fonctionne bien que quand où il suffit de lire les éléments du tableau.
+Cela ne fonctionne bien que quand il suffit de lire les éléments du tableau.
  S'il est nécessaire d'en ajouter, d'en retirer ou d'en mettre à jour, il
  faut manipuler les indices.
  Une façon courante de procéder repose sur l'usage de la fonction interne
@@ -58086,9 +58086,7 @@ mapping
 \end_layout
 
 \begin_layout Section
-Syntaxe avec 
-\emph on
-dots
+Syntaxe avec points
 \end_layout
 
 \begin_layout Standard
@@ -58117,15 +58115,7 @@ distributivement
 \color blue
 [1, 2, 3] .^ 3
 \color inherit
- (attention à l'espace avant 
-\color blue
-
-\begin_inset space ~
-\end_inset
-
-.^
-\color inherit
-) est défini comme le calcul du résultat élément par élément
+ est défini comme le calcul du résultat élément par élément
 \color blue
  [1^3, 2^3, 3^3]
 \color inherit
@@ -60938,7 +60928,7 @@ objet, structure de données
 \end_layout
 
 \begin_layout Standard
-Si les déclarations d'affectation sont effectuées telles que:
+Si les déclarations d'affectation sont effectuées ainsi:
 \end_layout
 
 \begin_layout Standard
@@ -61062,7 +61052,15 @@ name "fig:a-et-b-pointent-vers-2-objets"
 
 \end_inset
 
-a et b pointent vers 2 objets différents.
+
+\color blue
+a
+\color inherit
+ et 
+\color blue
+b
+\color inherit
+ pointent vers deux objets différents.
 \end_layout
 
 \end_inset
@@ -61103,7 +61101,15 @@ name "fig:a-et-b-pointent-vers-le-même-objet"
 
 \end_inset
 
-a et b pointent vers le même objet.
+
+\color blue
+a
+\color inherit
+ et 
+\color blue
+b
+\color inherit
+ pointent vers le même objet.
 \end_layout
 
 \end_inset
@@ -61537,14 +61543,17 @@ Diagramme d'état pour 2 tableaux équivalents mais non-identiques.
 \end_layout
 
 \begin_layout Standard
-Si deux objets sont identiques, ils sont forcément équivalents, mais s'ils
+Si deux objets sont identiques, ils sont forcément équivalents, mais, s'ils
  sont équivalents, ils ne sont pas nécessairement identiques.
 \end_layout
 
 \begin_layout Standard
 Pour être précis, un objet a une valeur.
- Si nous évaluons [1, 2, 3], nous obtenons un tableau d'objets dont la valeur
- est une séquence d'entiers.
+ Si nous évaluons 
+\color blue
+[1, 2, 3]
+\color inherit
+, nous obtenons un tableau d'objets dont la valeur est une séquence d'entiers.
  Si un autre tableau a les mêmes éléments, on dit qu'il a la même valeur,
  mais il ne s'agit pas du même objet.
 \end_layout
@@ -61755,7 +61764,11 @@ true
 \end_layout
 
 \begin_layout Standard
-Le diagramme d'état lié à cette situation est donné à la figure 
+Le diagramme d'état lié à cette situation est donné à la figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Diagramme-d'état-pour-2-alias"
@@ -61994,7 +62007,11 @@ En revanche, pour les objets persistants comme les chaînes de caractères,
 aliasing
 \emph default
  ne constitue pas un véritable problème.
- Dans cet exemple (qui se réfère à la sous-figure 
+ Dans cet exemple (qui se réfère à la sous-figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:a-et-b-pointent-vers-2-objets"
@@ -62082,12 +62099,12 @@ b
 \end_layout
 
 \begin_layout Section
-Les tableaux en tant qu'argument
+Tableaux en tant qu'argument
 \end_layout
 
 \begin_layout Standard
 Lorsqu'un tableau est passé en argument à une fonction, la fonction acquiert
- une référence au tableau puisqu'elle y accède.
+ une référence au tableau, puisqu'elle y accède.
  Si la fonction modifie le tableau, l'appelant perçoit le changement.
  Par exemple, 
 \color blue
@@ -62605,7 +62622,7 @@ letters
 \color blue
  t
 \color inherit
-, les 2 variables (l'une globale,
+, les deux variables (l'une globale,
 \color blue
  letters
 \color inherit
@@ -64115,7 +64132,7 @@ Débogage
 \end_layout
 
 \begin_layout Standard
-Une utilisation imprudente des tableaux (et des autres objets non persitants)
+Une utilisation imprudente des tableaux (et des autres objets non persistants)
  peut entraîner de longues heures de débogage.
  Voici quelques pièges courants et les moyens de les éviter:
 \begin_inset Index idx
@@ -64132,12 +64149,9 @@ debogage@débogage
 
 \begin_layout Itemize
 La plupart des fonctions agissant sur les tableaux modifient ces derniers.
- Ceci 
-\emph on
-a contrario 
-\emph default
-des fonctions traitant les chaînes de caractères, qui retournent une nouvelle
- chaîne de caractères et laissent l'original intact.
+ Cette caractéristique les oppose aux fonctions traitant les chaînes de
+ caractères, qui retournent une nouvelle chaîne de caractères et laissent
+ l'original intact.
 \begin_inset Newline newline
 \end_inset
 
@@ -64356,7 +64370,7 @@ string!
 \color blue
 delete_at
 \color inherit
-, ou même l'affectation d'un segment extrait du tableau.
+ ou même l'affectation d'un segment extrait du tableau.
  Pour ajouter un élément, il est possible de tirer parti de 
 \color blue
 push
@@ -65185,12 +65199,8 @@ tableau
 \begin_inset space ~
 \end_inset
 
-
-\emph on
-item
-\emph default
-) une des valeurs d'un tableau (ou de toute autre séquence, comme une matrice,
- par exemple).
+item) une des valeurs d'un tableau (ou de toute autre séquence, comme une
+ matrice).
  
 \begin_inset Index idx
 status open
@@ -65566,8 +65576,8 @@ delimiteur@délimiteur
 Exercices
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 10-1
 \end_layout
 
 \begin_layout Standard
@@ -65661,14 +65671,14 @@ julia>
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Exercice11-15-2"
 
 \end_inset
 
-Exercice
+Exercice 10-2
 \end_layout
 
 \begin_layout Standard
@@ -65685,7 +65695,7 @@ cumulsum
 \begin_inset script superscript
 
 \begin_layout Plain Layout
-ème
+ième
 \end_layout
 
 \end_inset
@@ -65783,8 +65793,8 @@ julia>
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 10-3
 \end_layout
 
 \begin_layout Standard
@@ -65878,8 +65888,8 @@ julia>
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 10-4
 \end_layout
 
 \begin_layout Standard
@@ -65901,7 +65911,7 @@ string!
 
 \color inherit
  qui prend un tableau, le modifie en supprimant le premier et le dernier
- élément, et retourne 
+ élément, puis retourne 
 \color blue
 nothing
 \color inherit
@@ -65999,8 +66009,8 @@ julia>
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 10-5
 \end_layout
 
 \begin_layout Standard
@@ -66148,8 +66158,8 @@ false
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 10-6
 \end_layout
 
 \begin_layout Standard
@@ -66157,7 +66167,7 @@ Deux mots sont des anagrammes si vous pouvez réarranger les lettres de l'un
  pour écrire l'autre.
  Écrivez une fonction appelée 
 \color blue
-isanagramme
+isanagram
 \color inherit
  qui prend deux chaînes de caractères et qui retourne 
 \color blue
@@ -66179,7 +66189,7 @@ anagramme
 status open
 
 \begin_layout Plain Layout
-isanagramme
+isanagram
 \end_layout
 
 \end_inset
@@ -66187,14 +66197,14 @@ isanagramme
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Exercice-11-15-7-hasduplicates1"
 
 \end_inset
 
-Exercice
+Exercice 10-7
 \end_layout
 
 \begin_layout Standard
@@ -66221,8 +66231,8 @@ hasduplicates
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 10-8
 \end_layout
 
 \begin_layout Standard
@@ -66303,8 +66313,8 @@ end{tip}
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 10-9
 \end_layout
 
 \begin_layout Standard
@@ -66348,19 +66358,19 @@ t = [t..., x]
  Laquelle prend le plus de temps à exécuter? Pourquoi? 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Exercice-11-15-10"
 
 \end_inset
 
-Exercice
+Exercice 10-10
 \end_layout
 
 \begin_layout Standard
 Pour vérifier si un mot se trouve dans le tableau de mots, vous pourriez
- utiliser l'opérateur ∈, mais ce serait lent car ce dernier recherche les
+ utiliser l'opérateur ∈, mais ce serait lent, car ce dernier recherche les
  mots dans l'ordre.
  
 \begin_inset ERT
@@ -66402,7 +66412,11 @@ recherche binaire
 
 \end_inset
 
-, voir la section 
+, voir la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Débogage-8-8"
@@ -66423,8 +66437,12 @@ noprefix "false"
 
 \begin_layout Standard
 Dans les deux cas, vous réduisez de moitié l'espace de recherche restant.
- Si le tableau contient 336.531 mots, il faudra environ 19 étapes pour trouver
- le mot ou conclure qu'il n'y est pas.
+ Si le tableau contient 336
+\begin_inset space ~
+\end_inset
+
+531 mots, il faudra environ 19 étapes pour trouver le mot ou conclure qu'il
+ n'y est pas.
 \end_layout
 
 \begin_layout Standard
@@ -66453,8 +66471,8 @@ inbisect
  
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 10-11
 \end_layout
 
 \begin_layout Standard
@@ -66485,8 +66503,8 @@ reversepairs
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 10-12
 \end_layout
 
 \begin_layout Standard
