@@ -41234,11 +41234,29 @@ retourne la partie de la chaîne du
 \color blue
 n
 \color inherit
--ième au 
+
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+ième
+\end_layout
+
+\end_inset
+
+ au 
 \color blue
 m
 \color inherit
--ième octet.
+
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+ième
+\end_layout
+
+\end_inset
+
+ octet.
  Il faut donc faire preuve de la même prudence que lors de la manipulation
  d'indices simples.
 \begin_inset Index idx
@@ -47753,7 +47771,11 @@ literal "false"
 
 \end_inset
 
- 
+
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-8"
@@ -47762,7 +47784,11 @@ literal "false"
 \end_inset
 
 .
- Il s'agit d'une liste de 336.531 mots encodés en UTF-8.
+ Il s'agit d'une liste de 336
+\begin_inset space ~
+\end_inset
+
+531 mots encodés en UTF-8.
  Un navigateur comme Firefox permet d'enregistrer directement ce fichier
  sous le nom 
 \color blue
@@ -47990,7 +48016,11 @@ julia>
 \end_layout
 
 \begin_layout Standard
-Le premier mot de cette liste est "a" (conjugaison du verbe 
+Le premier mot de cette liste est 
+\color blue
+"a"
+\color inherit
+ (conjugaison du verbe 
 \begin_inset Quotes cld
 \end_inset
 
@@ -48002,8 +48032,8 @@ avoir
 \end_layout
 
 \begin_layout Standard
-Le flux de fichiers garde une trace de l'endroit où il s'est arrêté.
- Si bien qu'appeler à nouveau 
+Le flux de fichiers garde une trace de l'endroit où il s'est arrêté, si
+ bien qu'appeler à nouveau 
 \color blue
 readline
 \color inherit
@@ -48064,7 +48094,7 @@ Parce que le fichier peut être parcouru dans une boucle
 \color blue
  for
 \color inherit
- ce programme lit le fichier 
+, ce programme lit le fichier 
 \color blue
 mots_FR.txt
 \color inherit
@@ -48167,8 +48197,8 @@ name "sec:Exercices_10-2"
 Exercices
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 9-1
 \end_layout
 
 \begin_layout Standard
@@ -48179,8 +48209,8 @@ mots_FR.txt
  et n'imprime que les mots de plus de 20 caractères (sans compter les espaces).
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 9-2
 \end_layout
 
 \begin_layout Standard
@@ -48292,8 +48322,8 @@ e
  et calculez-en le pourcentage sur la liste.
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 9-3
 \end_layout
 
 \begin_layout Standard
@@ -48327,8 +48357,8 @@ Modifiez votre programme pour demander à l'utilisateur d'entrer une chaîne
  le plus petit nombre de mots?
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 9-4
 \end_layout
 
 \begin_layout Standard
@@ -48366,8 +48396,8 @@ useonly
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 9-5
 \end_layout
 
 \begin_layout Standard
@@ -48392,8 +48422,8 @@ aeiouy
 ? 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 9-6
 \end_layout
 
 \begin_layout Standard
@@ -48441,7 +48471,11 @@ Recherche
 \end_layout
 
 \begin_layout Standard
-Tous les exercices de la section 
+Tous les exercices de la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Exercices_10-2"
@@ -48453,7 +48487,11 @@ noprefix "false"
 
  présentent un point commun.
  Ils peuvent être résolus avec le modèle de recherche dans les chaînes (voir
- la section 
+ la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Recherche-dans-les-chaines"
@@ -48850,7 +48888,7 @@ La fonction
 \color blue
 hasno_e
 \color inherit
- bien qu'elle présente la même structure: 
+, bien qu'elle présente la même structure: 
 \begin_inset Index ind
 status open
 
@@ -49828,7 +49866,11 @@ Boucles sur les indices
 \end_layout
 
 \begin_layout Standard
-Les fonctions de la section 
+Les fonctions de la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Recherche-10-3"
@@ -50389,7 +50431,7 @@ end
 \end_layout
 
 \begin_layout Standard
-Une autre possiblité consiste à faire appel à la récursion:
+Une autre possibilité consiste à faire appel à la récursion:
 \end_layout
 
 \begin_layout Standard
@@ -51084,11 +51126,11 @@ end
 \begin_layout Standard
 La boucle commence à 
 \color blue
-i=1
+i = 1
 \color inherit
  et 
 \color blue
-j=nextind(word, 1)
+j = nextind(word, 1)
 \color inherit
 .
  Elle se termine lorsque 
@@ -51104,7 +51146,7 @@ i
 \begin_inset script superscript
 
 \begin_layout Plain Layout
-ème
+ième
 \end_layout
 
 \end_inset
@@ -51117,7 +51159,7 @@ j
 \begin_inset script superscript
 
 \begin_layout Plain Layout
-ème
+ième
 \end_layout
 
 \end_inset
@@ -51634,7 +51676,11 @@ La fonction
 \color blue
 isreverse
 \color inherit
- a étudiée à la section 
+ a étudiée à la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Débogage-9-13"
@@ -51663,9 +51709,9 @@ Débogage
 
 \begin_layout Standard
 Tester des programmes est une tâche complexe.
- Les fonctions présentées dans ce chapitre sont relativement faciles à tester
+ Les fonctions présentées dans ce chapitre sont relativement faciles à tester,
  car les résultats sont vérifiables manuellement.
- Nonobstant cela, il est difficile –voire impossible– de choisir un ensemble
+ Nonobstant cela, il est difficile — voire impossible — de choisir un ensemble
  de mots qui permettent de tester toutes les erreurs possibles.
  
 \begin_inset Index idx
@@ -51736,16 +51782,18 @@ En plus des situations de test à traiter manuellement, tester le programme
  En analysant la sortie, il est peut-être possible de détecter des erreurs.
  Attention, toutefois: on court toujours le risque de détecter un type d'erreur
  (des mots qui ne devraient pas être inclus, mais qui le sont) et inversement
- (des mots qui devraient être inclus et qui...
- ne le sont pas).
+ (des mots qui devraient être inclus et qui… ne le sont pas).
 \end_layout
 
 \begin_layout Standard
 En général, les tests contribuent à trouver des bogues.
  En tout état de cause, il n'est guère facile de produire un bon ensemble
  de tests.
- Même dans ce cas, personne ne peut être sûr à 100% que le programme est
- correct.
+ Même dans ce cas, personne ne peut être sûr à 100
+\begin_inset space ~
+\end_inset
+
+% que le programme est correct.
  Selon le célèbre informaticien 
 \begin_inset CommandInset href
 LatexCommand href
@@ -51905,8 +51953,8 @@ cas atypique
 Exercices
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 9-7
 \end_layout
 
 \begin_layout Standard
@@ -51967,7 +52015,7 @@ Mississippi
 
 : M-i-s-s-i-s-s-i-p-p-i.
  Si vous pouviez enlever ces i, ce serait parfait.
- Pourtant il existe un mot qui a trois paires de lettres consécutives et,
+ Pourtant, il existe un mot qui a trois paires de lettres consécutives et,
  à ma connaissance, c'est peut-être le seul mot.
  Bien sûr, il y en a probablement 500 autres, mais je n'en connais qu'un
  seul.
@@ -51984,8 +52032,8 @@ Mississippi
 Écrivez un programme qui résout ce problème.
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 9-8
 \end_layout
 
 \begin_layout Standard
@@ -52018,11 +52066,11 @@ Car Talk
 
 \emph on
 L'autre jour, je conduisais sur l'autoroute et, par hasard, j'ai jeté un
- coup d'oeil à mon compteur kilométrique.
+ coup d'œil à mon compteur kilométrique.
  Comme la plupart des odomètres, il affiche six chiffres, en kilomètres
  entiers seulement.
- Ainsi, si ma voiture avait par exemple fait 300.000 miles, je verrais 3-0-0-0-0-
-0.
+ Ainsi, si ma voiture avait par exemple fait 300 000 miles, je verrais 3-0-0-0-0
+-0.
 \end_layout
 
 \begin_layout Standard
@@ -52032,7 +52080,7 @@ Ce que j'ai vu ce jour-là était très intéressant.
  J'ai remarqué que les quatre derniers chiffres étaient palindromiques,
  c'est-à-dire qu'ils lisaient de la même façon en avant et en arrière.
  Par exemple, 5-4-4-5 est un palindrome.
- Donc, mon odomètre aurait pu lire 3-1-5-4-4-5.
+ Donc, mon odomètre aurait pu afficher 3-1-5-4-4-5.
 \end_layout
 
 \begin_layout Standard
@@ -52062,8 +52110,8 @@ Rédigez un programme Julia qui teste tous les nombres à six chiffres et
  qui affiche tous les nombres répondant aux exigences du casse-tête.
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 9-9
 \end_layout
 
 \begin_layout Standard
