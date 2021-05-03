@@ -66942,10 +66942,14 @@ string;
 
 \begin_layout Standard
 Cette ligne crée un élément qui relie la clé 
-\color black
+\color blue
 "one"
 \color inherit
- à la valeur "un".
+ à la valeur 
+\color blue
+"un"
+\color inherit
+.
  À nouveau affiché, le dictionnaire montre une paire clé-valeur.
  La clé est connectée à la valeur par une flèche 
 \color blue
@@ -67217,7 +67221,11 @@ string:
 \end_layout
 
 \begin_layout Standard
-La figure 
+La figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Représentation-du-dictionnaire-eng2fr"
@@ -67875,7 +67883,11 @@ L'opérateur
  utilise des algorithmes différents selon que sont traités des tableaux
  ou des dictionnaires.
  Pour les tableaux, il recherche les éléments dans l'ordre, comme dans la
- section 
+ section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Recherche-dans-les-chaines"
@@ -67933,7 +67945,7 @@ name "sec:Les-dictionnaires-collections-compteurs"
 
 \end_inset
 
-Les dictionnaires en tant que collections de compteurs
+Dictionnaires en tant que collections de compteurs
 \end_layout
 
 \begin_layout Standard
@@ -69623,7 +69635,7 @@ textquotesingle
 else
 \color inherit
  et l'affichage devient 11111ω.
- Il est maintenant clair qu'à la fin, nous devons obtenir un affichage tel
+ Il est maintenant clair qu'à la fin nous devons obtenir un affichage tel
  que 11111ω111ω1.
  
 \end_layout
@@ -70812,7 +70824,7 @@ textquotesingle
 \emph on
 In fine
 \emph default
- l'état du dictionnaire est tel que:
+, l'état du dictionnaire est tel que:
 \end_layout
 
 \begin_layout Standard
@@ -72371,8 +72383,8 @@ textquotesingle
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 11-1
 \end_layout
 
 \begin_layout Standard
@@ -72850,7 +72862,7 @@ t
 
 \begin_layout Standard
 Là encore, les clés ne sont pas dans un ordre particulier.
- Pour parcourir les clés dans l'ordre dans l'ordre alphabétique, une combinaison
+ Pour parcourir les clés dans l'ordre dans l'ordre alphabétique, la combinaison
  des fonctions 
 \color blue
 sort
@@ -72859,7 +72871,7 @@ sort
 \color blue
 collect
 \color inherit
- est pratique:
+ se révèle pratique:
 \begin_inset Index idx
 status open
 
@@ -73294,7 +73306,11 @@ v
 
 \begin_layout Enumerate
 premièrement, il peut y avoir plus d'une clé qui correspond à la valeur
- v (par exemple, dans le cas du tableau 
+ 
+\color blue
+v
+\color inherit
+ (par exemple, dans le cas du tableau 
 \color blue
 d
 \color inherit
@@ -74064,7 +74080,11 @@ fréquence
 
 \end_inset
 
- (voir section 
+ (voir section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Les-dictionnaires-collections-compteurs"
@@ -74104,7 +74124,11 @@ dictionnaire inversé
 \end_layout
 
 \begin_layout Standard
-La figure 
+La figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Inversion-de-dictionnaire-avec-tableaux"
@@ -75183,7 +75207,11 @@ textquotesingle
 \end_layout
 
 \begin_layout Standard
-La figure 
+La figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Diagramme-d'état-pour-hist-et-inverse"
@@ -75298,7 +75326,7 @@ begin{tip2}
 
 \begin_layout Plain Layout
 
-Dans la section 
+Dans la section~
 \backslash
 nameref{sec:Un-dictionnaire-est-un-mapping}, il a été mentionné qu'un dictionnai
 re est implémenté à l'aide d'une table de hachage et cela signifie que les
@@ -75379,7 +75407,11 @@ fibonacci
 \end_layout
 
 \begin_layout Standard
-Pour comprendre pourquoi, considérons la figure 
+Pour comprendre pourquoi, considérons la figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Graphe-d'appel-associé-fibonacci"
@@ -75494,7 +75526,7 @@ fibonacci
 \end_layout
 
 \begin_layout Standard
-Un graphique d'appel comporte un ensemble de cadres associés à une (ou des)
+Un graphe d'appel comporte un ensemble de cadres associés à une (ou des)
  fonction(s), avec des flèches reliant chaque cadre aux cadres des fonctions
  qu'il appelle.
  En haut du graphique, 
@@ -75521,7 +75553,11 @@ n = 2
 \color blue
 fibonacci
 \color inherit
- avec n = 3 appelle 
+ avec 
+\color blue
+n = 3
+\color inherit
+ appelle 
 \color blue
 fibonacci
 \color inherit
@@ -75856,6 +75892,7 @@ Main
 \color black
 globales
 \emph default
+,
 \color inherit
  car elles sont accessibles depuis n'importe quelle fonction.
  Contrairement aux variables locales qui disparaissent lorsque leur fonction
@@ -76415,7 +76452,7 @@ been_called
 \end_inset
 
 .
- Ainsi, quand à l'intérieur de la fonction, 
+ Ainsi, quand, à l'intérieur de la fonction, 
 \color blue
 true
 \color inherit
@@ -77182,9 +77219,9 @@ réduire la taille de l'entrée:
 
 Si possible, réduire la taille du jeu de données.
  Par exemple, si un programme lit un fichier texte, on peut commencer par
- les 10 premières lignes, voire –si c'est possible avec le plus petit échantillo
-n sur lequel des erreurs sont identifiables.
- Il est fortement conseillé de ne pas éditer les fichiers eux-mêmes mais
+ les 10 premières lignes, voire — si c'est possible — avec le plus petit
+ échantillon sur lequel des erreurs sont identifiables.
+ Il est fortement conseillé de ne pas éditer les fichiers eux-mêmes, mais
  plutôt de modifier le programme afin qu'il ne lise que les 
 \emph on
 n
@@ -77229,7 +77266,7 @@ rédigez des vérifications automatiques:
 \begin_inset Newline newline
 \end_inset
 
-Parfois, il est habille d'écrire un peu de code pour vérifier automatiquement
+Parfois, il est habile d'écrire un peu de code pour vérifier automatiquement
  la présence d'erreurs.
  Par exemple, si la moyenne d'un tableau de nombres est calculée, on peut
  aisément vérifier que le résultat n'est pas supérieur au plus grand élément
@@ -77265,7 +77302,11 @@ formater les messages émis:
 \end_inset
 
 Le formatage des messages de débogage peut aider à repérer une erreur.
- Nous en avons vu un exemple dans la section 
+ Nous en avons vu un exemple dans la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Débogage-Chap-7"
@@ -77857,14 +77898,14 @@ constante globale
 Exercices
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Exercice-12-10-1"
 
 \end_inset
 
-Exercice
+Exercice 11-2
 \end_layout
 
 \begin_layout Standard
@@ -77900,8 +77941,8 @@ noprefix "false"
  par rapport à la recherche par bissection.
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 11-3
 \end_layout
 
 \begin_layout Standard
@@ -77958,8 +77999,8 @@ invertdict
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 11-4
 \end_layout
 
 \begin_layout Standard
@@ -77986,12 +78027,16 @@ noprefix "false"
  
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 11-5
 \end_layout
 
 \begin_layout Standard
-Si vous avez résolu l'exercice 
+Si vous avez résolu l'exercice
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Exercice-11-15-7-hasduplicates1"
@@ -78032,8 +78077,8 @@ hasduplicates
  
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 11-6
 \end_layout
 
 \begin_layout Standard
@@ -78046,7 +78091,10 @@ paires de rotation
 \end_inset
 
  si vous pouvez faire tourner l'un d'eux et obtenir l'autre (voir l'exercice
- 
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Exercice-9-15-5-rotatewords1"
@@ -78065,8 +78113,8 @@ noprefix "false"
  
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 11-7
 \end_layout
 
 \begin_layout Standard
@@ -78254,11 +78302,7 @@ end{tip}
 \end_layout
 
 \begin_layout Standard
-Écrivez un programme qui pourrait afficher tous les termes de 
-\color blue
-mots_FR.txt
-\color inherit
- résolvant l'énigme.
+Écrivez un programme qui pourrait afficher tous les termes résolvant l'énigme.
 \end_layout
 
 \begin_layout Standard
