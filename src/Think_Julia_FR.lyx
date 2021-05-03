@@ -38814,7 +38814,7 @@ données, structure de
 
 \end_inset
 
- (comme les tableaux (
+ (comme les tableaux [
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "chap:Tableaux"
@@ -38824,7 +38824,7 @@ noprefix "false"
 
 \end_inset
 
-), les dictionnaires (
+], les dictionnaires [
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "chap:Dictionnaires"
@@ -38834,7 +38834,7 @@ noprefix "false"
 
 \end_inset
 
-), les tuples (
+], les tuples [
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "chap:Tuples"
@@ -38844,7 +38844,7 @@ noprefix "false"
 
 \end_inset
 
-) et les structures composites (
+] et les structures composites [
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "chap:Structures-et-fonctions"
@@ -38854,7 +38854,7 @@ noprefix "false"
 
 \end_inset
 
- et suivants)).
+ et suivants]).
  Une chaîne est une séquence
 \begin_inset Index idx
 status open
@@ -38867,7 +38867,7 @@ sequence@séquence
 
 , ce qui signifie qu'elle forme un ensemble ordonné de valeurs.
  Dans ce chapitre, nous voyons comment accéder aux caractères qui composent
- une chaîne, et nous découvrirons certaines fonctions d'aide fournies par
+ une chaîne et nous découvrirons certaines fonctions d'aide fournies par
  Julia afin de manipuler des chaînes.
  
 \end_layout
@@ -38884,7 +38884,7 @@ Caractères
 
 \begin_layout Standard
 Les locuteurs de langue anglaise sont familiarisés avec les caractères tels
- que les lettres de l'alphabet (A, B, C, ...), les chiffres et la ponctuation
+ que les lettres de l'alphabet (A, B, C…), les chiffres et la ponctuation
  courante.
  Ces caractères
 \begin_inset Index idx
@@ -39258,7 +39258,7 @@ emoji
 
 \end_inset
 
- font partie de la norme Unicode (exemple
+ font partie de la norme Unicode (par exemple,
 \begin_inset space ~
 \end_inset
 
@@ -40338,7 +40338,7 @@ julia>
 \begin_inset script superscript
 
 \begin_layout Plain Layout
-ème
+e
 \end_layout
 
 \end_inset
@@ -40350,7 +40350,7 @@ fruit
  est un ESPACE.
  Cela signifie également que l'indice de chaque octet dans une chaîne UTF-8
  n'est pas nécessairement l'indice valide pour un caractère.
- Si un tel indice d'octet non-valide était utilisé dans une chaîne, Julia
+ Si un tel indice d'octet invalide était utilisé dans une chaîne, Julia
  afficherait une erreur:
 \end_layout
 
@@ -40485,7 +40485,7 @@ nextind()
 \end_layout
 
 \begin_layout Section
-Parcourir une chaîne
+Parcours d'une chaîne
 \end_layout
 
 \begin_layout Standard
@@ -40493,7 +40493,7 @@ De nombreux programmes requièrent le traitement en série d'une ou plusieurs
  chaînes de caractères.
  Souvent, ces traitements commencent au tout début.
  Ils sélectionnent chaque caractère à tour de rôle, effectuent une ou plusieurs
- modifications puis, continuent jusqu'à la fin de la chaîne.
+ modifications, puis continuent jusqu'à la fin de la chaîne.
  Ce type de traitement correspond à une traversée
 \begin_inset Index idx
 status open
@@ -40685,7 +40685,11 @@ global
 \color blue
  Main
 \color inherit
- (voir la section 
+ (voir la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Variables-globales"
@@ -40729,8 +40733,8 @@ firstindex
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 8-1
 \end_layout
 
 \begin_layout Standard
@@ -40832,8 +40836,8 @@ letter
 \end_layout
 
 \begin_layout Standard
-L'exemple suivant montre comment utiliser la concaténation (mise bout à
- bout de plusieurs chaînes de caractères) et une boucle
+L'exemple suivant montre l'utilisation de la concaténation (mise bout à
+ bout de plusieurs chaînes de caractères) et d'une boucle
 \color blue
  for
 \color inherit
@@ -40860,7 +40864,7 @@ literal "true"
 
 \end_inset
 
- (dont la traduction en français a pour titre: 
+ (dont la traduction en français a pour titre 
 \begin_inset CommandInset href
 LatexCommand href
 name "\\textit{Laissez passer les canards}"
@@ -41054,12 +41058,12 @@ Qack
 \end_layout
 
 \begin_layout Standard
-Ce retour est toutefois incorrect puisque Ouack et Quack ne sont pas correctemen
-t écrits.
+Ce retour est toutefois incorrect, puisque Ouack et Quack ne sont pas correcteme
+nt écrits.
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 8-2
 \end_layout
 
 \begin_layout Standard
@@ -41235,7 +41239,7 @@ n
 m
 \color inherit
 -ième octet.
- Il faut donc faire preuve de la même prudence que pour lors de la manipulation
+ Il faut donc faire preuve de la même prudence que lors de la manipulation
  d'indices simples.
 \begin_inset Index idx
 status open
@@ -41408,8 +41412,8 @@ Une chaîne vide ne contient aucun caractère et a une longueur égale à 0.
  Mis à part cela, ses caractéristiques sont identiques à toute autre chaîne.
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 8-3
 \end_layout
 
 \begin_layout Standard
@@ -41681,7 +41685,7 @@ nt64)
 La raison de cette erreur provient de ce que les chaînes de caractères sont
  persistantes ou inchangeables (
 \emph on
-immutables
+immutable
 \emph default
  en anglais).
 \begin_inset Index idx
@@ -41730,7 +41734,11 @@ immuabilité
 \color green
 julia> 
 \color black
-salut = J * salut[2
+salut = 
+\color inherit
+"J"
+\color black
+ * salut[2
 \begin_inset ERT
 status open
 
@@ -41846,8 +41854,11 @@ Interpolation des chaînes
 \begin_layout Standard
 Construire des chaînes de caractères en utilisant la concaténation peut
  devenir rapidement ardu.
- Pour réduire la nécessité de ces appels verbeux à des multiplications de
- chaînes ou répétées, Julia autorise l'
+ Pour réduire la nécessité de ces appels verbeux à 
+\color blue
+string
+\color inherit
+ ou des multiplications de chaînes, Julia autorise l'
 \emph on
 interpolation de chaînes
 \emph default
@@ -42034,7 +42045,7 @@ concaténation
 
  de chaînes: 
 \color blue
-salut
+salut1
 \begin_inset space ~
 \end_inset
 
@@ -42066,7 +42077,9 @@ a_qui
 \begin_inset space ~
 \end_inset
 
-!
+!"
+\color inherit
+.
 \end_layout
 
 \begin_layout Standard
@@ -42081,11 +42094,11 @@ $
 status open
 
 \begin_layout Plain Layout
-similairement à ce qui se pratique dans le shell 
+Comme ce qui se pratique dans le shell 
 \color blue
-bash 
+bash
 \color black
-par exemple.
+, par exemple.
 \end_layout
 
 \end_inset
@@ -42570,8 +42583,8 @@ recherche
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 8-4
 \end_layout
 
 \begin_layout Standard
@@ -42735,7 +42748,11 @@ textquotesingle
 \begin_inset space ~
 \end_inset
 
-global counter = counter + 1
+
+\color green
+global
+\color inherit
+ counter = counter + 1
 \end_layout
 
 \begin_layout Plain Layout
@@ -42832,14 +42849,14 @@ incrémentation
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Exercice-count"
 
 \end_inset
 
-Exercice
+Exercice 8-5
 \end_layout
 
 \begin_layout Standard
@@ -42847,7 +42864,7 @@ Encapsulez le code précédent dans une fonction appelée
 \color blue
 count
 \color inherit
-, et généralisez-le pour qu'il accepte la chaîne et la lettre comme arguments.
+ et généralisez-le pour qu'il accepte la chaîne et la lettre comme arguments.
 \begin_inset Index ind
 status open
 
@@ -42861,7 +42878,7 @@ count
 \end_layout
 
 \begin_layout Standard
-Ensuite, réécrivez la fonction de sorte qu'au lieu de parcourir la chaîne
+Ensuite, réécrivez la fonction de sorte que, au lieu de parcourir la chaîne
  de caractères, 
 \color blue
 count
@@ -43676,7 +43693,7 @@ Avec des noms de variables bien choisis, Julia se lit parfois comme du français
 \end_inset
 
 pour (chaque) lettre du (premier) mot, si (la) lettre est un élément du
- (deuxième) mot, affichez (la-dite) lettre
+ (deuxième) mot, affichez (ladite) lettre
 \begin_inset Quotes crd
 \end_inset
 
@@ -43912,11 +43929,11 @@ if
 
 println(
 \color brown
-"Le mot, 
+"Le mot 
 \color violet
 $word
 \color brown
-, vient avant thermodynamique."
+ vient avant thermodynamique."
 \color inherit
 )
 \end_layout
@@ -43952,11 +43969,11 @@ elseif
 
 println(
 \color brown
-"Le mot, 
+"Le mot 
 \color violet
 $word
 \color brown
-, vient après thermodynamique."
+ vient après thermodynamique."
 \color inherit
 )
 \end_layout
@@ -44019,7 +44036,8 @@ end
 
 \begin_layout Standard
 Julia ne gère pas les lettres majuscules et minuscules comme nous le faisons.
- Toutes les lettres majuscules passent avant les minuscules, donc:
+ Toutes les lettres majuscules passent avant les minuscules, le résultat
+ est donc:
 \end_layout
 
 \begin_layout Standard
@@ -44753,7 +44771,7 @@ stop
  true
 \color inherit
 .
- ce n'est pourtant pas le cas:
+ Ce n'est pourtant pas le cas:
 \end_layout
 
 \begin_layout Standard
@@ -44856,36 +44874,12 @@ while
 \begin_inset space ~
 \end_inset
 
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
 j = prevind(word2, j)
 \end_layout
 
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -44911,22 +44905,6 @@ j = prevind(word2, j)
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -45279,8 +45257,8 @@ pots
  
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 8-6
 \end_layout
 
 \begin_layout Standard
@@ -45572,14 +45550,14 @@ compteur
 Exercices
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Exercice-9-15-1"
 
 \end_inset
 
-Exercice
+Exercice 8-7
 \end_layout
 
 \begin_layout Standard
@@ -45742,7 +45720,7 @@ string
 \color blue
 chars
 \color inherit
- sont obligatoires tandis que 
+ sont obligatoires, tandis que 
 \color blue
 start
 \color inherit
@@ -45780,8 +45758,8 @@ start
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 8-8
 \end_layout
 
 \begin_layout Standard
@@ -45793,7 +45771,11 @@ count
 \color blue
 count
 \color inherit
- de la section 
+ de la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Boucle-et-compteur"
@@ -45803,7 +45785,11 @@ noprefix "false"
 
 \end_inset
 
- (voir en particulier l'exercice 
+ (voir en particulier l'exercice
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Exercice-count"
@@ -45813,7 +45799,11 @@ noprefix "false"
 
 \end_inset
 
- et la section 
+ et la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Documentation-interne"
@@ -45869,8 +45859,8 @@ count(), documentation
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 8-9
 \end_layout
 
 \begin_layout Standard
@@ -46051,8 +46041,8 @@ ispalindrome
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 8-10
 \end_layout
 
 \begin_layout Standard
@@ -47304,14 +47294,14 @@ end
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Exercice-9-15-5-rotatewords1"
 
 \end_inset
 
-Exercice
+Exercice 8-11
 \end_layout
 
 \begin_layout Standard
@@ -47471,7 +47461,7 @@ begin{tip}
 
 Vous pouvez utiliser la fonction intégrée 
 \backslash
-textcolor{blue}{Int}, qui convertit un caractère en un code numérique et
+textcolor{blue}{Int}, qui convertit un caractère en un code numérique, et
  
 \backslash
 textcolor{blue}{Char}, qui convertit les valeurs numériques en caractères.
