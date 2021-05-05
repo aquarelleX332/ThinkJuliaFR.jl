@@ -113391,7 +113391,10 @@ Cartes
 \begin_layout Standard
 Dans un paquet, il y a cinquante-deux cartes, chacune appartenant à une
  des quatre couleurs et à un des treize rangs (ou hauteurs, voir l'exercice
- 
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Exercice-18-13-3"
@@ -113546,7 +113549,11 @@ Le symbole
 \end_layout
 
 \begin_layout Standard
-La définition de la struct pour 
+La définition de la 
+\color blue
+struct
+\color inherit
+ pour 
 \color blue
 Carte 
 \color inherit
@@ -113582,7 +113589,10 @@ Carte
 \begin_layout Plain Layout
 
 \size small
-struct Carte 
+\color green
+struct
+\color inherit
+ Carte 
 \end_layout
 
 \begin_layout Plain Layout
@@ -113805,10 +113815,6 @@ Int64
 \end_inset
 
 
-\begin_inset space ~
-\end_inset
-
-
 \color magenta
 @assert
 \color inherit
@@ -113854,10 +113860,6 @@ Int64
 \end_inset
 
 
-\begin_inset space ~
-\end_inset
-
-
 \color magenta
 @assert
 \color inherit
@@ -113871,6 +113873,22 @@ Int64
 \begin_layout Plain Layout
 
 \size small
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset space ~
 \end_inset
 
@@ -114386,7 +114404,7 @@ carte
 \color blue
 noms_rangs
 \color inherit
-, et sélectionner la chaîne appropriée
+ et sélectionner la chaîne appropriée
 \begin_inset Quotes crd
 \end_inset
 
@@ -114667,8 +114685,8 @@ end
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 18-1
 \end_layout
 
 \begin_layout Standard
@@ -114681,7 +114699,7 @@ Exercice
 MyTime
 \color inherit
 .
- Vous pouvez utiliser la comparaison de tuples mais vous pourriez aussi
+ Vous pouvez utiliser la comparaison de tuples, mais vous pourriez aussi
  considérer la comparaison d'entiers.
 \end_layout
 
@@ -114990,7 +115008,10 @@ Paquet
 \begin_layout Plain Layout
 
 \size small
-struct Paquet 
+\color green
+struct
+\color inherit
+ Paquet 
 \end_layout
 
 \begin_layout Plain Layout
@@ -116479,8 +116500,8 @@ end
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 18-2
 \end_layout
 
 \begin_layout Standard
@@ -116541,7 +116562,11 @@ string!
 
 
 \color inherit
- pour trier les cartes dans un Paquet.
+ pour trier les cartes dans un 
+\color blue
+Paquet
+\color inherit
+.
  
 \color blue
 sort
@@ -116663,8 +116688,15 @@ UneMain
 status open
 
 \begin_layout Plain Layout
-En français, nous devons éviter l'usage d'une fonction personnelle Main
- du fait de l'existence de la fonction générale Main.
+En français, nous devons éviter l'usage d'une fonction personnelle 
+\color blue
+Main
+\color inherit
+ du fait de l'existence de la fonction générale 
+\color blue
+Main
+\color inherit
+.
 \end_layout
 
 \end_inset
@@ -116859,7 +116891,10 @@ Paquet
 \begin_layout Plain Layout
 
 \size small
-struct Paquet <
+\color green
+struct
+\color inherit
+ Paquet <
 \begin_inset ERT
 status open
 
@@ -117305,7 +117340,11 @@ julia>
 \color green
 julia>
 \color inherit
- paquet isa EnsembleDeCartes
+ paquet 
+\color green
+isa
+\color inherit
+ EnsembleDeCartes
 \end_layout
 
 \begin_layout Plain Layout
@@ -118550,22 +118589,6 @@ Int)
 \end_inset
 
 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
 \color green
 for
 \color inherit
@@ -118592,22 +118615,6 @@ n
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -118689,22 +118696,6 @@ string!
 \begin_inset space ~
 \end_inset
 
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
 push
 \begin_inset ERT
 status open
@@ -118724,22 +118715,6 @@ string!
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -118842,7 +118817,7 @@ nothing
 
 \begin_layout Standard
 Dans certains jeux, les cartes sont déplacées d'une main à l'autre alors
- que dans d'autres jeux, elles sont échangées depuis une main vers le paquet.
+ que, dans d'autres jeux, elles sont échangées depuis une main vers le paquet.
  La fonction 
 \color blue
 move
@@ -118937,7 +118912,15 @@ Il existe plusieurs catégories de relation entre les types:
 \begin_layout Itemize
 les objets d'un type spécifique peuvent contenir des références à des objets
  d'un autre type.
- Par exemple, chaque Rectangle (voir la section 
+ Par exemple, chaque 
+\color blue
+Rectangle
+\color inherit
+ (voir la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Rectangles"
@@ -118947,9 +118930,20 @@ noprefix "false"
 
 \end_inset
 
-) contient une référence à un Point.
- Dans le présent chapitre, chaque Paquet contient des références à un tableau
- de Cartes.
+) contient une référence à un 
+\color blue
+Point
+\color inherit
+.
+ Dans le présent chapitre, chaque 
+\color blue
+Paquet
+\color inherit
+ contient des références à un tableau de 
+\color blue
+Carte
+\color inherit
+.
  Ce type de relation est appelé 
 \emph on
 HAS-A
@@ -118960,8 +118954,15 @@ HAS-A
 
 
 \emph on
-a Rectangle has a Point
+a 
+\color blue
+Rectangle
+\color inherit
+ has a 
+\color blue
+Point
 \emph default
+\color inherit
 
 \begin_inset Quotes crd
 \end_inset
@@ -118991,8 +118992,14 @@ IS-A
 
 
 \emph on
-UneMain is a kind of EnsembleDeCartes
+\color blue
+UneMain
+\color inherit
+ is a kind of 
+\color blue
+EnsembleDeCartes
 \emph default
+\color inherit
 
 \begin_inset Quotes crd
 \end_inset
@@ -119013,7 +119020,7 @@ relation IS-A
 
 \begin_layout Itemize
 un type peut dépendre d'un autre dans la mesure où les objets d'un type
- prennent les objets du second type comme paramètres ou alors, utilisent
+ prennent les objets du second type comme paramètres ou, alors, utilisent
  les objets du second type dans le cadre d'un calcul.
  Ce type de relation est appelé une 
 \emph on
@@ -119092,7 +119099,11 @@ Diagramme de type et relations entre types.
 \end_layout
 
 \begin_layout Standard
-Dans la figure 
+Dans la figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Diagramme-de-type-et-relation-entre-types"
@@ -119104,11 +119115,15 @@ noprefix "false"
 
 , les flèches à extrémité creuse représentent une relation IS-A.
  Dans le cas présent, elle indique qu'
-\color black
+\color blue
 Unemain
 \color inherit
- et Paquet ont comme supertype 
-\color black
+ et 
+\color blue
+Paquet
+\color inherit
+ ont comme supertype 
+\color blue
 EnsembleDeCartes
 \color inherit
 .
@@ -119138,9 +119153,15 @@ flèche à extrémité pleine
  représentent une relation HAS-A.
  Dans le cas présent,
 \color black
- Paquet
+ 
+\color blue
+Paquet
 \color inherit
- a des références aux objets Carte.
+ a des références aux objets 
+\color blue
+Carte
+\color inherit
+.
 \end_layout
 
 \begin_layout Standard
@@ -119181,7 +119202,19 @@ multiplicité
 
 \end_inset
 
- Elle indique que Paquet ou UneMain possèdent un certain nombre de Cartes.
+ Elle indique que 
+\color blue
+Paquet
+\color inherit
+ ou 
+\color blue
+UneMain
+\color inherit
+ possèdent un certain nombre de 
+\color blue
+Carte
+\color inherit
+.
  La multiplicité peut être un simple nombre (comme 
 \color blue
 52
@@ -119199,7 +119232,11 @@ multiplicité
 
 \color inherit
 ).
- Ce dernier cas indique que Paquet peut avoir un nombre quelconque de Cartes.
+ Ce dernier cas indique que Paquet peut avoir un nombre quelconque de 
+\color blue
+Carte
+\color inherit
+.
 \end_layout
 
 \begin_layout Standard
@@ -119210,9 +119247,16 @@ Il n'y a pas de dépendances dans ce diagramme.
 \end_layout
 
 \begin_layout Standard
-Un diagramme plus détaillé peut montrer qu'un Paquet contient un tableau
- de Cartes, mais les types internes à Julia comme les tableaux et les dictionnai
-res ne sont généralement pas repris dans les diagrammes de types.
+Un diagramme plus détaillé peut montrer qu'un 
+\color blue
+Paquet
+\color inherit
+ contient un tableau de 
+\color blue
+Carte
+\color inherit
+, mais les types internes à Julia comme les tableaux et les dictionnaires
+ ne sont généralement pas repris dans les diagrammes de types.
  
 \end_layout
 
@@ -119260,20 +119304,20 @@ UneMain
 .
  Idéalement, il faudrait qu'elle fonctionne avec toute sorte de type
 \color blue
- UneMain+s
+ UneMain
 \color inherit
 , comme 
 \color blue
-+PokerUneMain+s
+PokerUneMain
 \color inherit
 , 
 \color blue
-+BridgeUneMain+s
+BridgeUneMain
 \color inherit
 , etc.
  Si nous invoquons une méthode comme 
 \color blue
-+sort
+sort
 \begin_inset ERT
 status open
 
@@ -119304,7 +119348,7 @@ sort!
 UneMain
 \color inherit
 .
- Ce comportement est généralement sain mais,
+ Ce comportement est généralement sain, mais,
 \emph on
  a priori
 \emph default
@@ -119660,7 +119704,7 @@ a posteriori
 \color blue
 EnsembleDeCartes
 \color inherit
-), fonctionnera également avec des instances de ses sous-types (comme 
+) fonctionnera également avec des instances de ses sous-types (comme 
 \color blue
 Paquet
 \color inherit
@@ -119786,7 +119830,7 @@ conception orientée type
 \end_inset
 
 .
- Nous avons identifié les objets à traiter – comme 
+ Nous avons identifié les objets à traiter — comme 
 \color blue
 Point
 \color inherit
@@ -119798,7 +119842,7 @@ et
 \color blue
 MyTime
 \color inherit
-– et nous avons défini des structures pour les représenter.
+ — et nous avons défini des structures pour les représenter.
  Dans chaque cas, il existait une correspondance évidente entre l'objet
  et une entité du monde réel (du moins, sa représentation mathématique).
  
@@ -119839,7 +119883,11 @@ encapsulation de données
 \end_layout
 
 \begin_layout Standard
-L'analyse de Markov (section 
+L'analyse de Markov (section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Analyse-de-Markov"
@@ -119890,9 +119938,9 @@ prefix
 \begin_layout Plain Layout
 
 \size small
-suffices=
+suffixes =
 \color brown
-Dict
+ Dict
 \color inherit
 ()
 \end_layout
@@ -119900,7 +119948,7 @@ Dict
 \begin_layout Plain Layout
 
 \size small
-prefix=[]
+prefix = []
 \end_layout
 
 \end_inset
@@ -119963,7 +120011,10 @@ Markov
 \begin_layout Plain Layout
 
 \size small
-struct Markov 
+\color green
+struct
+\color inherit
+ Markov 
 \end_layout
 
 \begin_layout Plain Layout
@@ -120651,8 +120702,8 @@ end
 \end_layout
 
 \begin_layout Standard
-La transformation conduisant à un programme comme celui-ci – à savoir, changer
- la conception sans modifier le comportement– constitue un autre exemple
+La transformation conduisant à un programme comme celui-ci — à savoir, changer
+ la conception sans modifier le comportement — constitue un autre exemple
  de refonte
 \begin_inset Index idx
 status open
@@ -120663,7 +120714,11 @@ refonte
 
 \end_inset
 
- (voir la section 
+ (voir la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Refonte-(ou-refactoring)"
@@ -120700,8 +120755,8 @@ transformer les fonctions associées en méthodes avec comme argument les
  objets du nouveau type.
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 18-3
 \end_layout
 
 \begin_layout Standard
@@ -120990,13 +121045,13 @@ données, encapsulation de
 Exercices
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 18-4
 \end_layout
 
 \begin_layout Standard
-Pour le programme suivant, dessinez un diagramme de types qui décr ces types
- et les relations entre eux.
+Pour le programme suivant, dessinez un diagramme de types qui décrit ces
+ types et les relations entre eux.
 \begin_inset Index ind
 status open
 
@@ -121053,7 +121108,13 @@ end
 \end_layout
 
 \begin_layout Plain Layout
-struct Ping <
+
+\size small
+\color green
+struct
+\size default
+\color inherit
+ Ping <
 \begin_inset ERT
 status open
 
@@ -121128,7 +121189,13 @@ end
 \end_layout
 
 \begin_layout Plain Layout
-struct Pong <
+
+\size small
+\color green
+struct
+\size default
+\color inherit
+ Pong <
 \begin_inset ERT
 status open
 
@@ -121435,8 +121502,8 @@ addping(pong, ping)
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 18-5
 \end_layout
 
 \begin_layout Standard
@@ -121471,7 +121538,11 @@ ad hoc
 UneMain
 \color inherit
 , distribuer le nombre approprié de cartes par main et retourner un tableau
- de +Main+s.
+ de 
+\color blue
+UneMain
+\color inherit
+.
  
 \begin_inset Index ind
 status open
@@ -121498,18 +121569,18 @@ string!
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Exercice-18-13-3"
 
 \end_inset
 
-Exercice
+Exercice 18-6
 \end_layout
 
 \begin_layout Standard
-Voici les mains possibles au poker (avec 5 cartes), par ordre décroissant
+Voici les mains possibles au poker (avec cinq cartes), par ordre décroissant
  de valeur et par ordre croissant de probabilité (voir le 
 \begin_inset CommandInset href
 LatexCommand href
@@ -121527,12 +121598,12 @@ Quinte
 \begin_inset space ~
 \end_inset
 
-Flush
+flush
 \begin_inset space ~
 \end_inset
 
-Royale il s'agit d'une suite de la même couleur (♠, ♥, ♦, ou ♣) allant du
- 10 à l'as .
+royale il s'agit d'une suite de la même couleur (♠, ♥, ♦, ou ♣) allant du
+ 10 à l'as.
  C'est la combinaison la plus forte au poker et d'une grande rareté.
  Par exemple: A♥, R♥, D♥, V♥, 10♥.
 \end_layout
@@ -121542,18 +121613,18 @@ Quinte
 \begin_inset space ~
 \end_inset
 
-Flush toute quinte de la même couleur (♠, ♥, ♦, ou ♣) inférieure à la quinte
+flush toute quinte de la même couleur (♠, ♥, ♦, ou ♣) inférieure à la quinte
  flush royale.
  Par exemple: 9♠, 8♠, 7♠, 6♠, 5♠.
 \end_layout
 
 \begin_layout Description
-Carré toute combinaison de 4 cartes identiques de même rang.
+Carré toute combinaison de quatre cartes identiques de même rang.
  Si deux joueurs ont le même carré en même temps (ce qui veut dire que le
  carré est déjà sur la table), c'est le joueur avec la plus forte carte
- en mains (le Kicker) qui remporte le pot.
+ en main (le kicker) qui remporte le pot.
  Si la cinquième plus forte carte possible est aussi la cinquième du tapis,
- il y a égalité, et le pot est partagé.
+ il y a égalité et le pot est partagé.
  Par exemple: 4♠, 4♥, 4♦, 4♣, R♥.
 \end_layout
 
@@ -121562,7 +121633,7 @@ Full
 \begin_inset space ~
 \end_inset
 
-House un Full House (
+house un full house (
 \begin_inset Quotes cld
 \end_inset
 
@@ -121570,10 +121641,10 @@ main pleine
 \begin_inset Quotes crd
 \end_inset
 
- en français) est l'association d'un Brelan et d'une Paire, c'est à dire
- 3 cartes identiques de n'importe quelle couleur et 2 autres cartes identiques
- à côté.
- On évalue toujours la force du Brelan en premier pour comparer deux Full.
+ en français) est l'association d'un brelan et d'une paire, c'est à dire
+ trois cartes identiques de n'importe quelle couleur et deux autres cartes
+ identiques à côté.
+ On évalue toujours la force du brelan en premier pour comparer deux full.
  Par exemple: A♥, A♠, A♣, R♠, R♥.
 \end_layout
 
@@ -121582,7 +121653,7 @@ Couleur
 \begin_inset space ~
 \end_inset
 
-(Flush
+(flush
 \begin_inset space ~
 \end_inset
 
@@ -121590,8 +121661,8 @@ en
 \begin_inset space ~
 \end_inset
 
-anglais) toute combinaison de 5 cartes de la même couleur (qui ne se suivent
- pas, sinon c'est une quinte flush).
+anglais) toute combinaison de cinq cartes de la même couleur (qui ne se
+ suivent pas, sinon c'est une quinte flush).
  La carte la plus haute de la couleur détermine sa force.
  L'exemple montre une 
 \begin_inset Quotes cld
@@ -121603,12 +121674,12 @@ couleur hauteur as
 
 , la plus forte couleur possible.
  Si deux joueurs ont une couleur de la même hauteur, on compare alors leur
- deuxième carte de la couleur la plus forte, et ainsi de suite.
+ deuxième carte de la couleur la plus forte et ainsi de suite.
  Exemple: A♠, 10♠, 7♠, 6♠, 2♠.
 \end_layout
 
 \begin_layout Description
-Quinte suite de 5 cartes consécutives qui ne sont pas toutes de la même
+Quinte suite de cinq cartes consécutives qui ne sont pas toutes de la même
  couleur.
  Les as peuvent tout autant compter pour une quinte basse (A-2-3-4-5) qu'on
  appelle aussi la roue, ou pour une quinte haute (10-V-D-R-A).
@@ -121617,8 +121688,8 @@ Quinte suite de 5 cartes consécutives qui ne sont pas toutes de la même
 \end_layout
 
 \begin_layout Description
-Brelan 3 cartes identiques.
- L'exemple montre un Brelan d'as, avec un roi et une dame en kickers (cartes
+Brelan trois cartes identiques.
+ L'exemple montre un brelan d'as, avec un roi et une dame en kickers (cartes
  accompagnantes), soit le meilleur brelan possible: A♥, A♠, A♣, R♠, D♥.
 \end_layout
 
@@ -121627,7 +121698,7 @@ Double
 \begin_inset space ~
 \end_inset
 
-paire 2 cartes identiques, accompagnées de 2 autres cartes identiques.
+paire deux cartes identiques, accompagnées de deux autres cartes identiques.
  L'exemple montre la meilleure combinaison de deux paires possible, une
  double paire as – rois.
  Lorsqu'on compare une double paire, on commence toujours par la paire la
@@ -121637,7 +121708,7 @@ paire 2 cartes identiques, accompagnées de 2 autres cartes identiques.
 \end_layout
 
 \begin_layout Description
-Paire 2 cartes de rang identique.
+Paire deux cartes de rang identique.
  L'exemple montre la meilleure main possible à une paire: A♥, A♣, R♥, D♠,
  V♦.
  
@@ -121645,13 +121716,13 @@ Paire 2 cartes de rang identique.
 
 \begin_layout Description
 Hauteur toute main qui ne possède aucune des combinaisons citées ci-dessus.
- Dans ce cas on évalue la main par rapport à sa carte la plus forte.
+ Dans ce cas, on évalue la main par rapport à sa carte la plus forte.
  Par exemple, une main R-V-9-4-2 (qui ne sont pas de la même couleur) est
  une 
 \begin_inset Quotes cld
 \end_inset
 
-Hauteur roi
+hauteur roi
 \begin_inset Quotes crd
 \end_inset
 
@@ -121700,7 +121771,7 @@ mains
 \begin_inset Quotes crd
 \end_inset
 
- qui contiennent un nombre quelconque de cartes (bien que 5 et 7 soient
+ qui contiennent un nombre quelconque de cartes (bien que cinq et sept soient
  les configurations les plus courantes).
 \begin_inset Index ind
 status open
@@ -121735,7 +121806,7 @@ classify
  label
 \color inherit
  en conséquence.
- Par exemple, si une main de 7 cartes contenait une 
+ Par exemple, si une main de sept cartes contenait une 
 \begin_inset Quotes cld
 \end_inset
 
@@ -121807,10 +121878,6 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -121818,7 +121885,7 @@ literal "false"
 \end_layout
 
 \begin_layout Chapter
-Bonus: À propos de la syntaxe
+Bonus: à propos de la syntaxe
 \end_layout
 
 \begin_layout Standard
