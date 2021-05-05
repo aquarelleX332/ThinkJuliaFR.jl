@@ -12532,7 +12532,7 @@ des fonctions bien conçues sont souvent utiles pour de nombreux programmes.
 \end_layout
 
 \begin_layout Itemize
-en Julia, les fonctions améliorent considérablement les performances.
+en Julia, les fonctions améliorent considérablement la performance.
  
 \end_layout
 
@@ -74020,7 +74020,7 @@ begin{tip3}
 
 Une recherche inverse est beaucoup plus lente qu'une recherche classique.
  S'il est nécessaire d'y recourir souvent, ou si le dictionnaire est de
- grande taille, les performances du programme en souffriront.
+ grande taille, la performance du programme en souffrira.
 \end_layout
 
 \begin_layout Plain Layout
@@ -85689,7 +85689,7 @@ item la chaîne vide peut être additionnée au dictionnaire,
 
 
 \backslash
-item pour améliorer les performances de votre programme, vous pouvez utiliser
+item pour améliorer la performance de votre programme, vous pouvez utiliser
  un 
 \backslash
 guillemotleft~mémo ~
@@ -121889,7 +121889,7 @@ Bonus: à propos de la syntaxe
 \end_layout
 
 \begin_layout Standard
-Un des objectifs de ce livre a été d'apprendre l'essentiel de Julia.
+Un des objectifs de ce livre a été d'enseigner l'essentiel de Julia.
  Lorsque deux façons de procéder coexistaient, l'une a été choisie tout
  en évitant de mentionner l'autre.
  Parfois, la seconde méthode faisait partie d'un exercice.
@@ -121898,7 +121898,7 @@ Un des objectifs de ce livre a été d'apprendre l'essentiel de Julia.
 \begin_layout Standard
 À présent, revenons sur quelques éléments que nous avons négligés.
  Julia fournit un certain nombre de fonctionnalités pas toujours nécessaires.
- Il est possible d'écrire un bon code sans elles mais leur usage permet
+ Il est possible d'écrire un bon code sans elles, mais leur usage permet
  parfois d'écrire un code plus concis, plus lisible, plus efficace.
  Ces trois qualités peuvent même se conjuguer.
 \end_layout
@@ -122045,11 +122045,11 @@ julia>
 
 \begin_layout Standard
 Avec les tuples nommés, il devient possible d'accéder aux champs par leur
- nom en utilisant la syntaxe par point 
+ nom en utilisant la syntaxe par point (
 \color blue
-(x.a)
+x.a
 \color inherit
-.
+).
  
 \end_layout
 
@@ -122119,7 +122119,7 @@ Fonctions anonymes
 \end_layout
 
 \begin_layout Standard
-Une fonction peut être définie de manière non-nominative: 
+Une fonction peut être définie de manière non nominative: 
 \begin_inset Index idx
 status open
 
@@ -122407,7 +122407,11 @@ julia>
 \end_layout
 
 \begin_layout Standard
-La figure 
+La figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Graphique-fct-anonyme-Plots"
@@ -122704,7 +122708,7 @@ string:
 
 \begin_layout Standard
 Les arguments nommés dans une fonction sont spécifiés après un point-virgule
- dans la signature mais peuvent être appelés avec une virgule.
+ dans la signature, mais peuvent être appelés avec une virgule.
  
 \end_layout
 
@@ -122841,8 +122845,11 @@ Dans cet exemple, la fonction
 \color blue
 foo
 \color inherit
- retourne une fonction anonyme qui a accès à l'argument x de la fonction
- 
+ retourne une fonction anonyme qui a accès à l'argument 
+\color blue
+x
+\color inherit
+ de la fonction 
 \color blue
 foo
 \color inherit
@@ -123099,7 +123106,8 @@ Dans cet exemple, la macro
 \color magenta
 @svg
 \color inherit
- possède un seul argument, c'est-à-dire un bloc regroupant 3 appels de fonction.
+ possède un seul argument, c'est-à-dire un bloc regroupant trois appels
+ de fonction.
  
 \begin_inset ERT
 status open
@@ -124291,7 +124299,11 @@ opérateur ternaire
 
 est une alternative à une déclaration 
 \color blue
-if-elseif
+if
+\color inherit
+-
+\color blue
+elseif
 \color inherit
  lorsqu'un choix entre plusieurs valeurs d'une seule expression s'avère
  nécessaire.
@@ -125635,7 +125647,10 @@ type spécifique
 \begin_layout Plain Layout
 
 \size small
-primitive 
+\color green
+primitive
+\color inherit
+ 
 \color green
 type
 \color inherit
@@ -125668,7 +125683,10 @@ end
 \begin_layout Plain Layout
 
 \size small
-primitive 
+\color green
+primitive
+\color inherit
+ 
 \color green
 type
 \color inherit
@@ -125703,7 +125721,10 @@ end
 \begin_layout Plain Layout
 
 \size small
-primitive 
+\color green
+primitive
+\color inherit
+ 
 \color green
 type
 \color inherit
@@ -125724,7 +125745,11 @@ string:
 
 \end_inset
 
- AbstractChar 32 
+ 
+\color brown
+AbstractChar
+\color inherit
+ 32 
 \color green
 end 
 \end_layout
@@ -125732,7 +125757,10 @@ end
 \begin_layout Plain Layout
 
 \size small
-primitive 
+\color green
+primitive
+\color inherit
+ 
 \color green
 type
 \color inherit
@@ -125931,7 +125959,7 @@ La fonction
 \color blue
 reinterpret
 \color inherit
- sert à enregistrer les bits d'un entier non signé de 8 bits (
+ sert à enregistrer les bits d'un entier non signé de huit bits (
 \color blue
 UInt8
 \color inherit
@@ -126012,7 +126040,10 @@ es:
 \begin_layout Plain Layout
 
 \size small
-struct Point{T<
+\color green
+struct
+\color inherit
+ Point{T<
 \begin_inset ERT
 status open
 
@@ -126446,7 +126477,7 @@ string:
 \end_layout
 
 \begin_layout Standard
-Julia permet à ses utilisateurs de tirer parti des unions car un code efficace
+Julia permet à ses utilisateurs de tirer parti des unions, car un code efficace
  est produit en terme d'utilisation de la mémoire.
  L’accès aux champs d’une union est simplifié lorsque l'union est rendue
  
@@ -126671,7 +126702,10 @@ objet appelable
 \begin_layout Plain Layout
 
 \size small
-struct Polynomial{R} 
+\color green
+struct
+\color inherit
+ Polynomial{R} 
 \end_layout
 
 \begin_layout Plain Layout
@@ -127368,7 +127402,10 @@ T
 \begin_layout Plain Layout
 
 \size small
-struct Point{T<
+\color green
+struct
+\color inherit
+ Point{T<
 \begin_inset ERT
 status open
 
@@ -127757,7 +127794,11 @@ La fonction
 \color blue
 promote
 \color inherit
- est traitée dans la sous-section 
+ est traitée dans la sous-section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Promotion"
@@ -128284,12 +128325,12 @@ Float64
 \end_layout
 
 \begin_layout Section
-Méta-programmation
+Métaprogrammation
 \end_layout
 
 \begin_layout Standard
-Le code Julia peut être représenté comme une structure de données de la
- langue elle-même.
+Le code Julia peut être représenté comme une structure de données du langage
+ lui-même.
  Cela permet à un programme de transformer et de produire son propre code.
 \begin_inset Index idx
 status open
@@ -128706,7 +128747,11 @@ La fonction
 \color blue
 dump
 \color inherit
- affiche les objets expr avec des annotations.
+ affiche les objets 
+\color blue
+Expr
+\color inherit
+ avec des annotations.
 \begin_inset Index idx
 status open
 
@@ -128872,14 +128917,16 @@ quote
 \end_inset
 
 
-\color green
+\begin_inset space ~
+\end_inset
+
 
 \begin_inset space ~
 \end_inset
 
+
+\color green
 end
-\color inherit
-;
 \end_layout
 
 \end_inset
@@ -129033,7 +129080,7 @@ macro
 \color blue
 Expr
 \color inherit
- directement à une expression compilée:
+ directement à une expression compilée.
 \begin_inset Index idx
 status open
 
@@ -129230,9 +129277,9 @@ string:
 \begin_layout Standard
 
 \color blue
-@macroexpand @containervariable lettres 1
+@macroexpand @containervariable letters 1
 \color inherit
- retourne cette expression qui est extrêmement utile pour le débogage.
+ retourne cette expression, qui se révèle extrêmement utile pour le débogage.
 \end_layout
 
 \begin_layout Standard
@@ -129455,8 +129502,8 @@ Le corps retourne une expression citée comme une macro.
 \end_layout
 
 \begin_layout Standard
-Pour l'appelant, la fonction générée se comporte comme une fonction régulière
- : 
+Pour l'appelant, la fonction générée se comporte comme une fonction régulière:
+ 
 \end_layout
 
 \begin_layout Standard
@@ -129862,7 +129909,7 @@ Union{Missing, T}
 \color blue
 T
 \color inherit
-, le type des valeurs non manquantes.
+ le type des valeurs non manquantes.
 \end_layout
 
 \begin_layout Standard
@@ -129923,7 +129970,7 @@ missing
 \begin_layout Standard
 Dans ce cas, il convient d'employer la fonction 
 \color blue
-skpmissing
+skipmissing
 \color inherit
  pour passer outre les valeurs manquantes: 
 \begin_inset Index idx
@@ -129988,7 +130035,7 @@ julia>
 \end_layout
 
 \begin_layout Section
-Appel du code C et Fortran
+Appel de code C et Fortran
 \end_layout
 
 \begin_layout Standard
@@ -130231,7 +130278,11 @@ end
 \end_layout
 
 \begin_layout Standard
-Un objet dbm
+Un objet 
+\color blue
+dbm
+\color inherit
+
 \begin_inset Index idx
 status open
 
@@ -130362,7 +130413,7 @@ un tuple des types d'arguments:
 \color blue
 (Ptr{Cvoid},)
 \color inherit
- et
+,
 \end_layout
 
 \begin_layout Itemize
@@ -130684,7 +130735,7 @@ type
 \begin_inset space ~
 \end_inset
 
-paramétrique type qui possède des paramètres (autrement-dit: type paramétré),
+paramétrique type qui possède des paramètres (autrement dit: type paramétré),
  
 \begin_inset Index idx
 status open
@@ -131020,7 +131071,7 @@ noprefix "false"
 status open
 
 \begin_layout Plain Layout
-performances, mesure de
+performance, mesure de
 \end_layout
 
 \end_inset
