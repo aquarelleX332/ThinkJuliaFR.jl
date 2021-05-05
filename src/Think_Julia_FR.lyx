@@ -102194,7 +102194,10 @@ Champs: heure, minute, seconde
 \begin_layout Plain Layout
 
 \size small
-mutable struct MyTime
+\color green
+mutable
+\color inherit
+ struct MyTime
 \end_layout
 
 \begin_layout Plain Layout
@@ -102380,7 +102383,11 @@ objet, diagramme
 
 \end_inset
 
- pour MyTime est représenté à la figure 
+ pour MyTime est représenté à la figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Diagramme-d'objet-associé-MyTime"
@@ -102441,8 +102448,8 @@ MyTime
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 16-1
 \end_layout
 
 \begin_layout Standard
@@ -102533,8 +102540,8 @@ index{
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 16-2
 \end_layout
 
 \begin_layout Standard
@@ -102603,7 +102610,7 @@ fonction pure
 
 \end_inset
 
- qui ajoutent des valeurs de temps.
+ qui additionnent des valeurs de temps.
  Le but est d'appréhender deux types de fonctions: les fonctions pures et
  les modificateurs.
  Nous verrons également un plan de développement appelé 
@@ -102723,7 +102730,8 @@ MyTime
 \emph on
 fonction pure
 \emph default
- car elle ne modifie aucun des objets qui lui sont transmis en tant qu'arguments.
+, car elle ne modifie aucun des objets qui lui sont transmis en tant qu'argument
+s.
  En outre, elle n'a aucun autre effet (tel l'affichage d'une valeur ou l'obtenti
 on d'une entrée utilisateur) que le renvoi d'une valeur.
 \end_layout
@@ -103415,7 +103423,11 @@ end
 \begin_layout Standard
 Bien que cette fonction soit correcte, elle commence à s'allonger significativem
 ent.
- Ultérieurement (section 
+ Ultérieurement (section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Prototypage-ou-planification?"
@@ -103887,8 +103899,8 @@ programmation fonctionnelle
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 16-3
 \end_layout
 
 \begin_layout Standard
@@ -103922,8 +103934,8 @@ increment!
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 16-4
 \end_layout
 
 \begin_layout Standard
@@ -103985,8 +103997,8 @@ planification
 Cette approche peut être efficace notamment lorsque le programmeur n'a pas
  encore une compréhension approfondie du problème.
  Ceci étant, les corrections incrémentales peuvent conduire à un code inutilemen
-t compliqué –puisqu'il traite de nombreux cas particuliers– et peu fiable
- –étant donné qu'il est difficile de connaître toutes les erreurs traitées.
+t compliqué — puisqu'il traite de nombreux cas particuliers — et peu fiable
+ — étant donné qu'il est difficile de connaître toutes les erreurs traitées.
 \end_layout
 
 \begin_layout Standard
@@ -104500,8 +104512,7 @@ timetoint
 inttotime
 \color inherit
 ), nous obtiendrions un programme plus court, plus facile à lire et à déboguer
- et...
- plus fiable.
+ et… plus fiable.
 \end_layout
 
 \begin_layout Standard
@@ -104534,8 +104545,8 @@ Ironiquement, le fait de poser un problème sous une forme plus générale
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 16-5
 \end_layout
 
 \begin_layout Standard
@@ -104601,7 +104612,7 @@ minute
 \color blue
 seconde
 \color inherit
- sont comprises entre 0 et 60 (y compris 0 mais pas 60) et si l'attribut
+ sont comprises entre 0 et 60 (y compris 0, mais pas 60) et si l'attribut
  
 \color blue
 heure
@@ -104647,7 +104658,7 @@ De telles exigences sont appelées des
 \emph on
 invariants
 \emph default
- car elles doivent toujours être vraies.
+, car elles doivent toujours être vraies.
  En d'autres termes, si elles ne sont pas vraies, c'est que quelque chose
  dysfonctionne.
 \end_layout
@@ -105146,8 +105157,8 @@ Une macro
 \color blue
 @assert
 \color inherit
- peut être utilisée, telle qu'elle vérifie un invariant donné et émet une
- exception en cas d'échec: 
+ peut être utilisée à la place, afin de vérifier un invariant donné et d'émettre
+ une exception en cas d'échec: 
 \begin_inset ERT
 status open
 
@@ -105320,8 +105331,8 @@ Les macros
 \color blue
 @assert
 \color inherit
- sont utiles car elles permettent de distinguer le code qui traite des condition
-s normales de celui qui vérifie les erreurs.
+ sont utiles, car elles permettent de distinguer le code qui traite des
+ conditions normales de celui qui vérifie les erreurs.
 \begin_inset Index ind
 status open
 
@@ -105450,8 +105461,8 @@ invariant
 Exercices
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 16-6
 \end_layout
 
 \begin_layout Standard
@@ -105503,8 +105514,8 @@ MyTime
  
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 16-7
 \end_layout
 
 \begin_layout Standard
@@ -105516,11 +105527,11 @@ temps
 \begin_inset Quotes crd
 \end_inset
 
- similaires à ceux de 
+ similaires à 
 \color blue
 MyTime
 \color inherit
- vu dans ce chapitre.
+, développé dans ce chapitre.
  Toutefois, ils offrent un riche ensemble de fonctions et d'opérateurs.
  Lisez la documentation à l'adresse 
 \begin_inset CommandInset href
@@ -105532,7 +105543,11 @@ literal "false"
 \end_inset
 
 .
- À l'usage: using Dates.
+ À l'usage: 
+\color blue
+using Dates
+\color inherit
+.
 \end_layout
 
 \begin_layout Enumerate
