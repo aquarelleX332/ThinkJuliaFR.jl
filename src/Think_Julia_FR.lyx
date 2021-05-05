@@ -98172,7 +98172,10 @@ end
 \begin_layout Plain Layout
 
 \size small
-struct Point
+\color green
+struct
+\color inherit
+ Point
 \end_layout
 
 \begin_layout Plain Layout
@@ -98293,7 +98296,7 @@ structure, champ
 
 \begin_layout Standard
 Une structure fonctionne comme une usine créant des objets.
- Pour créer un point, vous appelez 
+ Pour créer un point, on peut appeler 
 \color blue
 Point
 \color inherit
@@ -98412,7 +98415,7 @@ instance
 
  Lorsqu'une instance est affichée, Julia indique à quel type elle appartient
  et quelles sont les valeurs des attributs.
- Chaque objet est une instance d'un certain type, donc les termes 
+ Chaque objet est une instance d'un certain type, les termes 
 \begin_inset Quotes cld
 \end_inset
 
@@ -98428,7 +98431,7 @@ instance
 \begin_inset Quotes crd
 \end_inset
 
- sont interchangeables.
+ sont donc interchangeables.
 \begin_inset Index idx
 status open
 
@@ -98438,7 +98441,7 @@ objet et instance
 
 \end_inset
 
- Cependant, dans ce chapitre, nous utilisons le terme 
+ Cependant, dans ce chapitre, le terme 
 \begin_inset Quotes cld
 \end_inset
 
@@ -98446,12 +98449,16 @@ instance
 \begin_inset Quotes crd
 \end_inset
 
- pour désigner un type défini par le programmeur.
+ sera utilisé pour désigner un type défini par le programmeur.
 \end_layout
 
 \begin_layout Standard
 Un diagramme d'état qui rend compte d'un objet et de ses champs est appelé
- un diagramme d'objet (voir la figure 
+ un diagramme d'objet (voir la figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Diagramme-d'objet-pour-Point-et-ses-attributs"
@@ -98515,7 +98522,11 @@ name "fig:Diagramme-d'objet-pour-Point-et-ses-attributs"
 
 \end_inset
 
-Diagramme d'objet pour le type Point avec la valeur de ses attributs.
+Diagramme d'objet pour le type 
+\color blue
+Point
+\color inherit
+ avec la valeur de ses attributs.
 \end_layout
 
 \end_inset
@@ -98633,7 +98644,15 @@ p.x
 \begin_inset Quotes cld
 \end_inset
 
-Allez à l'objet auquel p se réfère et extrayez la valeur de x
+Allez à l'objet auquel 
+\color blue
+p
+\color inherit
+ se réfère et extrayez la valeur de 
+\color blue
+x
+\color inherit
+
 \begin_inset Quotes crd
 \end_inset
 
@@ -98837,7 +98856,11 @@ constructeur
 
 \end_inset
 
- du type (voir la section 
+ du type (voir la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Constructeurs"
@@ -98865,7 +98888,7 @@ objet persistant
 \end_layout
 
 \begin_layout Section
-Structures non-persistantes
+Structures non persistantes
 \end_layout
 
 \begin_layout Standard
@@ -98875,7 +98898,11 @@ S'il y échet, des types composites non persistants peuvent être déclarés
 mutable struct
 \color inherit
 .
- Voici la définition d'un point modifiable (MPoint pour 
+ Voici la définition d'un point modifiable (
+\color blue
+MPoint
+\color inherit
+ pour 
 \begin_inset Quotes cld
 \end_inset
 
@@ -98925,7 +98952,10 @@ mutabilité
 \begin_layout Plain Layout
 
 \size small
-mutable struct MPoint
+\color green
+mutable struct
+\color inherit
+ MPoint
 \end_layout
 
 \begin_layout Plain Layout
@@ -99180,7 +99210,10 @@ champs: largeur, hauteur, coin.
 \begin_layout Plain Layout
 
 \size small
-struct Rectangle 
+\color green
+struct
+\color inherit
+ Rectangle 
 \end_layout
 
 \begin_layout Plain Layout
@@ -99279,11 +99312,11 @@ largeur
 \color blue
 hauteur
 \color inherit
- sont des nombres tandis que 
+ sont des nombres, tandis que 
 \color blue
 coin
 \color inherit
- (qui requiert 2 coordonnées) est un objet 
+ (qui requiert deux coordonnées) est un objet 
 \color blue
 Point
 \color inherit
@@ -99404,7 +99437,11 @@ objet, diagramme
 
 \end_inset
 
- (voir la figure 
+ (voir la figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Diagramme-d'objet-pour-objet-Rectangle"
@@ -99511,7 +99548,7 @@ Rectangle
 \end_layout
 
 \begin_layout Section
-Instances en arguments
+Instances en argument
 \end_layout
 
 \begin_layout Standard
@@ -99694,8 +99731,12 @@ julia>
 \end_layout
 
 \begin_layout Standard
-Si un objet struct non persistant est passé à une fonction en tant qu'argument,
- cette fonction peut modifier les champs de l'objet.
+Si un objet 
+\color blue
+struct
+\color inherit
+ non persistant est passé à une fonction en tant qu'argument, cette fonction
+ peut modifier les champs de l'objet.
  Par exemple, 
 \color blue
 movepoint
@@ -99725,7 +99766,7 @@ dx
 \color blue
 dy
 \color inherit
-, et ajoute –respectivement– ces nombres aux attributs 
+, et ajoute — respectivement — ces nombres aux attributs 
 \color blue
 x
 \color inherit
@@ -99999,15 +100040,15 @@ alias
 origine
 \color inherit
 .
- Donc, lorsque la fonction modifie 
+ Par conséquent, lorsque la fonction modifie 
 \color blue
 p
 \color inherit
-, 
+, l'objet 
 \color blue
 origine
 \color inherit
- est affecté.
+ est aussi affecté.
 \end_layout
 
 \begin_layout Standard
@@ -100534,8 +100575,8 @@ end{tip3}
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 15-1
 \end_layout
 
 \begin_layout Standard
@@ -100684,7 +100725,11 @@ et sélectionnez le champ nommé
 \color blue
 coin
 \color inherit
-, puis rendez vous à cet objet et sélectionnez le champ nommé x
+, puis rendez-vous à cet objet et sélectionnez le champ nommé 
+\color blue
+x
+\color inherit
+
 \begin_inset Quotes crd
 \end_inset
 
@@ -100778,8 +100823,9 @@ L'
 \emph on
 aliasing
 \emph default
- peut rendre un programme difficile à lire parce que les modifications apportées
- à un endroit peuvent avoir des effets inattendus ailleurs dans le code.
+ peut rendre un programme difficile à lire, parce que les modifications
+ apportées à un endroit peuvent avoir des effets inattendus ailleurs dans
+ le code.
  Il est difficile de garder une trace de toutes les variables qui pourraient
  se référer à un objet donné.
 \begin_inset Index idx
@@ -100949,8 +100995,8 @@ p2
 true
 \color inherit
 , car ces points contiennent les mêmes données.
- Dans ce cas, il faut être attentif au fait que pour les objets non persistants,
- le comportement par défaut de l'opérateur 
+ Dans ce cas, il faut être attentif au fait que, pour les objets non persistants
+, le comportement par défaut de l'opérateur 
 \color blue
 ==
 \color inherit
@@ -100964,7 +101010,7 @@ true
 ==
 \color inherit
  vérifie l'identité de l'objet et non son équivalence.
- C'est parce que pour les types composites non persistants, Julia ne sait
+ C'est parce que, pour les types composites non persistants, Julia ne sait
  pas ce qui doit être considéré comme équivalent (du moins, pas encore).
  
 \begin_inset ERT
@@ -100994,8 +101040,8 @@ status open
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 15-2
 \end_layout
 
 \begin_layout Standard
@@ -101336,7 +101382,11 @@ isa()
 \color green
 julia> 
 \color inherit
-p isa Point
+p 
+\color green
+isa
+\color inherit
+ Point
 \end_layout
 
 \begin_layout Plain Layout
@@ -101581,7 +101631,11 @@ Glossaire
 \end_layout
 
 \begin_layout Description
-struct type composite, 
+
+\color blue
+struct
+\color inherit
+ type composite, 
 \begin_inset Index idx
 status open
 
@@ -101708,8 +101762,8 @@ deep
 
 copy
 \emph default
-) action de copier le contenu d'un objet ainsi que tous les objets qui y
- sont intégrés, et ainsi de suite.
+) action de copier le contenu d'un objet, ainsi que tous les objets qui
+ y sont intégrés, et ainsi de suite.
  La duplication est mise en œuvre par la fonction 
 \color blue
 deepcopy
@@ -101770,8 +101824,8 @@ objet, diagramme
 Exercices
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 15-3
 \end_layout
 
 \begin_layout Enumerate
@@ -101808,7 +101862,7 @@ Instancier un objet
 \color blue
 circle
 \color inherit
- qui représente un cercle dont le centre est à (150, 100) et le rayon =
+ qui représente un cercle dont le centre est à (150, 100) et le rayon vaut
  75.
 \end_layout
 
@@ -101907,8 +101961,8 @@ rectcircleoverlap
  
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 15-4
 \end_layout
 
 \begin_layout Enumerate
@@ -101978,7 +102032,7 @@ Turtle
 \color blue
 Cercle
 \color inherit
- et, qui dessine le cercle.
+ et qui dessine le cercle.
  
 \begin_inset Index ind
 status open
