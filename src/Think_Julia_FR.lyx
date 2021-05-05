@@ -130879,12 +130879,12 @@ name "chap:Bonus:-bibliothèque-de-base-et-standard"
 
 \end_inset
 
-Bonus: Bibliothèque de base et standard
+Bonus: bibliothèque de base et standard
 \end_layout
 
 \begin_layout Standard
-Outre un environnement en développement permanent, Julia est livrée –de
- base– avec de nombreux outils.
+Outre un environnement en développement permanent, Julia est livré — de
+ base — avec de nombreux outils.
  Le module de base contient les fonctions, les types et les macros les plus
  utiles.
  Julia fournit également un grand nombre de modules spécialisés dans sa
@@ -130923,8 +130923,10 @@ Module
 \color inherit
  importe toutes les fonctions, types et macros du 
 \emph on
+\color blue
 Module
 \emph default
+\color inherit
 .
 \end_layout
 
@@ -131037,7 +131039,11 @@ Nous avons vu que certains algorithmes sont plus performants que d'autres.
 \color blue
 fibonacci
 \color inherit
- en section 
+ en section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Mémos"
@@ -131051,7 +131057,11 @@ noprefix "false"
 \color blue
 fib
 \color inherit
- écrite en section 
+ écrite en section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Un-exemple-supplémentaire"
@@ -131234,7 +131244,7 @@ mémo
 \begin_inset Quotes crd
 \end_inset
 
- est effectivement beaucoup plus rapide mais elle requiert davantage de
+ est effectivement beaucoup plus rapide, mais elle requiert davantage de
  mémoire.
 \end_layout
 
@@ -131275,7 +131285,7 @@ begin{tip}
 
 En Julia,  lors de sa première exécution, une fonction  est compilée.
  La comparaison de deux algorithmes requiert que ceux-ci soient implémentés
- en tant que fonctions pour être compilés et, la première fois qu'ils sont
+ en tant que fonctions pour être compilés et la première fois qu'ils sont
  appelés doit être exclue de la mesure de performance, sinon la durée de
  compilation est prise en compte.
  
@@ -131297,7 +131307,7 @@ textcolor{blue}{@btime} qui permet de faire de l'analyse de performance
  de la bonne manière.
  Utilisez-le.
 \backslash
-footnote[1]{Le lecteur consultera la référence 
+footnote[1]{Le lecteur consultera la référence~
 \backslash
 cite{key-10}}.
  
@@ -131328,7 +131338,11 @@ Collections et structures de données
 \end_layout
 
 \begin_layout Standard
-Dans la section 
+Dans la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Soustraction-de-dictionnaires"
@@ -131339,7 +131353,7 @@ noprefix "false"
 \end_inset
 
  (Soustraction de dictionnaires), des dictionnaires ont été utilisés pour
- trouver les mots qui apparaissent dans un document mais pas dans un tableau
+ trouver les mots qui apparaissent dans un document, mais pas dans un tableau
  de mots.
  La fonction que nous avons écrite prend 
 \color blue
@@ -131662,19 +131676,19 @@ nothing
 \end_layout
 
 \begin_layout Standard
-Julia propose un autre type interne appelé un 
+Julia propose un autre type interne appelé 
 \begin_inset Quotes cld
 \end_inset
 
-
-\emph on
-set
-\emph default
-
+ensemble
 \begin_inset Quotes crd
 \end_inset
 
-.
+ (
+\emph on
+set
+\emph default
+).
 \begin_inset Index idx
 status open
 
@@ -131685,29 +131699,15 @@ set
 \end_inset
 
  Ce type se comporte comme un ensemble de clés de dictionnaire sans valeurs.
- L'ajout d'éléments à un 
-\emph on
-set
-\emph default
- est rapide, tout comme la vérification d'appartenance à un 
-\emph on
-set
-\emph default
-.
- Les
-\emph on
- sets
-\emph default
- fournissent des fonctions et des opérateurs pour yeffectuer des opérations
- courantes.
+ L'ajout d'éléments à un ensemble est rapide, tout comme la vérification
+ d'appartenance.
+ Les ensembles fournissent des fonctions et des opérateurs pour y effectuer
+ des opérations courantes.
 \end_layout
 
 \begin_layout Standard
-Par exemple, la soustraction d'un 
-\emph on
-set
-\emph default
- est disponible sous la forme d'une fonction appelée 
+Par exemple, la soustraction d'ensembles est disponible sous la forme d'une
+ fonction appelée 
 \color blue
 setdiff
 \color inherit
@@ -131795,25 +131795,21 @@ end
 \end_layout
 
 \begin_layout Standard
-Le résultat est un 
-\emph on
-set 
-\emph default
-au lieu d'un dictionnaire.
+Le résultat est un ensemble au lieu d'un dictionnaire.
 \end_layout
 
 \begin_layout Standard
 Certains des exercices de ce livre peuvent être réécrits de manière concise
- et efficace avec des 
-\emph on
-sets
-\emph default
-.
+ et efficace avec des ensembles.
  Par exemple, voici une solution pour 
 \color blue
 hasduplicates
 \color inherit
-, de l'exercice 
+, de l'exercice
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Exercice-11-15-7-hasduplicates1"
@@ -132166,11 +132162,7 @@ true
 \end_layout
 
 \begin_layout Standard
-En utilisant des 
-\emph on
-sets
-\emph default
-, la même fonction peut être réécrite comme ceci:
+En utilisant des ensembles, la même fonction peut être réécrite comme ceci:
 \begin_inset Index idx
 status open
 
@@ -132258,25 +132250,17 @@ end
 \end_layout
 
 \begin_layout Standard
-Un élément ne peut apparaître qu'une seule fois dans un 
-\emph on
-set
-\emph default
-.
- Donc si un élément apparaît plus d'une fois dans 
+Un élément ne peut apparaître qu'une seule fois dans un ensemble.
+ Ainsi, si un élément apparaît plus d'une fois dans 
 \color blue
 t
 \color inherit
-, le 
-\emph on
-set
-\emph default
- sera plus petit que 
+, l'ensemble sera plus petit que 
 \color blue
 t
 \color inherit
 .
- S'il n'y a pas de répétitions d'élément(s), l'ensemble aura la même taille
+ S'il n'y a pas de répétitions d'élément, l'ensemble aura la même taille
  que 
 \color blue
 t
@@ -132285,11 +132269,12 @@ t
 \end_layout
 
 \begin_layout Standard
-Nous pouvons également utiliser des 
-\emph on
-sets
-\emph default
- pour faire certains des exercices du chapitre 
+Nous pouvons également utiliser des ensembles pour certains des exercices
+ du chapitre
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Étude-de-cas-Jeux-de-mots"
@@ -132300,11 +132285,15 @@ noprefix "false"
 \end_inset
 
 .
- Par exemple, voici une version d'
+ Par exemple, voici une version de 
 \color blue
 useonly
 \color inherit
- (section 
+ (section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Recherche-10-3"
@@ -132717,15 +132706,8 @@ subseteq
 
 \end_inset
 
- vérifie si un 
-\emph on
-set
-\emph default
- est inclus dans un autre 
-\emph on
-set
-\emph default
-, en ce compris la possibilité qu'ils soient égaux.
+ vérifie si un ensemble est inclus dans un autre, en ce compris la possibilité
+ qu'ils soient égaux.
  Dans ce dernier cas, cela signifie que toutes les lettres de 
 \color blue
 word 
@@ -132738,8 +132720,8 @@ available
  
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 20-1
 \end_layout
 
 \begin_layout Standard
@@ -132747,7 +132729,11 @@ Réécrivez la fonction
 \color blue
 avoids
 \color inherit
- (section 
+ (section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Recherche-10-3"
@@ -132757,11 +132743,7 @@ noprefix "false"
 
 \end_inset
 
-) avec les 
-\emph on
-sets
-\emph default
-.
+) avec les ensembles.
 \begin_inset Index ind
 status open
 
@@ -132808,7 +132790,7 @@ nombre complexe
 \end_layout
 
 \begin_layout Standard
-L'identité d'Euler est vérifiable, 
+L'identité d'Euler est vérifiable: 
 \begin_inset Index idx
 status open
 
@@ -132851,6 +132833,12 @@ julia>
 \end_inset
 
 )+1
+\end_layout
+
+\begin_layout Plain Layout
+
+\color darkgray
+0.0 + 1.2246467991473532e-16im
 \end_layout
 
 \end_inset
@@ -133059,7 +133047,7 @@ point
 \end_inset
 
 .
- Julia permet également de juxtaposer des littéraux numériques avec des
+ Julia permet également de juxtaposer des constantes numériques avec des
  identificateurs sous forme de coefficients comme dans 
 \color blue
 2π
@@ -133093,7 +133081,11 @@ noprefix "false"
 \end_inset
 
 , nous avons mené quelques recherches élémentaires dans les objets de type
- String.
+ 
+\color blue
+String
+\color inherit
+.
  Cependant, Julia gère des expressions rationnelles compatibles avec le
  langage Perl.
  Ceci facilite la recherche de motifs complexes dans les chaînes de caractères.
@@ -133476,11 +133468,19 @@ Dans ce cas, l'interpolation de chaînes n'est pas autorisée.
 match
 \color inherit
  ne retourne rien si le motif (une commande) n'est pas trouvé et retourne
- un objet regexmatch dans le cas contraire.
+ un objet 
+\color blue
+RegexMatch
+\color inherit
+ dans le cas contraire.
 \end_layout
 
 \begin_layout Standard
-Nous pouvons extraire les informations suivantes d'un objet regexmatch:
+Nous pouvons extraire les informations suivantes d'un objet 
+\color blue
+RegexMatch
+\color inherit
+:
 \begin_inset Index idx
 status open
 
@@ -133603,7 +133603,11 @@ Tableaux
 \end_layout
 
 \begin_layout Standard
-Dans le chapitre 
+Dans le chapitre
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Tableaux"
@@ -133613,7 +133617,11 @@ noprefix "false"
 
 \end_inset
 
-, nous avons utilisé l'objet Array (tableau
+, nous avons utilisé l'objet 
+\color blue
+Array
+\color inherit
+ (tableau
 \begin_inset Index idx
 status open
 
@@ -133758,8 +133766,8 @@ Array{Float64,2}
 \end_layout
 
 \begin_layout Standard
-Le type de cette matrice est un tableau à 2 dimensions contenant des nombres
- à virgule flottante.
+Le type de cette matrice est un tableau à deux dimensions contenant des
+ nombres à virgule flottante.
 \end_layout
 
 \begin_layout Standard
@@ -134074,7 +134082,7 @@ textcolor{blue}{s} est une matrice à une ligne, tandis que [
 \begin_inset Quotes crd
 \end_inset
 
-] est une matrice à 1 
+] est une matrice à une 
 \end_layout
 
 \begin_layout Plain Layout
@@ -134690,7 +134698,11 @@ Si ça ressemble à un canard, si ça nage comme un canard et si ça cancane
 \end_layout
 
 \begin_layout Standard
-Dans la section 
+Dans la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Un-exemple-supplémentaire"
@@ -134712,7 +134724,7 @@ n
 \begin_inset script superscript
 
 \begin_layout Plain Layout
-ème
+ième
 \end_layout
 
 \end_inset
@@ -134761,7 +134773,10 @@ Base.iterate
 \begin_layout Plain Layout
 
 \size small
-struct Fibonacci{T
+\color green
+struct
+\color inherit
+ Fibonacci{T
 \color darkgray
 <
 \begin_inset ERT
@@ -135025,7 +135040,7 @@ Real
 \end_layout
 
 \begin_layout Standard
-Nous avons mis en œuvre un type paramétrique sans champs 
+Nous avons mis en œuvre un type paramétrique sans champ 
 \color blue
 Fibonacci
 \color inherit
@@ -135113,9 +135128,9 @@ julia>
 \color inherit
  
 \color green
-for e
+for 
 \color inherit
- 
+e 
 \color green
 in
 \color inherit
@@ -135182,9 +135197,9 @@ Int64
 \begin_inset space ~
 \end_inset
 
-e
+
 \color inherit
- > 100 && 
+e > 100 && 
 \color green
 break
 \color inherit
@@ -135255,9 +135270,9 @@ e
 \begin_inset space ~
 \end_inset
 
-")
+"
 \color inherit
- 
+) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -135587,9 +135602,9 @@ end
 \begin_layout Standard
 C'est là un très bon exemple de la façon dont une interface bien conçue
  permet à une implémentation d'utiliser toutes les fonctions disponibles
- 
+ via
 \emph on
-via 
+ 
 \emph default
 cette interface.
 \end_layout
@@ -135615,7 +135630,11 @@ InteractiveUtils
 
 
 \color inherit
- dans la section 
+ dans la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Débogage-18-10"
