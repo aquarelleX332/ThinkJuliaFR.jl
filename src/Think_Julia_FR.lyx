@@ -91994,7 +91994,11 @@ Lire et écrire
 \begin_layout Standard
 Un fichier texte est une séquence de caractères enregistrée sur un support
  permanent comme un disque dur ou une mémoire flash.
- Nous avons vu comment ouvrir et lire un fichier dans la section 
+ Nous avons vu comment ouvrir et lire un fichier dans la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Lecture-de-listes-de-mots"
@@ -92216,7 +92220,7 @@ La valeur numérique retournée représente le nombre de caractères écrits
  dans le fichier.
  L'objet fichier conserve une trace de l'endroit où il se trouve dans l'arboresc
 ence de l'ordinateur.
- Donc, si elle est à nouveau appelée, la fonction 
+ Par conséquent, si elle est à nouveau appelée, la fonction 
 \color blue
 write
 \color inherit
@@ -92361,11 +92365,7 @@ Formatage
 L'argument en écriture doit impérativement être une chaîne de caractères.
  Ainsi, pour écrire d'autres valeurs, il est nécessaire de les convertir
  en chaînes de caractères.
- Le moyen le plus simple est de procéder 
-\emph on
-via
-\emph default
- l'interpolation de chaînes:
+ Le moyen le plus simple est de procéder via l'interpolation de chaînes:
 \end_layout
 
 \begin_layout Standard
@@ -92651,11 +92651,11 @@ pwd
 status open
 
 \begin_layout Plain Layout
-pwd –
+pwd 
 \emph on
-print working directory
+— print working directory
 \emph default
-– est une commande des systèmes 
+ — est une commande des systèmes 
 \noun on
 Unix
 \noun default
@@ -92812,7 +92812,7 @@ output.txt
 \emph on
 chemin relatif
 \emph default
- car il se rapporte au répertoire courant.
+, car il se rapporte au répertoire courant.
  Si le répertoire courant est 
 \color blue
 /home/aquarelle/Julia\SpecialChar softhyphen
@@ -93501,22 +93501,6 @@ path = joinpath(dirname, name)
 \end_inset
 
 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
 \color green
 if
 \color inherit
@@ -93526,22 +93510,6 @@ if
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -93646,22 +93614,6 @@ println(path)
 \end_inset
 
 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
 \color green
 else
 \end_layout
@@ -93716,44 +93668,12 @@ else
 \begin_inset space ~
 \end_inset
 
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
 walk(path)
 \end_layout
 
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -94391,7 +94311,7 @@ levée d'une exception
 Dans un code qui effectue des changements d'état ou qui utilise des ressources
  telles que des fichiers, un travail de nettoyage (fermeture de fichiers)
  doit généralement être réalisé lorsque le code est terminé.
- Les exceptions compliquent potentiellement cette tâche car elles peuvent
+ Les exceptions compliquent potentiellement cette tâche, car elles peuvent
  provoquer la sortie d'un bloc de code avant d'atteindre sa fin normale.
  Le mot-clé 
 \color blue
@@ -95192,7 +95112,11 @@ serialize
 deserialize
 \color inherit
  contribuent à contourner cette limitation.
- Elles traduisent presque tout type d'objet en un tableau d'octets (iobuffer
+ Elles traduisent presque tout type d'objet en un tableau d'octets (
+\color blue
+IOBuffer
+\color inherit
+
 \begin_inset Foot
 status open
 
@@ -95604,7 +95528,7 @@ deserialize
 \color inherit
  écrivent et lisent un objet
 \color blue
- iobuffer
+ IOBuffer
 \color inherit
  qui représente un flux d'entrées/sorties en mémoire.
  La fonction
@@ -97162,8 +97086,8 @@ linecount(
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 14-1
 \end_layout
 
 \begin_layout Standard
@@ -97171,7 +97095,7 @@ Saisissez cet exemple dans un fichier nommé
 \color blue
 wc.jl,
 \color inherit
- incluez-le dans le REPL et entrer 
+ incluez-le dans le REPL et entrez 
 \color blue
 using LineCount
 \color inherit
@@ -97198,7 +97122,7 @@ begin{tip3}
 
 \begin_layout Plain Layout
 
-Si vous réimportez un module, Julia ne réagira pas et ne relira pas le fichier
+Si vous réimportez un module, Julia ne réagira pas et ne relira pas le fichier,
  même en cas de modification.
  Si vous voulez recharger un module, vous devez redémarrer le REPL.
  Il existe un paquet 
@@ -97231,8 +97155,8 @@ Débogage
 \begin_layout Standard
 Lorsque des fichiers sont utilisés en lecture et en écriture, des problèmes
  d'espacement sont susceptibles d'apparaître.
- Ces erreurs sont souvent difficiles à déboguer car les espaces, les tabulations
- et les nouvelles lignes sont normalement invisibles: 
+ Ces erreurs sont souvent difficiles à déboguer, car les espaces, les tabulation
+s et les nouvelles lignes sont normalement invisibles: 
 \begin_inset Index idx
 status open
 
@@ -97779,7 +97703,7 @@ base de données
 
 \begin_layout Description
 shell programme qui permet aux utilisateurs de saisir des commandes et de
- les exécuter en lançant d'autres programmes (exemples: bash, csh, sh, etc.),
+ les exécuter en lançant d'autres programmes (comme bash, csh, sh),
 \begin_inset Index idx
 status open
 
@@ -97820,8 +97744,8 @@ objet de commande
 Exercices
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 14-2
 \end_layout
 
 \begin_layout Standard
@@ -97850,15 +97774,19 @@ sed
 \begin_layout Standard
 Si une erreur se produit lors de l'ouverture, de la lecture, de l'écriture
  ou de la fermeture d'un fichier, votre programme doit capter l'exception,
- afficher un message d'erreur puis quitter le flux de programmation.
+ afficher un message d'erreur, puis quitter le flux de programmation.
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 14-3
 \end_layout
 
 \begin_layout Standard
-Si vous avez résolu l'exercice 
+Si vous avez résolu l'exercice
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Exercice-13-10-2"
@@ -97868,7 +97796,7 @@ noprefix "false"
 
 \end_inset
 
-, vous savez qu'un dictionnaire est créé qui établit une correspondance
+, vous savez comment créer un dictionnaire qui établit une correspondance
  entre une chaîne de lettres triée et la série de mots pouvant être orthographié
 s avec ces lettres.
  Par exemple, 
@@ -97939,8 +97867,8 @@ readanagrams
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 14-4
 \end_layout
 
 \begin_layout Standard
