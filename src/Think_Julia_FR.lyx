@@ -106689,7 +106689,10 @@ using
 \begin_layout Plain Layout
 
 \size small
-struct MyTime
+\color green
+struct
+\color inherit
+ MyTime
 \end_layout
 
 \begin_layout Plain Layout
@@ -107535,8 +107538,8 @@ Je ne sais pas comment afficher l'argument time.
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 17-1
 \end_layout
 
 \begin_layout Standard
@@ -107758,7 +107761,7 @@ end
 \end_layout
 
 \begin_layout Standard
-À présent, il s'agit d'une fonction pure, et non plus d'un modificateur.
+À présent, il s'agit d'une fonction pure et non plus d'un modificateur.
 \begin_inset Index idx
 status open
 
@@ -107987,7 +107990,7 @@ MyTime)
 \end_layout
 
 \begin_layout Standard
-La signature de la méthode est 
+En effet, la signature de la méthode est 
 \color blue
 increment(time
 \begin_inset ERT
@@ -108111,7 +108114,7 @@ pour agir uniquement sur les objets
 \color blue
 MyTime 
 \color inherit
-est aisé: 
+est tout aussi aisé: 
 \begin_inset Index ind
 status open
 
@@ -108515,7 +108518,11 @@ string:
 
 \end_inset
 
-Int64, minute
+
+\color brown
+Int64
+\color inherit
+, minute
 \begin_inset ERT
 status open
 
@@ -108541,7 +108548,11 @@ string:
 
 \end_inset
 
-Int64, seconde
+
+\color brown
+Int64
+\color inherit
+, seconde
 \begin_inset ERT
 status open
 
@@ -108567,7 +108578,11 @@ string:
 
 \end_inset
 
-Int64)
+
+\color brown
+Int64
+\color inherit
+)
 \end_layout
 
 \end_inset
@@ -108712,7 +108727,7 @@ Cette dernière méthode est appelée
 \emph on
 constructeur de copie
 \emph default
- car le nouvel objet 
+, car le nouvel objet 
 \color blue
 MyTime
 \color inherit
@@ -108776,7 +108791,10 @@ constructeur interne
 \begin_layout Plain Layout
 
 \size small
-struct MyTime 
+\color green
+struct
+\color inherit
+ MyTime 
 \end_layout
 
 \begin_layout Plain Layout
@@ -109171,7 +109189,11 @@ Int64
 \begin_inset space ~
 \end_inset
 
-new(heure, minute, seconde) 
+
+\color green
+new
+\color inherit
+(heure, minute, seconde) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -109226,7 +109248,7 @@ La structure
 \color blue
 MyTime
 \color inherit
- dispose maintenant de 4 méthodes à constructeurs internes:
+ dispose maintenant de quatre méthodes à constructeurs internes:
 \begin_inset Index idx
 status open
 
@@ -109290,7 +109312,11 @@ string:
 
 \end_inset
 
-Int64) 
+
+\color brown
+Int64
+\color inherit
+) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -109322,7 +109348,11 @@ string:
 
 \end_inset
 
-Int64, minute
+
+\color brown
+Int64
+\color inherit
+, minute
 \begin_inset ERT
 status open
 
@@ -109348,7 +109378,11 @@ string:
 
 \end_inset
 
-Int64) 
+
+\color brown
+Int64
+\color inherit
+) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -109380,7 +109414,11 @@ string:
 
 \end_inset
 
-Int64, minute
+
+\color brown
+Int64
+\color inherit
+, minute
 \begin_inset ERT
 status open
 
@@ -109406,7 +109444,11 @@ string:
 
 \end_inset
 
-Int64, seconde
+
+\color brown
+Int64
+\color inherit
+, seconde
 \begin_inset ERT
 status open
 
@@ -109432,7 +109474,11 @@ string:
 
 \end_inset
 
-Int64)
+
+\color brown
+Int64
+\color inherit
+)
 \end_layout
 
 \end_inset
@@ -109552,7 +109598,10 @@ new, méthode sans argument
 \begin_layout Plain Layout
 
 \size small
-mutable struct MyTime 
+\color green
+mutable struct
+\color inherit
+ MyTime 
 \end_layout
 
 \begin_layout Plain Layout
@@ -109754,7 +109803,11 @@ string:
 
 \end_inset
 
-Int64=0, minute
+
+\color brown
+Int64
+\color inherit
+=0, minute
 \begin_inset ERT
 status open
 
@@ -109810,7 +109863,11 @@ string:
 
 \end_inset
 
-Int64=0)
+
+\color brown
+Int64
+\color inherit
+=0)
 \end_layout
 
 \begin_layout Plain Layout
@@ -110138,7 +110195,7 @@ end
 \begin_layout Standard
 Cela permet de construire des structures de données récursives, c'est-à-dire
  une structure dont un des champs est la structure elle-même.
- Dans ce cas, la structure doit être non persistante puisque ses champs
+ Dans ce cas, la structure doit être non persistante, puisque ses champs
  sont modifiés après l'instanciation.
  
 \end_layout
@@ -110469,7 +110526,7 @@ Lorsque nous écrivons un nouveau type composite, il est pertinent:
 
 \begin_layout Itemize
 de commencer presque toujours par écrire un constructeur extérieur (ceci
- facilite l'instanciation des objets) et,
+ facilite l'instanciation des objets),
 \end_layout
 
 \begin_layout Itemize
@@ -110481,8 +110538,8 @@ show
  
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 17-2
 \end_layout
 
 \begin_layout Standard
@@ -111479,8 +111536,8 @@ multiméthode
 
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 17-3
 \end_layout
 
 \begin_layout Standard
@@ -111488,7 +111545,11 @@ Exercice
 \color blue
 +
 \color inherit
- pour les objets point (voir le 
+ pour les objets 
+\color blue
+Point
+\color inherit
+ (voir le 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "chap:Structures-et-objets"
@@ -111503,7 +111564,11 @@ noprefix "false"
 
 \begin_layout Enumerate
 Si les deux opérandes sont des objets point, la méthode doit retourner un
- nouvel objet point dont la coordonnée 
+ nouvel objet 
+\color blue
+Point
+\color inherit
+ dont la coordonnée 
 \color blue
 x
 \color inherit
@@ -111511,8 +111576,7 @@ x
 \color blue
 x
 \color inherit
- des opérandes.
- De même pour les coordonnées 
+ des opérandes, de même pour les coordonnées 
 \color blue
 y
 \color inherit
@@ -111565,7 +111629,11 @@ t correctement pour des arguments de types différents.
 \begin_layout Standard
 De nombreuses fonctions que nous avons écrites pour des chaînes de caractères
  fonctionnent également pour d'autres types de séquences.
- Par exemple, dans la section 
+ Par exemple, dans la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Les-dictionnaires-collections-compteurs"
@@ -112513,7 +112581,7 @@ Interface et implémentation
 \end_layout
 
 \begin_layout Standard
-Un des objectifs du dispacth multiple
+Un des objectifs du dispatch multiple
 \begin_inset Index idx
 status open
 
@@ -113024,17 +113092,17 @@ constructeur par défaut
 \end_layout
 
 \begin_layout Description
-copie
+constructeur
 \begin_inset space ~
 \end_inset
 
-du
+de
 \begin_inset space ~
 \end_inset
 
-constructeur méthode de construction extérieure d'un type avec comme seul
- argument un objet du type.
- Cette méthode crée un nouvel objet, copie de l'argument, 
+copie méthode de construction extérieure d'un type avec comme seul argument
+ un objet du type.
+ Cette méthode crée un nouvel objet, une copie de l'argument, 
 \begin_inset Index idx
 status open
 
@@ -113136,8 +113204,8 @@ généricité
 Exercices
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 17-4
 \end_layout
 
 \begin_layout Standard
@@ -113151,8 +113219,8 @@ MyTime
  fonctionnent avec la nouvelle implémentation.
 \end_layout
 
-\begin_layout Subsection
-Exercice
+\begin_layout Subsection*
+Exercice 17-5
 \end_layout
 
 \begin_layout Standard
