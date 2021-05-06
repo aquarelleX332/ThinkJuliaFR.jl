@@ -8914,7 +8914,7 @@ radians = 0.7
 \begin_layout Plain Layout
 
 \size small
-heigth = sin(radians)
+height = sin(radians)
 \end_layout
 
 \end_inset
@@ -10074,7 +10074,7 @@ Ses fluctuat nec mergitur,
 
 \size small
 \color lightgray
-C’était pas d’la litterature
+C’était pas d’la littérature
 \end_layout
 
 \begin_layout Plain Layout
@@ -10088,7 +10088,7 @@ Ses fluctuat nec mergitur,
 
 \size small
 \color lightgray
-C’était pas d’la litterature
+C’était pas d’la littérature
 \end_layout
 
 \end_inset
@@ -20824,7 +20824,7 @@ letters.jl
 \end_layout
 
 \begin_layout Subsection*
-Exercice 4-11
+Exercice 4-12
 \end_layout
 
 \begin_layout Standard
@@ -24034,7 +24034,7 @@ n
 else
 \color inherit
 ; il affiche la valeur 1 suivie d'un espace.
- Le cycle se prolonge avec un auto-appel de 
+ Le cycle se prolonge avec un autoappel de 
 \color blue
 countdown
 \color inherit
@@ -30355,7 +30355,7 @@ string!
 
 \end_inset
 
- avec 
+, avec 
 \begin_inset ERT
 status open
 
@@ -30368,7 +30368,7 @@ string!
 
 \end_inset
 
-, qui est 2 fois 
+ qui est 2 fois 
 \begin_inset ERT
 status open
 
@@ -30381,7 +30381,7 @@ string!
 
 \end_inset
 
- avec 
+, avec 
 \begin_inset ERT
 status open
 
@@ -32256,7 +32256,20 @@ julia>
 
 \size small
 \color red
-"La factorielle est seulement définie pour les entiers."
+ERROR
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+string:
+\end_layout
+
+\end_inset
+
+ La factorielle est seulement définie pour les entiers.
 \end_layout
 
 \begin_layout Plain Layout
@@ -32285,7 +32298,7 @@ string:
 
 \end_inset
 
- La factoriel n'est pas définie pour les entiers négatifs.
+ La factorielle n'est pas définie pour les entiers négatifs.
 \end_layout
 
 \end_inset
@@ -40377,9 +40390,7 @@ fruits
 \color green
 julia>
 \color inherit
- fruit
-\color black
-s[2]
+ fruits[2]
 \end_layout
 
 \begin_layout Plain Layout
@@ -41878,7 +41889,7 @@ Construire des chaînes de caractères en utilisant la concaténation peut
 \color blue
 string
 \color inherit
- ou des multiplications de chaînes, Julia autorise l'
+ ou à des multiplications de chaînes, Julia autorise l'
 \emph on
 interpolation de chaînes
 \emph default
@@ -44079,7 +44090,7 @@ Julia ne gère pas les lettres majuscules et minuscules comme nous le faisons.
 \begin_layout Plain Layout
 
 \color lightgray
-Le mot, Prigogine, vient avant thermodynamique.
+Le mot Prigogine vient avant thermodynamique.
 \end_layout
 
 \end_inset
@@ -44958,13 +44969,6 @@ string=
 \end_inset
 
  word2[j]
-\end_layout
-
-\begin_layout Plain Layout
-
-\size small
-\color green
-end
 \end_layout
 
 \end_inset
@@ -61527,7 +61531,7 @@ name "fig:Diagramme-d'état-pour-deux-tab-équival-non-identiques"
 
 \end_inset
 
-Diagramme d'état pour 2 tableaux équivalents mais non-identiques.
+Diagramme d'état pour deux tableaux équivalents mais non identiques.
 \end_layout
 
 \end_inset
@@ -70826,7 +70830,7 @@ textquotesingle
 \emph on
 In fine
 \emph default
-, l'état du dictionnaire est tel que:
+, l'état du dictionnaire est
 \end_layout
 
 \begin_layout Standard
@@ -85025,7 +85029,7 @@ erreur de forme
 Exercices
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Exercice 12-2
 \end_layout
 
@@ -118978,7 +118982,7 @@ noprefix "false"
 , les flèches à extrémité creuse représentent une relation IS-A.
  Dans le cas présent, elle indique qu'
 \color blue
-Unemain
+UneMain
 \color inherit
  et 
 \color blue
@@ -139465,8 +139469,8 @@ Si vous souffrez de l'un de ces symptômes, levez-vous et allez faire une
  promenade.
  Lorsque vous reviendrez au calme, pensez au programme.
  Que fait-il? Quelles sont les causes possibles de son comportement? Quand
- avez-vous vu le programme fonctionne correctement la dernière fois, qu'avez-vou
-s fait ensuite?
+ avez-vous vu le programme fonctionner correctement la dernière fois, qu'avez-vo
+us fait ensuite?
 \end_layout
 
 \begin_layout Standard
