@@ -137620,7 +137620,7 @@ string:
 
 \begin_layout Itemize
 les erreurs sémantiques sont liées à un programme qui s'exécute sans produire
- de messages d'erreur mais qui ne fait pas ce à quoi il est destiné.
+ de messages d'erreur, mais qui ne fait pas ce à quoi il est destiné.
  À titre d'exemple, une expression peut ne pas être évaluée dans l'ordre
  prévu, ce qui donne un résultat incorrect.
 \end_layout
@@ -137788,7 +137788,7 @@ ement l'endroit exact où se situe l'erreur.
 \begin_layout Standard
 Si vous construisez un programme de manière incrémentale, vous devriez avoir
  une bonne idée de l'endroit où se trouve l'erreur.
- Elle se cache soit dans la dernière ligne soit dans le dernier bloc ajouté.
+ Elle se cache soit dans la dernière ligne, soit dans le dernier bloc ajouté.
 \end_layout
 
 \begin_layout Standard
@@ -137938,7 +137938,7 @@ invalid token
 \end_layout
 
 \begin_layout Enumerate
-un opérateur d'ouverture sans son vis-à-vis – 
+un opérateur d'ouverture sans son vis-à-vis — 
 \color blue
 (
 \color inherit
@@ -137946,11 +137946,11 @@ un opérateur d'ouverture sans son vis-à-vis –
 \color blue
 {
 \color inherit
-, ou 
+ ou 
 \color blue
 [
 \color inherit
- – amène Julia à considérer la ligne suivante comme appartenant à la déclaration
+ — amène Julia à considérer la ligne suivante comme appartenant à la déclaration
  courante.
  En général, une erreur se produit presque immédiatement à la ligne suivante,
 \end_layout
@@ -137988,7 +137988,7 @@ status open
 \end_layout
 
 \begin_layout Enumerate
-si des caractères non-ASCII
+si des caractères non ASCII
 \begin_inset Index idx
 status open
 
@@ -138000,7 +138000,7 @@ non-ASCII, caractère
 
  se trouvent dans le code (y compris des chaînes de caractères et des commentair
 es), cela peut poser un problème bien que Julia gère généralement les caractères
- non-ASCII.
+ non ASCII.
  Soyez attentif si vous collez du texte provenant d'une page web ou d'une
  autre source.
 \end_layout
@@ -138010,7 +138010,7 @@ Si rien de ceci ne fonctionne, passez à la section suivante.
 \end_layout
 
 \begin_layout Subsection
-Je continue à faire des changements mais sans effet
+Je continue à faire des changements, mais sans effet
 \end_layout
 
 \begin_layout Standard
@@ -138137,7 +138137,11 @@ Ce problème est assez fréquent lorsque votre fichier se compose de fonctions
 Si ce n'est pas le cas, assurez-vous qu'un appel de fonction est bien présent
  dans le programme.
  Ensuite, vérifiez que le flux d'exécution l'atteint bel et bien (voir le
- paragraphe 
+ paragraphe
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Flux-d'exécution"
@@ -138237,7 +138241,7 @@ noprefix "false"
 
 \begin_layout Itemize
 la plupart du temps, une récursion infinie entraînera l'exécution du programme
- pendant un certain temps puis, produira une 
+ pendant un certain temps, puis produira une 
 \color blue
 ERROR
 \begin_inset ERT
@@ -138269,7 +138273,11 @@ string:
 OverflowError
 \color inherit
 .
- Si c'est le cas, passez au paragraphe 
+ Si c'est le cas, passez au paragraphe
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Récursion-infinie"
@@ -138285,7 +138293,11 @@ noprefix "false"
 
 Si vous n'obtenez pas cette erreur quoique vous soupçonniez un problème
  avec une méthode ou une fonction récursive, vous pouvez toujours utiliser
- les techniques du paragraphe 
+ les techniques du paragraphe
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Récursion-infinie"
@@ -138315,7 +138327,11 @@ flux d'exécution
 \end_inset
 
  de votre programme.
- Rendez-vous au paragraphe 
+ Rendez-vous au paragraphe
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Flux-d'exécution"
@@ -138497,28 +138513,7 @@ while
 \color brown
 "condition"
 \color inherit
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-\size small
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-x > 0 && y < 0 
+ x > 0 && y < 0 
 \end_layout
 
 \begin_layout Plain Layout
@@ -138647,7 +138642,7 @@ cas de base
 \end_layout
 
 \begin_layout Standard
-Si un cas de base existe mais que le programme ne semble pas l'atteindre,
+Si un cas de base existe, mais que le programme ne semble pas l'atteindre,
  ajoutez une instruction
 \color blue
  
@@ -139045,7 +139040,7 @@ declaration@déclaration d'affichage
 \begin_layout Standard
 Pour simplifier la sortie, il est pertinent de supprimer ou commenter les
  déclarations d'affichage qui n'apportent pas d'aide concrètes, les combiner
- (le cas échéant) ou encore, formater la sortie de manière à être plus facile
+ (le cas échéant) ou encore formater la sortie de manière à être plus facile
  à interpréter.
 \end_layout
 
@@ -139070,7 +139065,7 @@ Ensuite, nettoyez le programme.
 
 \begin_layout Standard
 Souvent, le processus de recherche d'un test minimal vous mène au bogue.
- Si vous trouvez qu'un programme fonctionne dans une situation mais pas
+ Si vous trouvez qu'un programme fonctionne dans une situation, mais pas
  dans une autre, cela aussi vous donne un indice.
 \end_layout
 
@@ -139162,10 +139157,10 @@ une partie du code produit-elle un effet qui n'est pas celui auquel vous
 \end_layout
 
 \begin_layout Standard
-Pour pouvoir programmer, vous devez disposer d'un modèle mental du fonctionnemen
-t des programmes.
- Si vous écrivez un programme qui n'exécute pas ce que vous attendez, souvent
- le problème ne se situe pas dans le programme mais dans votre modèle mental.
+Pour programmer, vous devez disposer d'un modèle mental du fonctionnement
+ des programmes.
+ Si vous écrivez un programme qui n'exécute pas ce que vous attendez, souvent,
+ le problème ne se situe pas dans le programme, mais dans votre modèle mental.
 \end_layout
 
 \begin_layout Standard
@@ -139295,13 +139290,9 @@ addcard(game.hands[i], pickedcard)
 
 \begin_layout Standard
 La version explicite est nettement plus facile à lire parce que les noms
- des variables fournissent une documentation 
-\emph on
-per se
-\emph default
-.
- Elle est aussi plus facile à déboguer car il est possible de vérifier les
- types des variables intermédiaires et d'afficher leurs valeurs.
+ des variables fournissent une documentation en eux-mêmes.
+ Elle est aussi plus facile à déboguer, car il est possible de vérifier
+ les types des variables intermédiaires et d'afficher leurs valeurs.
 \end_layout
 
 \begin_layout Standard
@@ -139371,7 +139362,7 @@ y = x / 2 *
 \end_layout
 
 \begin_layout Standard
-Toutefois, cette formulation est erronée car la multiplication et la division
+Toutefois, cette formulation est erronée, car la multiplication et la division
  ayant la même priorité sont évaluées de gauche à droite.
  Cette expression calcule donc 
 \begin_inset Formula $\frac{x}{2}\pi$
@@ -139430,9 +139421,9 @@ y = x / (2 *
 
 \begin_layout Standard
 Lorsque vous n'êtes pas sûr de l'ordre d'évaluation, utilisez des parenthèses.
- Non seulement le programme sera correct (dans le sens où il exécutera votre
- intention) mais, de surcroît, il sera lisible pour ceux qui n'ont pas mémorisé
- l'ordre des opérations.
+ Non seulement le programme sera correct (dans le sens où il s'exécutera
+ selon votre intention), mais, de surcroît, il sera lisible pour ceux qui
+ n'ont pas mémorisé l'ordre des opérations.
  
 \end_layout
 
@@ -139447,7 +139438,7 @@ Si vous écrivez une déclaration de retour avec une expression complexe,
 \color blue
 return
 \color inherit
- ne soit exécutée.
+ soit exécutée.
  Là encore, il est astucieux de tirer parti d'une variable temporaire.
  Par exemple, au lieu de:
 \end_layout
@@ -139602,16 +139593,15 @@ Si vous souffrez de l'un de ces symptômes, levez-vous et allez faire une
  promenade.
  Lorsque vous reviendrez au calme, pensez au programme.
  Que fait-il? Quelles sont les causes possibles de son comportement? Quand
- avez-vous reçu du programme de travail lors de la dernière exécution, et
- qu'avez-vous fait ensuite?
+ avez-vous vu le programme fonctionne correctement la dernière fois, qu'avez-vou
+s fait ensuite?
 \end_layout
 
 \begin_layout Standard
-Parfois, il faut juste du temps pour trouver un bug.
- Les très bons programmeurs trouvent régulièrement des bugs quand ils se
- trouvent loin de leur(s) ordinateur(s) et qu'ils laissent leur esprit vagabonde
-r.
- Les meilleurs endroits pour trouver des bugs sont les trains, les douches
+Parfois, il faut juste du temps pour trouver un bogue.
+ Les très bons programmeurs trouvent régulièrement des bogues quand ils
+ se trouvent loin de leur ordinateur et qu'ils laissent leur esprit vagabonder.
+ Les meilleurs endroits pour trouver des bogues sont les trains, les douches
  et le lit, juste avant de s'endormir.
  
 \end_layout
@@ -139653,12 +139643,12 @@ quelle est la dernière modification insérée avant que cette erreur se produis
 \end_layout
 
 \begin_layout Itemize
-quelles sont les dernières lignes de code introduites, et/ou quel est la
- nouvelle batterie de tests qui échoue?
+quelles sont les dernières lignes de code introduites, quelle est la nouvelle
+ batterie de tests qui échoue?
 \end_layout
 
 \begin_layout Itemize
-qu'avez-vous essayé jusque là et qu'en avez-vous tiré?
+qu'avez-vous essayé jusque-là et qu'en avez-vous tiré?
 \end_layout
 
 \begin_layout Standard
@@ -139718,7 +139708,7 @@ thispagestyle{empty}
 \end_layout
 
 \begin_layout Chapter*
-Annexe A: Entrées Unicode
+Annexe A: entrées Unicode
 \end_layout
 
 \begin_layout Standard
