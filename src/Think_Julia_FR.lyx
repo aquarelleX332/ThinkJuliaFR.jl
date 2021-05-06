@@ -139713,19 +139713,7 @@ Annexe A: entrées Unicode
 
 \begin_layout Standard
 Le tableau suivant énumère quelques caractères Unicode parmi les nombreux
- qui peuvent être saisis par tabulation d'abréviations de type 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
-\end_layout
-
-\end_inset
-
+ qui peuvent être saisis par tabulation d'abréviations de type \SpecialChar LaTeX
 
 \begin_inset space ~
 \end_inset
@@ -140610,7 +140598,11 @@ Situation au 1er janvier 2021
 \end_layout
 
 \begin_layout Standard
-Depuis la publication du livre Think Julia 
+Depuis la publication du livre Think Julia
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-1"
@@ -140636,7 +140628,11 @@ JuliaBox
 
 \end_inset
 
- (voir la section 
+ (voir la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Informatique-en-nuage"
@@ -140646,7 +140642,7 @@ noprefix "false"
 
 \end_inset
 
-) qui a des conséquences notamment sur l'utilisation de JuliaBox pour des
+), qui a des conséquences notamment sur l'utilisation de JuliaBox pour des
  cours Julia en direct, 
 \end_layout
 
@@ -140672,7 +140668,7 @@ Juno
 
 \end_inset
 
- –toujours installable et utilisable– et la migration vers Visual Studio
+ — toujours installable et utilisable — et la migration vers Visual Studio
  Code
 \begin_inset Index idx
 status open
@@ -140715,7 +140711,11 @@ Utilisation des exemples de codes
 \begin_inset Quotes crd
 \end_inset
 
- ainsi que l'introduction du chapitre 
+ ainsi que l'introduction du chapitre
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Étude-de-cas-conception-interface"
@@ -140725,7 +140725,7 @@ noprefix "false"
 
 \end_inset
 
- et, à proposer la présente annexe.
+ et à proposer la présente annexe.
 \end_layout
 
 \begin_layout Standard
@@ -140765,32 +140765,22 @@ addcontentsline{toc}{section}{Julia en mode local}
 \end_layout
 
 \begin_layout Standard
-Julia est installable sur MS-Windows
+Julia est installable sur MS Windows
 \begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
-MS-Windows
+MS Windows
 \end_layout
 
 \end_inset
 
-, MacOS
+, macOS
 \begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
-MacOS
-\end_layout
-
-\end_inset
-
-
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-
+macOS
 \end_layout
 
 \end_inset
@@ -140892,7 +140882,11 @@ Installation de binaires sous Ubuntu
 \end_layout
 
 \begin_layout Standard
-Les binaires de la version stable (par exemple: julia-1.5.3) se trouvent 
+Les binaires de la version stable (par exemple: 
+\color blue
+julia-1.5.3
+\color inherit
+) se trouvent 
 \begin_inset CommandInset href
 LatexCommand href
 name "sous ce lien"
@@ -141132,8 +141126,8 @@ PATH
 
 \end_inset
 
- pouvoir travailler avec les caractères accentués et grecs, par exemple,
- repérez le fichier 
+ travailler avec les caractères accentués et grecs, par exemple, repérez
+ le fichier 
 \color blue
 startup.jl
 \begin_inset Index idx
@@ -141338,7 +141332,11 @@ codium
 \end_inset
 
  ou par l'icône déposée sur le bureau, ce qui permet d'obtenir une fenêtre
- comme celle représentée à la figure 
+ comme celle représentée à la figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Écran-de-Visual-Studio-Codium"
@@ -141349,7 +141347,7 @@ noprefix "false"
 \end_inset
 
 .
- Pour obtenir cette fenêtre, il convient après l'ouverture de codium de
+ Pour obtenir cette fenêtre, il convient, après l'ouverture de Codium, de
  se rendre sur l'onglet Terminal 
 \begin_inset Formula $\rightarrow$
 \end_inset
@@ -141430,12 +141428,12 @@ Extensions
 \begin_layout Plain Layout
 
 \size small
-ème
+e
 \end_layout
 
 \end_inset
 
- bouton de la barre verticale gauche) et installez Julia 1.0.10 – Julia Language
+ bouton de la barre verticale gauche) et installez Julia 1.0.10 — Julia Language
  Support
 \begin_inset Index idx
 status open
@@ -141446,7 +141444,7 @@ Julia Language Support
 
 \end_inset
 
- (ce numéro n'est pas lié au numéro de version de Julia proprement-dit).
+ (ce numéro n'est pas lié au numéro de version de Julia proprement dit).
 \end_layout
 
 \begin_layout Standard
@@ -141492,20 +141490,24 @@ paquets, installation
 status open
 
 \begin_layout Plain Layout
-modules
+modules, installation
 \end_layout
 
 \end_inset
 
-, installation) complétant la bibliothèque standard.
+) complétant la bibliothèque standard.
 \end_layout
 
 \begin_layout Standard
-L'installation de nouveaux paquets se fait dans le REPL de VSCodium (
+L'installation de nouveaux paquets se fait dans le REPL de VS Codium (
 \emph on
 Read-Eval-Print Loop
 \emph default
-) qui se trouve dans la partie inférieure de la figure 
+) qui se trouve dans la partie inférieure de la figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Écran-de-Visual-Studio-Codium"
@@ -141520,7 +141522,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Subsubsection*
-Ancienne Méthode
+Ancienne méthode
 \end_layout
 
 \begin_layout Standard
@@ -141572,7 +141574,11 @@ Plots, installation
 
 
 \color inherit
- (voir la sous-section 
+ (voir la sous-section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Exercice-13-12-1"
@@ -141638,6 +141644,10 @@ using
 \begin_layout Plain Layout
 
 \size small
+\color green
+julia>
+\color blue
+ 
 \color black
 Pkg.add(
 \color brown
@@ -141675,7 +141685,7 @@ $HOME/.julia/packages
 \end_layout
 
 \begin_layout Subsubsection*
-Nouvelle Méthode
+Nouvelle méthode
 \end_layout
 
 \begin_layout Standard
@@ -141867,11 +141877,8 @@ index{(
 \end_layout
 
 \begin_layout Standard
-Pour quitter le gestionnaire de paquets, on peut utiliser la touche 
-\emph on
-backspace
-\emph default
- ou la combinaison 
+Pour quitter le gestionnaire de paquets, on peut utiliser la touche retour
+ arrière ou la combinaison 
 \color blue
 Ctrl-C
 \color inherit
@@ -142005,7 +142012,7 @@ sudo apt-get install jupyter
 \end_layout
 
 \begin_layout Standard
-De retour dans VScodium, Julia activé et en mode gestionnaire de paquet:
+De retour dans VS Codium, Julia activé et en mode gestionnaire de paquet:
 \begin_inset Index idx
 status open
 
@@ -142050,7 +142057,7 @@ IJulia, installation
 \color blue
 (@v1.5) pkg >
 \color black
- add Ijulia
+ add IJulia
 \end_layout
 
 \end_inset
@@ -142071,7 +142078,7 @@ IJulia, installation
 \end_layout
 
 \begin_layout Standard
-Pour lancer Jupyter, dans un terminal bash de VSCodium:
+Pour lancer Jupyter, dans un terminal bash de VS Codium:
 \end_layout
 
 \begin_layout Standard
@@ -142094,7 +142101,7 @@ Pour lancer Jupyter, dans un terminal bash de VSCodium:
 
 \size small
 \color black
-jupyter notebook
+$ jupyter notebook
 \end_layout
 
 \end_inset
@@ -142129,7 +142136,11 @@ Nouveau
 \end_inset
 
  Julia-1.5.3, il est possible d'entrer du code.
- La figure 
+ La figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Exemple-d'une-feuille-Jupyter"
@@ -142221,7 +142232,7 @@ literal "false"
 
 \end_inset
 
- est un carnet –écrit en Julia– et dont les caractéristiques principales
+ est un carnet — écrit en Julia — et dont les caractéristiques principales
  sont:
 \begin_inset Index idx
 status open
@@ -142502,7 +142513,10 @@ addcontentsline{toc}{section}{Aide et documentation}
 
 \begin_layout Standard
 Outre quelques livres cités dans la bibliographie, notamment les références
- 
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-1,key-2,key-3,key-4,key-5"
@@ -142510,7 +142524,11 @@ literal "false"
 
 \end_inset
 
- et 
+ et
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-10"
@@ -142518,7 +142536,7 @@ literal "false"
 
 \end_inset
 
- (sans que cela ne soit exhaustif), le lecteur peut se référer à la 
+ (sans que cela soit exhaustif), le lecteur peut se référer à la 
 \begin_inset CommandInset href
 LatexCommand href
 name "documentation officielle"
@@ -142530,7 +142548,7 @@ literal "false"
  pour laquelle existe un document 
 \begin_inset CommandInset href
 LatexCommand href
-name "pdf téléchargeable"
+name "PDF téléchargeable"
 target "https://raw.githubusercontent.com/JuliaLang/docs.julialang.org/assets/julia-1.5.3.pdf"
 literal "false"
 
@@ -142582,7 +142600,7 @@ name "chap:Annexe-C:-Notes-de-traduction"
 
 \end_inset
 
-Annexe C: Notes de traduction 
+Annexe C: notes de traduction 
 \end_layout
 
 \begin_layout Standard
@@ -142612,7 +142630,7 @@ Notes de bas de page
 \end_layout
 
 \begin_layout Standard
-Toutes les notes de bas de page sont des compléments associés à la traduction
+Toutes les notes de bas de page sont des compléments associés à la traduction,
  sauf en ce qui concerne les notes associées aux pages 
 \begin_inset CommandInset ref
 LatexCommand pageref
@@ -142741,7 +142759,11 @@ noprefix "false"
 
 \end_inset
 
-) ainsi que dans la section 
+) ainsi que dans la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand vref
 reference "sec:Les-dictionnaires-collections-compteurs"
@@ -142771,7 +142793,11 @@ le choix du répertoire de mots français (
 \color blue
 mots_FR.txt
 \color inherit
-, source: référence 
+, source: référence
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-8"
@@ -142779,7 +142805,11 @@ literal "false"
 
 \end_inset
 
-, chapitre 
+, chapitre
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Étude-de-cas-Jeux-de-mots"
@@ -142799,7 +142829,7 @@ words.txt
 \begin_layout Itemize
 le choix du roman 
 \emph on
-Notre Dame de Paris
+Notre-Dame de Paris
 \emph default
  (section 
 \begin_inset CommandInset ref
@@ -142846,7 +142876,11 @@ Modifications des exemples de programmes
 
 \begin_layout Standard
 Aucune modification de noms de fonctions ou structures composites n'a eu
- lieu, sauf dans le chapitre 
+ lieu, sauf dans le chapitre
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Sous-typage"
@@ -142866,7 +142900,11 @@ Ajouts de figures
 \end_layout
 
 \begin_layout Standard
-Les figures 
+Les figures
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Déplacement-de-la-tortue-en-avant"
@@ -142936,7 +142974,11 @@ noprefix "false"
 
 \end_inset
 
-, 
+ et
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Écran-de-Visual-Studio-Codium"
@@ -142951,7 +142993,11 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-Un croquis a été inséré dans la section 
+Un croquis a été inséré dans la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Réaffectation"
@@ -142965,7 +143011,11 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-Compte tenu de la situation décrite à la section 
+Compte tenu de la situation décrite à la section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Situation-au-1er-janvier-2021"
@@ -142995,7 +143045,11 @@ Modifications de tableaux
 \end_layout
 
 \begin_layout Standard
-Les tableaux 
+Les tableaux
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:Liste-des-mots-clés-Julia"
@@ -143005,7 +143059,11 @@ noprefix "false"
 
 \end_inset
 
- et 
+ et
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:Liste-des-opérateurs-relationnels"
@@ -143029,7 +143087,11 @@ Dans la version française, la bibliographie a été concentrée dans une partie
 ad hoc
 \emph default
 .
- Les citations 
+ Les citations
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-1,key-2,key-3,key-4,key-5"
@@ -143045,7 +143107,11 @@ literal "false"
 
 \end_inset
 
- et 
+ et
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-10"
