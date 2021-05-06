@@ -416,7 +416,7 @@ literal "false"
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename Figures/CC_by-nc-sa.svg
+	filename figures/CC_by-nc-sa.svg
 
 \end_inset
 
@@ -1556,7 +1556,7 @@ ctions), les renvois aux notes de bas de page et à la bibliographie ainsi
  que les liens hypertextes sont en gris et cliquables (sur ordinateur à
  l'aide de la souris [symbole 
 \begin_inset Graphics
-	filename Figures/PNG/souris_main.png
+	filename figures/souris_main.png
 	lyxscale 4
 	scale 1
 
@@ -2502,7 +2502,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/PNG/Screenshot_julia_1-5-3.png
+	filename figures/Screenshot_julia_1-5-3.png
 	scale 44
 
 \end_inset
@@ -4479,7 +4479,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/exemple-de-diagramme-d-état.svg
+	filename figures/exemple-de-diagramme-d-état.svg
 	scale 45
 
 \end_inset
@@ -11521,7 +11521,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/stack_diagram_2_inkscape.svg
+	filename figures/stack_diagram_2_inkscape.svg
 	scale 50
 
 \end_inset
@@ -14418,7 +14418,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/PNG/exercice_4_14_3.png
+	filename figures/exercice_4_14_3.png
 	scale 30
 
 \end_inset
@@ -14869,7 +14869,7 @@ ThinkJuliaFR
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -14930,7 +14930,7 @@ Luxor
 
 
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -15054,7 +15054,7 @@ begin
 
 forward(
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -15241,7 +15241,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/PNG/luxor-drawing-165611_608.png
+	filename figures/luxor-drawing-165611_608.png
 	lyxscale 50
 	scale 20
 
@@ -15323,7 +15323,7 @@ SVG
  Les macros sont une fonctionnalité importante mais avancée de Julia.
  Les arguments de marche sont 
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -15356,7 +15356,7 @@ turn()
 \color inherit
  est une autre fonction pouvant être sollicitée avec 
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -15467,7 +15467,7 @@ Pour dessiner un angle droit, modifions l'appel de la macro:
 
 forward(
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -15495,7 +15495,7 @@ forward(
 
 turn(
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -15523,7 +15523,7 @@ turn(
 
 forward(
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -15579,7 +15579,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/PNG/luxor-drawing-172110_831.png
+	filename figures/luxor-drawing-172110_831.png
 	lyxscale 50
 	scale 20
 
@@ -15683,7 +15683,7 @@ Il y a beaucoup de chances que vous ayez écrit ceci:
 
 forward(
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -15711,7 +15711,7 @@ forward(
 
 turn(
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -15739,7 +15739,7 @@ turn(
 
 forward(
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -15767,7 +15767,7 @@ forward(
 
 turn(
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -15795,7 +15795,7 @@ turn(
 
 forward(
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -15823,7 +15823,7 @@ forward(
 
 turn(
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -15851,7 +15851,7 @@ turn(
 
 forward(
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -16121,7 +16121,7 @@ for
 
 \size small
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -16219,7 +16219,7 @@ string:
 
 forward(
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -16263,7 +16263,7 @@ forward(
 
 turn(
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -16873,7 +16873,7 @@ end
 \color inherit
 
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -16912,7 +16912,7 @@ end
 
 square(
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -16977,7 +16977,7 @@ square
 \color inherit
  fait référence à la tortue 
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -16992,7 +16992,7 @@ turn(t, -90)
 \color inherit
 
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -17004,7 +17004,7 @@ turn(t, -90)
 .
  Dans ce cas, pourquoi ne pas appeler le paramètre 
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -17015,7 +17015,7 @@ t
 \color inherit
  peut être n'importe quelle tortue, pas seulement 
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -17023,7 +17023,7 @@ t
 .
  Un autre animal qui effectue le même travail que 
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -17053,7 +17053,7 @@ square
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/PNG/camel.png
+	filename figures/camel.png
 	scale 35
 
 \end_inset
@@ -17092,7 +17092,7 @@ square
 
 square(
 \begin_inset Graphics
-	filename Figures/PNG/camel.png
+	filename figures/camel.png
 	scale 35
 
 \end_inset
@@ -17364,7 +17364,7 @@ end
 \color inherit
 
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -17405,7 +17405,7 @@ end
 
 square(
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -17691,7 +17691,7 @@ end
 \color inherit
 
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -17732,7 +17732,7 @@ end
 
 polygon(
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -20299,7 +20299,7 @@ Dessinez un diagramme de pile qui montre l'état du programme pendant l'exécuti
 \color blue
 circle(
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -20760,7 +20760,7 @@ Rédigez un ensemble de fonctions générales appropriées pour dessiner des
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename Figures/PNG/turtleflowers.png
+	filename figures/turtleflowers.png
 	scale 50
 
 \end_inset
@@ -20787,7 +20787,7 @@ Rédigez un ensemble de fonctions générales appropriées pour dessiner des
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename Figures/PNG/turtlepies.png
+	filename figures/turtlepies.png
 	scale 50
 
 \end_inset
@@ -20871,7 +20871,7 @@ Archimède, spirale
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename Figures/PNG/spirale_archimede.png
+	filename figures/spirale_archimede.png
 	scale 50
 
 \end_inset
@@ -24496,7 +24496,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/diagramme-pile-countdown-inkscape.svg
+	filename figures/diagramme-pile-countdown-inkscape.svg
 	scale 35
 
 \end_inset
@@ -31098,7 +31098,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/diagramme-pile-factoriel-inkscape.svg
+	filename figures/diagramme-pile-factoriel-inkscape.svg
 	scale 40
 
 \end_inset
@@ -34715,7 +34715,7 @@ x
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename Figures/reaffectation.svg
+	filename figures/reaffectation.svg
 	scale 40
 
 \end_inset
@@ -38429,7 +38429,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/PNG/tableau_sqrt_mysqrt.png
+	filename figures/tableau_sqrt_mysqrt.png
 	scale 55
 
 \end_inset
@@ -39078,7 +39078,7 @@ textquotesingle
 
  
 \begin_inset Graphics
-	filename Figures/PNG/banana.png
+	filename figures/banana.png
 	scale 25
 
 \end_inset
@@ -39117,7 +39117,7 @@ textquotesingle
 
  
 \begin_inset Graphics
-	filename Figures/PNG/banana.png
+	filename figures/banana.png
 	scale 25
 
 \end_inset
@@ -39512,7 +39512,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/indice_de_chaine.svg
+	filename figures/indice_de_chaine.svg
 	scale 45
 
 \end_inset
@@ -40031,7 +40031,7 @@ julia>
 \color inherit
 
 \begin_inset Graphics
-	filename Figures/PNG/banana.png
+	filename figures/banana.png
 	scale 35
 
 \end_inset
@@ -40042,7 +40042,7 @@ julia>
 
 
 \begin_inset Graphics
-	filename Figures/PNG/apple.png
+	filename figures/apple.png
 	scale 35
 
 \end_inset
@@ -40053,7 +40053,7 @@ julia>
 
 
 \begin_inset Graphics
-	filename Figures/PNG/pear.png
+	filename figures/pear.png
 	scale 35
 
 \end_inset
@@ -40071,21 +40071,21 @@ julia>
 \color inherit
 
 \begin_inset Graphics
-	filename Figures/PNG/banana.png
+	filename figures/banana.png
 	scale 35
 
 \end_inset
 
  
 \begin_inset Graphics
-	filename Figures/PNG/apple.png
+	filename figures/apple.png
 	scale 35
 
 \end_inset
 
  
 \begin_inset Graphics
-	filename Figures/PNG/pear.png
+	filename figures/pear.png
 	scale 35
 
 \end_inset
@@ -40296,7 +40296,7 @@ julia>
 \color inherit
 
 \begin_inset Graphics
-	filename Figures/PNG/banana.png
+	filename figures/banana.png
 	scale 35
 
 \end_inset
@@ -40399,7 +40399,7 @@ string:
 
  StringIndexError("
 \begin_inset Graphics
-	filename Figures/PNG/banana.png
+	filename figures/banana.png
 	scale 30
 
 \end_inset
@@ -40410,7 +40410,7 @@ string:
 
 
 \begin_inset Graphics
-	filename Figures/PNG/apple.png
+	filename figures/apple.png
 	scale 30
 
 \end_inset
@@ -40421,7 +40421,7 @@ string:
 
 
 \begin_inset Graphics
-	filename Figures/PNG/pear.png
+	filename figures/pear.png
 	scale 30
 
 \end_inset
@@ -40453,7 +40453,7 @@ fruit
 \color inherit
 , le pictogramme 
 \begin_inset Graphics
-	filename Figures/PNG/banana.png
+	filename figures/banana.png
 	scale 35
 
 \end_inset
@@ -41830,7 +41830,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/concat_reaffectation_chaine.svg
+	filename figures/concat_reaffectation_chaine.svg
 	scale 40
 
 \end_inset
@@ -52909,7 +52909,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/tableau_alpha.svg
+	filename figures/tableau_alpha.svg
 	scale 45
 
 \end_inset
@@ -53205,7 +53205,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/diagramme-fromages-nombres-vide-inkscape.svg
+	filename figures/diagramme-fromages-nombres-vide-inkscape.svg
 	scale 35
 
 \end_inset
@@ -61034,7 +61034,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/diagramme-état-notion-objet-A-inkscape.svg
+	filename figures/diagramme-état-notion-objet-A-inkscape.svg
 	scale 45
 
 \end_inset
@@ -61083,7 +61083,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/diagramme-état-notion-objet-B-inkscape.svg
+	filename figures/diagramme-état-notion-objet-B-inkscape.svg
 	scale 45
 
 \end_inset
@@ -61507,7 +61507,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/diagramme-état-pour-2-tableaux-non-identiques-inkscape.svg
+	filename figures/diagramme-état-pour-2-tableaux-non-identiques-inkscape.svg
 	scale 50
 
 \end_inset
@@ -61795,7 +61795,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/diagramme-état-pour-2-tableaux-inkscape.svg
+	filename figures/diagramme-état-pour-2-tableaux-inkscape.svg
 	scale 50
 
 \end_inset
@@ -62582,7 +62582,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/diagramme-état-tableau-passé-fct-inskape.svg
+	filename figures/diagramme-état-tableau-passé-fct-inskape.svg
 	scale 45
 
 \end_inset
@@ -67251,7 +67251,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/dico_eng2fr_inkscape.svg
+	filename figures/dico_eng2fr_inkscape.svg
 	scale 45
 
 \end_inset
@@ -74174,7 +74174,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/inversion-dictionnaire-inkscape.svg
+	filename figures/inversion-dictionnaire-inkscape.svg
 	scale 45
 
 \end_inset
@@ -75258,7 +75258,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/diagrammmeétat-hist-inverse-inkscape.svg
+	filename figures/diagrammmeétat-hist-inverse-inkscape.svg
 	scale 35
 
 \end_inset
@@ -75486,7 +75486,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/graphique-appel-fibonacci-inkscape.svg
+	filename figures/graphique-appel-fibonacci-inkscape.svg
 	scale 40
 
 \end_inset
@@ -84639,7 +84639,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/Diagramme-état-François-Rabelais-inkscape.svg
+	filename figures/Diagramme-état-François-Rabelais-inkscape.svg
 	scale 35
 
 \end_inset
@@ -84724,7 +84724,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/diagramme-état_répertoire_tél_inkscape.svg
+	filename figures/diagramme-état_répertoire_tél_inkscape.svg
 	scale 35
 
 \end_inset
@@ -91798,7 +91798,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/PDF/quadratic_1.pdf
+	filename figures/quadratic_1.pdf
 	scale 40
 
 \end_inset
@@ -93148,7 +93148,7 @@ julia>
 \color inherit
  isfile(
 \color brown
-"Figures/quadratic_1.pdf"
+"figures/quadratic_1.pdf"
 \color inherit
 )
 \end_layout
@@ -98508,7 +98508,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/diagramme_objet_Point-xy_inkscape.svg
+	filename figures/diagramme_objet_Point-xy_inkscape.svg
 	scale 40
 
 \end_inset
@@ -99512,7 +99512,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/diagramme_objet-objet-rectangle-inkscape.svg
+	filename figures/diagramme_objet-objet-rectangle-inkscape.svg
 	scale 40
 
 \end_inset
@@ -102413,7 +102413,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/diagramme_objet_MyTime_inkscape.svg
+	filename figures/diagramme_objet_MyTime_inkscape.svg
 	scale 45
 
 \end_inset
@@ -119067,7 +119067,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/diagramme-de-type-inkscape.svg
+	filename figures/diagramme-de-type-inkscape.svg
 	scale 40
 
 \end_inset
@@ -122438,7 +122438,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/fonction_anonyme.svg
+	filename figures/fonction_anonyme.svg
 	scale 50
 
 \end_inset
@@ -122966,7 +122966,7 @@ noprefix "false"
 
 \size small
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -123009,7 +123009,7 @@ noprefix "false"
 
 forward(
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -123041,7 +123041,7 @@ forward(
 
 turn(
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -123073,7 +123073,7 @@ turn(
 
 forward(
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 35
 
 \end_inset
@@ -139912,7 +139912,7 @@ _2
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/PNG/apple.png
+	filename figures/apple.png
 	scale 28
 
 \end_inset
@@ -139951,7 +139951,7 @@ _2
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/PNG/banana.png
+	filename figures/banana.png
 	scale 28
 
 \end_inset
@@ -139990,7 +139990,7 @@ _2
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/PNG/camel.png
+	filename figures/camel.png
 	scale 20
 
 \end_inset
@@ -140029,7 +140029,7 @@ _2
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/PNG/pear.png
+	filename figures/pear.png
 	scale 28
 
 \end_inset
@@ -140068,7 +140068,7 @@ _2
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/PNG/tutle3.png
+	filename figures/tutle3.png
 	scale 28
 
 \end_inset
@@ -141379,7 +141379,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/EPS-TIF-XCF-JPG/écran_visual_studio_codium.tif
+	filename figures/écran_visual_studio_codium.tif
 	lyxscale 35
 	scale 30
 
@@ -142171,7 +142171,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/EPS-TIF-XCF-JPG/jupyter_notebook_modif.tif
+	filename figures/jupyter_notebook_modif.tif
 	lyxscale 50
 	scale 45
 
