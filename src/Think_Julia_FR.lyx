@@ -40025,7 +40025,7 @@ length()
 \color green
 julia>
 \color inherit
- fruit = 
+ fruits = 
 \color brown
 "
 \color inherit
@@ -40101,7 +40101,7 @@ julia>
 \color green
 julia>
 \color inherit
- length(fruit)
+ len = length(fruits)
 \end_layout
 
 \begin_layout Plain Layout
@@ -40154,7 +40154,9 @@ Pour obtenir la dernière lettre d'une chaîne, il est tentant d'essayer ceci:
 \color green
 julia>
 \color inherit
- last = length(fruit)
+ last = 
+\size default
+fruits[len]
 \end_layout
 
 \begin_layout Plain Layout
@@ -40345,7 +40347,7 @@ e
 
  élément de 
 \color blue
-fruit
+fruits
 \color inherit
  est un ESPACE.
  Cela signifie également que l'indice de chaque octet dans une chaîne UTF-8
@@ -40377,7 +40379,7 @@ julia>
 \color inherit
  fruit
 \color black
-[2]
+s[2]
 \end_layout
 
 \begin_layout Plain Layout
@@ -40449,7 +40451,7 @@ string:
 \begin_layout Standard
 Dans le cas de 
 \color blue
-fruit
+fruits
 \color inherit
 , le pictogramme 
 \begin_inset Graphics
@@ -48388,7 +48390,7 @@ acefhlo
 status open
 
 \begin_layout Plain Layout
-useonly
+usesonly
 \end_layout
 
 \end_inset
@@ -49183,7 +49185,7 @@ La fonction
 status open
 
 \begin_layout Plain Layout
-useonly
+usesonly
 \end_layout
 
 \end_inset
@@ -49213,7 +49215,7 @@ useonly
 \color green
 function 
 \color inherit
-useonly(word, available)
+usesonly(word, available)
 \end_layout
 
 \begin_layout Plain Layout
@@ -74293,22 +74295,6 @@ Dict
 \end_inset
 
 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
 \color green
 for
 \color inherit
@@ -74353,44 +74339,12 @@ for
 \begin_inset space ~
 \end_inset
 
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
 val = d[key]
 \end_layout
 
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -74479,44 +74433,12 @@ if
 \begin_inset space ~
 \end_inset
 
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
 inverse[val] = [key] 
 \end_layout
 
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -74558,22 +74480,6 @@ else
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -74672,22 +74578,6 @@ string!
 \end_inset
 
 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
 \color green
 end
 \end_layout
@@ -74695,22 +74585,6 @@ end
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -74736,22 +74610,6 @@ end
 \begin_layout Plain Layout
 
 \size small
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset space ~
 \end_inset
 
@@ -88947,7 +88805,7 @@ nothing
 status open
 
 \begin_layout Plain Layout
-substract
+subtract
 \end_layout
 
 \end_inset
@@ -89255,7 +89113,7 @@ mots_FR.txt
 \color inherit
 , et ensuite 
 \color blue
-substract
+subtract
 \color inherit
 :
 \begin_inset Index ind
@@ -101873,7 +101731,7 @@ circle
 \begin_layout Enumerate
 Écrivez une fonction appelée 
 \color blue
-pointincercle
+pointincircle
 \color inherit
  qui prend un objet
 \color blue
@@ -131381,7 +131239,7 @@ d2
 status open
 
 \begin_layout Plain Layout
-substract()
+subtract()
 \end_layout
 
 \end_inset
@@ -131698,6 +131556,16 @@ status open
 
 \begin_layout Plain Layout
 set
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+ensemble
 \end_layout
 
 \end_inset
@@ -132291,7 +132159,7 @@ noprefix "false"
 .
  Par exemple, voici une version de 
 \color blue
-useonly
+usesonly
 \color inherit
  (section
 \begin_inset space ~
@@ -132312,7 +132180,7 @@ noprefix "false"
 status open
 
 \begin_layout Plain Layout
-useonly
+usesonly
 \end_layout
 
 \end_inset
@@ -132342,7 +132210,7 @@ useonly
 \color green
 function 
 \color inherit
-useonly(word, available)
+usesonly(word, available)
 \end_layout
 
 \begin_layout Plain Layout
@@ -132580,7 +132448,7 @@ end
 \begin_layout Standard
 
 \color blue
-useonly
+usesonly
 \color inherit
  vérifie si toutes les lettres contenues dans 
 \color blue
@@ -133149,7 +133017,7 @@ expression rationnelle
 status open
 
 \begin_layout Plain Layout
-useonly
+usesonly
 \end_layout
 
 \end_inset
