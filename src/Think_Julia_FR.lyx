@@ -587,7 +587,7 @@ MIT, licence
 
 \end_inset
 
-) dont les prémisses datent de 2009.
+) dont les prémices datent de 2009.
  Le code est arrivé à maturité en 2018 avec la version 1.0.
  Cependant, c'est seulement durant la période de confinement associée à
  la covid-19, au début mars 2020, que j'ai été véritablement attiré par
@@ -1325,7 +1325,7 @@ C'était un parcours semé d'embûches.
  En août 2018, Julia 1.0 est sorti et, comme tous mes collègues programmeurs
  de Julia, j'ai dû procéder à une migration du code.
  Tous les exemples du livre ont été testés lors de la conversion des fichiers
- sources en fichiers AsciiDoc compatibles avec O'Reilly.
+ source en fichiers AsciiDoc compatibles avec O'Reilly.
  La chaîne d'outils et le code des exemples ont dû être rendus conformes
  à la version 1.0 de Julia.
  Heureusement, il n'y a pas de conférence à donner en août...
@@ -1962,7 +1962,7 @@ literal "false"
 
 \end_inset
 
- pour avoir rédigé 
+ d'avoir rédigé 
 \begin_inset CommandInset href
 LatexCommand href
 name "Think Python, How to Think Like a Computer Scientist"
@@ -4135,8 +4135,8 @@ Exercice 1-1
 \end_layout
 
 \begin_layout Standard
-Chaque fois qu'une une nouvelle fonctionnalité est expérimentée, il est
- indiqué de commettre volontairement des erreurs.
+Chaque fois qu'une nouvelle fonctionnalité est expérimentée, il est indiqué
+ de commettre volontairement des erreurs.
  Par exemple, dans le programme 
 \begin_inset Quotes cld
 \end_inset
@@ -4207,7 +4207,7 @@ Combien de secondes y a-t-il dans 42 minutes 42 secondes?
 \end_layout
 
 \begin_layout Enumerate
-Sachant qu'un mile terrestre correspond à 1,61 km, combien de miles y a-t-il
+Sachant que 1 mile terrestre correspond à 1,61 km, combien de miles y a-t-il
  dans 10 kilomètres?
 \end_layout
 
@@ -6193,7 +6193,7 @@ Codium
 \end_layout
 
 \begin_layout Standard
-Quoiqu'il en soit, parce que Julia propose les deux modes (REPL et exécution
+Quoi qu'il en soit, parce que Julia propose les deux modes (REPL et exécution
  de script), il est possible de tester des bouts de code en mode interactif
  avant de les insérer dans un script.
  Cependant, il existe des différences entre le mode interactif et le mode
@@ -7213,7 +7213,7 @@ pourcentage = (minute * 100) / 60
 
 \begin_layout Standard
 Dans ce cas, le commentaire apparaît sur une ligne séparée.
- Cependant,les commentaires peuvent se trouver à la fin d'une ligne:
+ Cependant, les commentaires peuvent se trouver à la fin d'une ligne:
 \end_layout
 
 \begin_layout Standard
@@ -8320,7 +8320,7 @@ Il est courant de dire qu'une fonction
 \emph on
 valeur de retour
 \emph default
- 
+.
 \begin_inset Index idx
 status open
 
@@ -8340,7 +8340,7 @@ retour, valeur
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
@@ -8491,7 +8491,7 @@ La fonction
 \color blue
  trunc
 \color inherit
- peut convertir des nombres à virgule flottante en entiers mais sans arrondi
+ peut convertir des nombres à virgule flottante en entiers, mais sans arrondi
 \begin_inset Index idx
 status open
 
@@ -9597,7 +9597,7 @@ noprefix "false"
 
 \end_inset
 
-), si ce n'est que le premier caractère ne peut pas être un nombre.
+), si ce n'est que le premier caractère ne peut pas être un chiffre.
  Par ailleurs, il n'est pas permis d'utiliser un mot-clé comme nom de fonction.
  En outre, il faut éviter qu'une variable et une fonction portent le même
  nom.
@@ -10311,7 +10311,7 @@ repeatlyrics
  Les définitions de fonction sont exécutées comme les autres instructions,
  mais elles ont pour effet de créer des objets de fonction.
  Les instructions à l'intérieur de la fonction ne s'exécutent pas avant
- que la fonction soit pas appelée.
+ que la fonction soit appelée.
  La définition de la fonction ne produit aucune sortie.
 \end_layout
 
@@ -12123,7 +12123,7 @@ printtwice
 \begin_layout Standard
 En appelant une fonction avec retour, l'intention est d'exploiter le résultat
  obtenu.
- Par exemple, il est tout-à-fait possible d'affecter le résultat à une variable
+ Par exemple, il est tout à fait possible d'affecter le résultat à une variable
  ou de l'utiliser comme partie d'une expression: 
 \begin_inset Index idx
 status open
@@ -12404,7 +12404,7 @@ show()
 \color blue
 println
 \color inherit
- mais en gérant la valeur
+, mais en gérant la valeur
 \color blue
  nothing
 \color inherit
@@ -12416,7 +12416,11 @@ La valeur
 \color blue
 nothing
 \color inherit
- n'est pas de la même nature que la chaîne "nothing".
+ n'est pas de la même nature que la chaîne 
+\color blue
+"nothing"
+\color inherit
+.
 \begin_inset Index idx
 status open
 
@@ -12991,7 +12995,7 @@ de
 \begin_inset space ~
 \end_inset
 
-piles
+pile
 \begin_inset Index idx
 status open
 
@@ -15320,7 +15324,7 @@ SVG
 \end_inset
 
 .
- Les macros sont une fonctionnalité importante mais avancée de Julia.
+ Les macros sont une fonctionnalité importante, mais avancée de Julia.
  Les arguments de marche sont 
 \begin_inset Graphics
 	filename figures/tutle3.png
@@ -19289,8 +19293,8 @@ chercher des possibilités d'améliorer le programme en le remaniant (processus
 
 \begin_layout Standard
 Cette manière de procéder présente quelques inconvénients — nous verrons
- les alternatives plus tard —, mais il s'avère utile si le programmeur ignore
- comment diviser le programme en fonctions.
+ les autres options plus tard —, mais il s'avère utile si le programmeur
+ ignore comment diviser le programme en fonctions.
  Cette approche permet de concevoir un programme de manière progressive.
 \end_layout
 
@@ -24577,7 +24581,7 @@ n = 0
 \color blue
 n = 0
 \color inherit
-, il n'y a donc plus de cadres en-dessous.
+, il n'y a donc plus de cadres en dessous.
 \end_layout
 
 \begin_layout Subsection*
@@ -25395,7 +25399,7 @@ quel type d'erreur s'est-il produit?
 \end_layout
 
 \begin_layout Itemize
-à quel endroit du programme l'erreur s'est-il produite?
+à quel endroit du programme l'erreur s'est-elle produite?
 \end_layout
 
 \begin_layout Standard
@@ -25726,7 +25730,7 @@ opérateur
 \begin_inset space ~
 \end_inset
 
-relationnel un des opérateurs qui compare deux opérandes: 
+relationnel un des opérateurs qui comparent deux opérandes: 
 \color blue
 ==
 \color inherit
@@ -25791,7 +25795,7 @@ opérateur
 \begin_inset space ~
 \end_inset
 
-logique un des opérateurs qui combine les expressions booléennes: 
+logique un des opérateurs qui combinent les expressions booléennes: 
 \color blue
 &&
 \color inherit
@@ -27534,7 +27538,7 @@ Comme ces instructions
 \color blue
 return
 \color inherit
- sont dans un branche conditionnelle alternative, une seule des options
+ sont dans une branche conditionnelle alternative, une seule des options
  est empruntée.
  Dès qu'une déclaration 
 \color blue
@@ -29283,8 +29287,8 @@ Les variables temporaires
 result
 \color inherit
  sont utiles pour le développement et le débogage.
- Lorsque qu'il est opérationnel, le programme peut être rédigé de manière
- plus concise en composant les appels de fonction: 
+ Lorsqu'il est opérationnel, le programme peut être rédigé de manière plus
+ concise en composant les appels de fonction: 
 \end_layout
 
 \begin_layout Standard
@@ -33478,7 +33482,7 @@ canevas
 \emph on
 scaffolding
 \emph default
-) code utilisé pendant le développement du programme mais qui ne fait pas
+) code utilisé pendant le développement du programme, mais qui ne fait pas
  partie de la version finale, 
 \begin_inset Index idx
 status open
@@ -34324,7 +34328,7 @@ Testez ces fonctions.
 
 "
 \color inherit
- et ne contient pas de lettres?
+ et ne contient pas de lettre?
 \end_layout
 
 \begin_layout Enumerate
@@ -38116,7 +38120,7 @@ débogage par bissection
 \begin_inset Quotes crd
 \end_inset
 
- est un des méthodes permettant de réduire le temps de débogage.
+ est une des méthodes permettant de réduire le temps de débogage.
  Par exemple, s'il y a 100 lignes dans un programme et qu'elles sont vérifiées
  une à une, il en résultera 100 étapes.
  Il est plus astucieux de diviser le problème en deux en regardant vers
@@ -39310,11 +39314,15 @@ Une chaîne est une séquence
 \begin_layout Standard
 Une chaîne est une séquence de caractères.
  Il nous est loisible d'accéder aux caractères un à un avec l'opérateur
- double crochets [
+ crochets appariés 
+\color blue
+[
 \begin_inset space ~
 \end_inset
 
-]: 
+]
+\color inherit
+: 
 \begin_inset Index idx
 status open
 
@@ -47850,7 +47858,7 @@ Ce fichier est en mode texte brut, tout éditeur de texte peut l'afficher.
 \color blue
 open
 \color inherit
- prend le nom du fichier comme paramètre et retourne un flux de fichiers
+ prend le nom du fichier comme paramètre et retourne un flux de fichier
  utilisable pour lire le fichier.
  
 \begin_inset VSpace medskip
@@ -47910,8 +47918,8 @@ IOStream(<file /home/chemin_vers_fichier/mots_FR.txt>)
 \color blue
 fin
 \color inherit
- est un flux de fichiers utilisé pour l'entrée et lorsqu'il n'est plus nécessair
-e, il doit être fermé avec 
+ est un flux de fichier utilisé pour l'entrée et lorsqu'il n'est plus nécessaire
+, il doit être fermé avec 
 \color blue
 close(fin)
 \color inherit
@@ -48038,8 +48046,8 @@ avoir
 \end_layout
 
 \begin_layout Standard
-Le flux de fichiers garde une trace de l'endroit où il s'est arrêté, si
- bien qu'appeler à nouveau 
+Le flux de fichier garde une trace de l'endroit où il s'est arrêté, si bien
+ qu'appeler à nouveau 
 \color blue
 readline
 \color inherit
@@ -51174,8 +51182,8 @@ ième
 \end_layout
 
 \begin_layout Standard
-Si le caractère suivant est inférieur en terme d'ordre alphabétique au caractère
- courant, alors il y a rupture dans le schéma abécédaire.
+Si le caractère suivant est inférieur en termes d'ordre alphabétique au
+ caractère courant, alors il y a rupture dans le schéma abécédaire.
  En conséquence, le programme retourne 
 \color blue
 false
@@ -51682,7 +51690,7 @@ La fonction
 \color blue
 isreverse
 \color inherit
- a étudiée à la section
+ a été étudiée à la section
 \begin_inset space ~
 \end_inset
 
@@ -51964,7 +51972,7 @@ Exercice 9-7
 \end_layout
 
 \begin_layout Standard
-Cet exercice est basée sur un casse-tête qui fut diffusé dans l'émission
+Cet exercice est basé sur un casse-tête qui fut diffusé dans l'émission
  de radio 
 \begin_inset CommandInset href
 LatexCommand href
@@ -53211,7 +53219,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/diagramme-fromages-nombres-vide-inkscape.svg
+	filename e de manière distribuée à tout tableau. Pa
 	scale 35
 
 \end_inset
@@ -53229,7 +53237,7 @@ name "fig:Diagrammes-d'état-pour-3-tableaux-élémentaires"
 
 \end_inset
 
-Diagrammes d'état pour 3 tableaux élémentaires.
+Diagrammes d'état pour trois tableaux élémentaires.
 \end_layout
 
 \end_inset
@@ -58247,7 +58255,7 @@ Dans Julia, toute fonction
 f 
 \color inherit
 peut être appliquée de manière distribuée à tout tableau.
- Par exemple, pour mettre en majuscule un tableau de chaînes de caractères,
+ Par exemple, pour mettre en majuscules un tableau de chaînes de caractères,
  nous n'avons pas besoin d'une boucle explicite: 
 \end_layout
 
@@ -61161,7 +61169,7 @@ Diagramme d'état et notion d'objets
 \end_layout
 
 \begin_layout Standard
-Pour vérifier si deux variables désigne le même objet, il faut utiliser
+Pour vérifier si deux variables désignent le même objet, il faut utiliser
  l'opérateur 
 \begin_inset Formula $\equiv$
 \end_inset
@@ -61531,7 +61539,7 @@ name "fig:Diagramme-d'état-pour-deux-tab-équival-non-identiques"
 
 \end_inset
 
-Diagramme d'état pour deux tableaux équivalents mais non identiques.
+Diagramme d'état pour deux tableaux équivalents, mais non identiques.
 \end_layout
 
 \end_inset
@@ -65206,8 +65214,7 @@ tableau
 \end_inset
 
 item) une des valeurs d'un tableau (ou de toute autre séquence, comme une
- matrice).
- 
+ matrice), 
 \begin_inset Index idx
 status open
 
@@ -65548,7 +65555,7 @@ arguments
 \begin_inset space ~
 \end_inset
 
-facultatifs arguments figurant dans une fonction mais dont l'usage n'est
+facultatifs arguments figurant dans une fonction, mais dont l'usage n'est
  pas toujours nécessaire, 
 \begin_inset Index idx
 status open
@@ -66436,8 +66443,8 @@ noprefix "false"
  le dictionnaire.
  Vous commencez au milieu et vous vérifiez si le mot que vous recherchez
  vient avant le mot du milieu du tableau.
- Si c'est le cas, vous recherchez la première moitié du tableau de la même
- manière.
+ Si c'est le cas, vous recherchez dans la première moitié du tableau de
+ la même manière.
  Sinon, vous cherchez dans la deuxième moitié.
 \end_layout
 
@@ -77556,7 +77563,7 @@ reverse lookup
 \end_layout
 
 \begin_layout Description
-singleton tableau (ou tout autre séquence) avec un seul élément, 
+singleton tableau (ou toute autre séquence) avec un seul élément, 
 \begin_inset Index idx
 status open
 
@@ -77642,7 +77649,7 @@ déclaration
 \begin_inset space ~
 \end_inset
 
-globale déclaration qui établit le nom d'un variable globale, 
+globale déclaration qui établit le nom d'une variable globale, 
 \begin_inset Index idx
 status open
 
@@ -78055,7 +78062,15 @@ to wrack with pain
 \end_inset
 
 .
- Si j'enlève la première lettre, il me reste un mot de quatre lettres, "R-A-C-K".
+ Si j'enlève la première lettre, il me reste un mot de quatre lettres, 
+\begin_inset Quotes cld
+\end_inset
+
+R-A-C-K
+\begin_inset Quotes crd
+\end_inset
+
+.
  Comme dans 
 \begin_inset Quotes cld
 \end_inset
@@ -79147,7 +79162,7 @@ begin{tip3}
 
 \begin_layout Plain Layout
 
-Une valeur entre parenthèse sans virgule finale n'est pas un tuple:
+Une valeur entre parenthèses sans virgule finale n'est pas un tuple:
 \backslash
 
 \backslash
@@ -84806,9 +84821,9 @@ debogage@débogage
  Malheureusement, elles sont sujettes à des erreurs de forme, c'est-à-dire
  des erreurs causées lorsqu'une structure de données présente un mauvais
  type, une mauvaise taille ou une mauvaise structure.
- Par exemple, si vous attendez à un tableau avec un entier et que vous recevez
- un entier ordinaire (c'est-à-dire non incorporé à un tableau), la structure
- de données ne fonctionnera pas.
+ Par exemple, si vous vous attendez à un tableau avec un entier et que vous
+ recevez un entier ordinaire (c'est-à-dire non incorporé à un tableau),
+ la structure de données ne fonctionnera pas.
 \end_layout
 
 \begin_layout Standard
@@ -85229,7 +85244,7 @@ begin{tip}
 \begin_layout Plain Layout
 
 Si vous voulez construire un dictionnaire qui établit une correspondance
- entre une collection de lettres et une série de mots qui pouvent être orthograp
+ entre une collection de lettres et une série de mots qui peuvent être orthograp
 hiés avec ces lettres, comment pouvez-vous représenter la collection de
  lettres de manière à ce qu'elle puisse servir de clé?
 \end_layout
@@ -85871,12 +85886,12 @@ stochasticité
 
  Néanmoins, il existe des moyens de le rendre au moins quasi non déterministe.
  Un de ces moyens consiste à utiliser des algorithmes qui fournissent des
- nombres pseudo-aléatoires.
+ nombres pseudoaléatoires.
 \begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
-pseudo-aléatoire
+pseudoaléatoire
 \end_layout
 
 \end_inset
@@ -90291,7 +90306,7 @@ lampe
 
 \begin_layout Standard
 Dans cet exemple, le nombre de mots formant un préfixe vaut toujours deux,
- mais il est tout-à-fait envisageable d'entreprendre une analyse de Markov
+ mais il est tout à fait envisageable d'entreprendre une analyse de Markov
  avec des préfixes dont les mots apparaissent en nombre quelconque, voire
  variable.
 \end_layout
@@ -91166,13 +91181,13 @@ deterministe@déterministe
 \end_layout
 
 \begin_layout Description
-pseudo-aléatoire terme se rapportant à une séquence de nombres qui semble
+pseudoaléatoire terme se rapportant à une séquence de nombres qui semble
  être aléatoire, mais qui est conçue par un programme déterministe, 
 \begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
-pseudo-aléatoire
+pseudoaléatoire
 \end_layout
 
 \end_inset
@@ -118947,15 +118962,11 @@ name "fig:Diagramme-de-type-et-relation-entre-types"
 
 \end_inset
 
-Diagramme de type et relations entre types.
+Diagramme de types et relations entre types.
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -118980,7 +118991,7 @@ noprefix "false"
 \end_inset
 
 , les flèches à extrémité creuse représentent une relation IS-A.
- Dans le cas présent, elle indique qu'
+ Dans le cas présent, elles indiquent qu'
 \color blue
 UneMain
 \color inherit
@@ -120857,7 +120868,7 @@ type, diagramme de
 \end_layout
 
 \begin_layout Description
-multiplicité notation dans un diagramme de type qui montre, pour une relation
+multiplicité notation dans un diagramme de types qui montre, pour une relation
  HAS-A, combien de références existent à des instances d'une autre classe,
  
 \begin_inset Index idx
@@ -121507,7 +121518,7 @@ main pleine
 \begin_inset Quotes crd
 \end_inset
 
- en français) est l'association d'un brelan et d'une paire, c'est à dire
+ en français) est l'association d'un brelan et d'une paire, c'est-à-dire
  trois cartes identiques de n'importe quelle couleur et deux autres cartes
  identiques à côté.
  On évalue toujours la force du brelan en premier pour comparer deux full.
@@ -123606,7 +123617,7 @@ Citation de Richard M.
 \color blue
 fout
 \color inherit
- est le flux de fichiers utilisé pour la sortie.
+ est le flux de fichier utilisé pour la sortie.
  En termes de fonctionnement, ceci est équivalent à:
 \end_layout
 
@@ -124479,7 +124490,7 @@ end
 \end_layout
 
 \begin_layout Subsection
-Tâches ou co-routines
+Tâches ou coroutines
 \end_layout
 
 \begin_layout Standard
@@ -124521,7 +124532,7 @@ tâche
 status open
 
 \begin_layout Plain Layout
-co-routine
+coroutine
 \end_layout
 
 \end_inset
@@ -126192,7 +126203,7 @@ union
 
 \end_inset
 
- de types est un regroupement d’objet de types différents.
+ de types est un regroupement d’objets de types différents.
  À la différence d'une structure, une union de types ne peut contenir qu'un
  seul de ses membres à la fois:
 \end_layout
@@ -129905,7 +129916,7 @@ Appel de code C et Fortran
 \end_layout
 
 \begin_layout Standard
-Une quantité considérable de code est écrit en C
+Une quantité considérable de code est écrite en C
 \begin_inset Index idx
 status open
 
@@ -130524,8 +130535,8 @@ tâche
 \begin_inset space ~
 \end_inset
 
-co-routine) fonction de contrôle du flux qui permet la suspension et la
- reprise des calculs de manière flexible,
+coroutine) fonction de contrôle du flux qui permet la suspension et la reprise
+ des calculs de manière flexible,
 \begin_inset Index idx
 status open
 
@@ -131175,8 +131186,7 @@ textcolor{blue}{@btime} qui permet de faire de l'analyse de performance
 \backslash
 footnote[1]{Le lecteur consultera la référence~
 \backslash
-cite{key-10}}.
- 
+cite{key-10}} 
 \backslash
 index{BenchmarkTools}
 \end_layout
@@ -133807,15 +133817,11 @@ julia>
 \end_layout
 
 \begin_layout Standard
-L'élément unitaire 
-\begin_inset Quotes cld
-\end_inset
-
-chaîne
-\begin_inset Quotes crd
-\end_inset
-
- représente une chaîne vide.
+L'élément unitaire de chaîne de caractères est une chaîne vide, 
+\color blue
+""
+\color inherit
+.
 \end_layout
 
 \begin_layout Standard
@@ -134330,7 +134336,7 @@ L'opérateur
 .
 
 \color inherit
- effectue une distribution sur chaque éléments dans toutes les dimensions:
+ effectue une distribution sur chaque élément dans toutes les dimensions:
  
 \begin_inset Index idx
 status open
@@ -134616,7 +134622,7 @@ Fibonacci, suite de
 \end_inset
 
 .
- La recherche des valeurs d'une suite constitue une des ces interfaces.
+ La recherche des valeurs d'une suite constitue une de ces interfaces.
  Créons un itérateur qui retourne la suite de Fibonacci:
 \begin_inset Index idx
 status open
@@ -136930,7 +136936,7 @@ Les macros
 \color blue
 Logging
 \color inherit
- fournissent une alternative aux canevas avec des déclarations d'affichage:
+ fournissent un substitut aux canevas avec des déclarations d'affichage:
 \begin_inset Index idx
 status open
 
@@ -137296,8 +137302,7 @@ représentation
 \end_inset
 
 intermédiaire structure de données utilisée en interne par un compilateur
- pour représenter le code source.
- 
+ pour représenter le code source, 
 \begin_inset Index idx
 status open
 
@@ -137748,7 +137753,7 @@ if
 
 \begin_layout Enumerate
 assurez-vous que toutes les chaînes de caractères du code sont entre guillemets
- et que tous les guillemets sont des "droits" et non ''bouclés'',
+ et que tous les guillemets sont des "droits" et non “bouclés”,
 \begin_inset Index idx
 status open
 
@@ -138053,7 +138058,7 @@ suspendu
 
 .
  Souvent, cela signifie qu'il est engagé dans une boucle ou une récursion
- infinies:
+ infinie:
 \begin_inset Index idx
 status open
 
@@ -138822,7 +138827,7 @@ OverflowError
 \begin_layout Description
 StackOverflowError un appel de fonction tente d'utiliser plus d'espace que
  celui disponible dans la pile d'appels.
- Cela se produit généralement lorsqu'un appel est répété à l'infini.
+ Cela se produit généralement lorsqu'un appel est répété à l'infini,
 \begin_inset Index idx
 status open
 
@@ -138836,7 +138841,7 @@ StackOverflowError
 \end_layout
 
 \begin_layout Description
-StringIndexError Une erreur s'est produite lors de la tentative d'accès
+StringIndexError une erreur s'est produite lors de la tentative d'accès
  à un indice de chaîne invalide,
 \begin_inset Index idx
 status open
@@ -138915,7 +138920,7 @@ declaration@déclaration d'affichage
 
 \begin_layout Standard
 Pour simplifier la sortie, il est pertinent de supprimer ou commenter les
- déclarations d'affichage qui n'apportent pas d'aide concrètes, les combiner
+ déclarations d'affichage qui n'apportent pas d'aide concrète, les combiner
  (le cas échéant) ou encore formater la sortie de manière à être plus facile
  à interpréter.
 \end_layout
@@ -138923,7 +138928,7 @@ Pour simplifier la sortie, il est pertinent de supprimer ou commenter les
 \begin_layout Standard
 Pour simplifier un programme, il existe plusieurs approches.
  Tout d'abord, réduisez le problème sur lequel le programme travaille.
- Par exemple, si vous traiter une liste, testez une liste courte.
+ Par exemple, si vous traitez une liste, testez une liste courte.
  Si le programme capte diverses données de l'utilisateur, donnez-lui l'informati
 on la plus élémentaire qui cause le problème.
 \end_layout
@@ -138976,7 +138981,7 @@ erreur sémantique
 La première étape consiste à établir un lien entre le code du programme
  et le comportement observé.
  Il faut émettre une hypothèse concernant la manière dont le programme procède.
- Une des causes qui rendent la dépistage des erreurs sémantiques si difficile
+ Une des causes qui rendent le dépistage des erreurs sémantiques si difficile
  provient de la vitesse d'exécution des ordinateurs.
 \end_layout
 
@@ -139168,7 +139173,7 @@ addcard(game.hands[i], pickedcard)
 La version explicite est nettement plus facile à lire parce que les noms
  des variables fournissent une documentation en eux-mêmes.
  Elle est aussi plus facile à déboguer, car il est possible de vérifier
- les types des variables intermédiaires et d'afficher leurs valeurs.
+ les types des variables intermédiaires et d'afficher leur valeur.
 \end_layout
 
 \begin_layout Standard
